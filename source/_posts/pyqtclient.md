@@ -2,8 +2,10 @@
 author: Irony
 title: PyQtClient例子客户端
 date: 2019-02-02 15:15:06
+top: 999
 tags: 
- - 例子
+ - PyQt5
+ - Example
 categories: 随笔
 ---
 

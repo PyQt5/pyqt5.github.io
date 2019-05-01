@@ -1,7 +1,7 @@
 <% if ((post.original != false && !is_page() && theme.copyright) || post.original){ %> <!-- 版权署名授权 -->
     <div class="copyright">
         <p><span><%= __('copyright_info.title') %>:</span><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
-        <p><span><%= __('copyright_info.author') %>:</span><a id="copyright_author" href="/" class="hint  hint--right" data-hint="<%= __('tooltip.back2home') %>"><%=theme.author%></a></p>
+        <p><span><%= __('copyright_info.author') %>:</span><a id="copyright_author" href="/" class="hint  hint--right" data-hint="<%= __('tooltip.back2home') %>"><% if(post.author) { %> <%= post.author %> <% } else { %> <%= post.author %> <% } %></a></p>
         <p style="color: #696969;"><span><%= __('copyright_info.date') %>:</span><%= post.date.format("YYYY-MM-DD, HH:mm:ss") %></p>
         <!-- <p><span><%= __('copyright_info.updated') %>:</span><%= post.updated.format("YYYY-MM-DD, HH:mm:ss") %></p> -->
         <p>
