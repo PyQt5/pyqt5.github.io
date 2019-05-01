@@ -43,15 +43,18 @@ Job ID   | $TRAVIS_JOB_ID |
 Job NUM  | $TRAVIS_JOB_NUMBER |
 EOF
 
-  git init
   git config user.name "Irony"
   git config user.email "892768447@qq.com"
+
+  git init
   git add .
   git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  
   # Github Pages
   git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+
   # Coding Pages
-  git push --force --quiet "https://892768447:${CODING_TOKEN}@${CODING_REF}" master:master
+  git push --force --quiet "https://892768447:${CO_TOKEN}@${CO_REF}" master:master
 }
 
 case $1 in
