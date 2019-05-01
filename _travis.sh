@@ -22,9 +22,28 @@ function default(){
 
   cd ../
 
-  mv -f ./public/* ./blog_master/
-  cd ./blog_master
+  mv -f blog_master/.git/ ./public/
+  cd ./public
 
+cat <<EOF >> README.md
+# PyQt5 Blog
+
+https://blog.pyqt5.com
+
+## 部署结果
+部署状态 | 集成结果 | 参考值
+---|---|---
+完成时间 | $time | yyyy-mm-dd hh:mm:ss
+部署环境 | $TRAVIS_OS_NAME + $TRAVIS_NODE_VERSION | window \| linux + stable
+部署类型 | $TRAVIS_EVENT_TYPE | push \| pull_request \| api \| cron
+仓库地址 | $TRAVIS_REPO_SLUG | owner_name/repo_name
+提交分支 | $TRAVIS_COMMIT | hash 16位
+提交信息 | $TRAVIS_COMMIT_MESSAGE |
+Job ID   | $TRAVIS_JOB_ID |
+Job NUM  | $TRAVIS_JOB_NUMBER |
+EOF
+
+  git init
   git config user.name "Irony"
   git config user.email "892768447@qq.com"
   git add .
