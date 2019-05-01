@@ -279,8 +279,8 @@ mathjax: false
 
 # Socail Share | 是否开启分享
 share:
-  on: true
-  baidu: true
+  on: false
+  baidu: false
   addthis: false
   addthis_pubid: ""
   ## Go to www.addthis.com/dashboard to get your pubid (in src of Code)
@@ -298,7 +298,7 @@ google_analytics:
 
 # 百度统计 http://sitecenter.baidu.com/sc-web/
 # 查看代码，填入 //hm.baidu.com/hm.js? 之后的内容
-baidu_tongji: f7dfd656bdac4e76da8b54bba2978f0b
+baidu_tongji: d38fb2cd754f5fb4995a96a95605819b
 
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
