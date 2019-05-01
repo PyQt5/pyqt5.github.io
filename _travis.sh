@@ -22,7 +22,7 @@ function default(){
 
   cd ../
 
-  mv ./public/ ./blog_master/
+  mv -f ./public/* ./blog_master/
   cd ./blog_master
 
   git config user.name "Irony"
