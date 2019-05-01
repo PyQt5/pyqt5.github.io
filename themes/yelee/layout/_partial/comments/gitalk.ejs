@@ -1,0 +1,19 @@
+<section class="gitalk" id="comments">
+    <div id="gitalk-container"></div>
+    <script>
+        var loadComment = function () {
+            var gitalk = new Gitalk({
+                clientID: "<%= theme.gitalk.clientID %>",
+                clientSecret: "<%= theme.gitalk.clientSecret %>",
+                id: window.location.pathname,
+                repo: "<%= theme.gitalk.repo %>",
+                owner: "<%= theme.gitalk.owner %>",
+                admin: "<%= theme.gitalk.admin %>",
+                language: "zh-CN",
+                createIssueManually: true
+            })
+            gitalk.render("gitalk-container")
+        }
+    </script>
+    <%- partial("click2show") %>
+</section>
