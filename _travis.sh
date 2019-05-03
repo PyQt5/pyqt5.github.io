@@ -28,7 +28,7 @@ function default(){
 cat <<EOF >> README.md
 # PyQt5 Blog
 
-https://blog.pyqt5.com
+https://pyqt5.com
 
 ## 部署结果
 部署状态 | 集成结果 | 参考值

@@ -48,10 +48,10 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: true
-  tab_replace: true
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: 
 
 #prettify 插件位置
 # enable 启用和不启用
@@ -85,6 +85,9 @@ theme: yelee
 
 index_generator:
   per_page: 10 ##首页默认10篇文章标题 如果值为0不分页
+  order_by:
+    top: -1
+    date: -1
 
 archive_generator:
   per_page: 10 ##归档页面默认10篇文章标题

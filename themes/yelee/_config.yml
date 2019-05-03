@@ -156,7 +156,7 @@ highlight:
    enable: true
 
 blockquote_style:
-  on: true
+  #on: true
   blockquote: 1  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 

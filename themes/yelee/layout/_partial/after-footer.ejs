@@ -42,9 +42,9 @@
     function is_post(){//根据自己实际需要来判断
       var url = window.location.pathname;
       var urlArray = url.split("/");
-      if(urlArray.length > 2){
-        var id = $(".article").eq(0).attr("id");
-        var resultUrl = "post-" + urlArray[urlArray.length - 2];
+      if(urlArray.length >= 2){
+        var id = $(".article").eq(0).attr("id") + ".html";
+        var resultUrl = "post-" + urlArray[urlArray.length - 1];
         if(resultUrl == id){
           return true;
         }

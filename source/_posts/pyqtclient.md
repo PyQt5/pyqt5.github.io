@@ -4,8 +4,7 @@ title: PyQtClient例子客户端
 date: 2019-02-02 15:15:06
 top: 999
 tags: 
- - PyQt5
- - Example
+ - PyQt
 categories: 随笔
 ---
 
