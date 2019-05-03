@@ -368,8 +368,7 @@
           <% } %>
           
           if(isPostPage) {
-            jQuery.getScript('//push.zhanzhang.baidu.com/push.js').done(function () {
-            });
+            //jQuery.getScript('//push.zhanzhang.baidu.com/push.js').done(function () {});
             //目录随着页面滚动页高亮标题
             jQuery.getScript('/plugins/js/scrollHighlight.js').done(function(){
               $(".toc-article").scrollHighlight({childItem:'a', container:'.article-content', attribute:'href'});
@@ -450,7 +449,7 @@
               } else {
                   $(".no-result").hide();
                   //auto
-                  $("#left_col_div").css("overflow-y", "hidden").css("overflow-x", "hidden");
+                  $("#left_col_div").css("overflow-y", "auto").css("overflow-x", "hidden");
               }
           })
         });
@@ -1383,7 +1382,7 @@
                 if(totalHeight >= 1000){//左侧鼠标进入显示滚动条
                   $("#left_col_div").mouseenter(function(){
                     //auto
-                    $("#left_col_div").css("overflow-y", "hidden").css("overflow-x", "hidden");
+                    $("#left_col_div").css("overflow-y", "auto").css("overflow-x", "hidden");
                   });
 
                   $("#left_col_div").mouseleave(function(){
@@ -1395,7 +1394,7 @@
                   $("#id_span_change").css("cursor", "pointer").click(function(){
                     if((clickCount % 2) == 0){
                       //auto
-                      $("#left_col_div").css("overflow-y", "hidden").css("overflow-x", "hidden");
+                      $("#left_col_div").css("overflow-y", "auto").css("overflow-x", "hidden");
                     } else {
                       $("#left_col_div").css("overflow-y", "hidden").css("overflow-x", "hidden");
                     }

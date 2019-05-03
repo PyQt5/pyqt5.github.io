@@ -275,7 +275,7 @@ define([], function() {
                     } else {
                         $(".no-result").hide();
                         //auto
-                        $("#left_col_div").css("overflow-y", "hidden").css("overflow-x", "hidden");
+                        $("#left_col_div").css("overflow-y", "auto").css("overflow-x", "hidden");
                     }
                 })
             })
