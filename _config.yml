@@ -36,6 +36,7 @@ i18n_dir: :lang
 ##要告诉hexo对plugins目录下的所有文件跳过解析渲染，因为测试时发现如果不配置，加载prettify的相关js会报脚本错误
 skip_render:
   - "plugins/**"
+  - "search.html"
 
 # Writing
 new_post_name: :title.md # File name of new posts
