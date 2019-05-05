@@ -368,7 +368,14 @@
           <% } %>
           
           if(isPostPage) {
-            //jQuery.getScript('//push.zhanzhang.baidu.com/push.js').done(function () {});
+            {% if theme.baidu_push %}
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+              jQuery.getScript('//zz.bdstatic.com/linksubmit/push.js').done(function () {});
+            } else {
+              jQuery.getScript('//push.zhanzhang.baidu.com/push.js').done(function () {});
+            }
+            {% endif %}
             //目录随着页面滚动页高亮标题
             jQuery.getScript('/plugins/js/scrollHighlight.js').done(function(){
               $(".toc-article").scrollHighlight({childItem:'a', container:'.article-content', attribute:'href'});
