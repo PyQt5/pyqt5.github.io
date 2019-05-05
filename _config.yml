@@ -113,6 +113,10 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
+lazyload:
+  enable: true
+  onlypost: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
