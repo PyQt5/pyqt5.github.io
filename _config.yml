@@ -116,6 +116,7 @@ baidusitemap:
 lazyload:
   enable: true
   onlypost: false
+  loadingImg: /img/loading0_2.gif
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
