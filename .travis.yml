@@ -46,4 +46,4 @@ branches:
 env:
  global:
    - GH_REF: github.com/PyQt5/blog.git
-   - CO_REF: git.coding.net/892768447/PyQtBlog.git
+   - CO_REF: git.coding.net/892768447/892768447.coding.me.git
