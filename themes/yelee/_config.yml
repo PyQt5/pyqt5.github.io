@@ -143,7 +143,7 @@ color_scheme: yilia
 
 ##主题默认的高亮配置
 highlight_style:
-  on: false
+  on: true
   inline_code: 1  # Value: 0 - 9 可选
   code_block: 1  # Value: 0 - 4
   # Set inline_code to style highlight text
@@ -156,7 +156,7 @@ highlight:
    enable: true
 
 blockquote_style:
-  #on: true
+  on: true
   blockquote: 1  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 
@@ -182,7 +182,7 @@ toc:
 
 # 是否开启主页及加载头像时的动画效果
 # Animation in Homepage and Loading avatar
-animate: true
+animate: false
 
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
