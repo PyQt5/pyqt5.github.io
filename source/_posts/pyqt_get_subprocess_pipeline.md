@@ -10,8 +10,9 @@ tags:
 categories: 随笔
 ---
 
-文章内容简介：
 pyqt线程读取子进程python脚本的print输出流。
+
+<!-- more -->
 
 问题所在：
 
