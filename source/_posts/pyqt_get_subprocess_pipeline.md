@@ -10,10 +10,15 @@ tags:
 categories: 随笔
 ---
 
+文章内容简介：
+pyqt线程读取子进程python脚本的print输出流。
+
 问题所在：
+
 ![image.png](https://i.loli.net/2019/05/24/5ce793171984f27031.png)
 
 如果模块都由自己开发， 正常操作 
+
 ![image.png](https://i.loli.net/2019/05/24/5ce7933994a0090037.png)
 
 但是因为不能改, 所以只能拦截：
