@@ -27,6 +27,9 @@
         "hexo-wordcount": "^6.0.1",
         "markdown-it-emoji": "^1.4.0",
         "hexo-lazyload-image": "^1.0.4",
+        "hexo-pagination": "^0.1.0",
+        "lodash.pick": "^4.4.0",
+        "moment": "^2.24.0",
         "hexo-generator-restful": "file:./hexo-generator-restful"
     }
 }
