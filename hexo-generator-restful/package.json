@@ -1,0 +1,26 @@
+{
+  "name": "hexo-generator-restful",
+  "version": "0.2.3",
+  "description": "Generate restful json data for Hexo plugins.",
+  "main": "index.js",
+  "keywords": [
+    "hexo",
+    "restful",
+    "json",
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yscoder/hexo-generator-restful.git"
+  },
+  "author": "yusen",
+  "license": "MIT",
+  "dependencies": {
+    "hexo-pagination": "^0.1.0",
+    "lodash.pick": "^4.4.0",
+    "moment": "^2.24.0"
+  },
+  "__npminstall_done": "Tue Jun 11 2019 22:19:13 GMT+0800 (GMT+08:00)",
+  "_from": "hexo-generator-restful@0.2.3",
+  "_resolved": "https://registry.npm.taobao.org/hexo-generator-restful/download/hexo-generator-restful-0.2.3.tgz"
+}

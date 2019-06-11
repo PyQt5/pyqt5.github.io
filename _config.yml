@@ -114,7 +114,7 @@ baidusitemap:
   path: baidusitemap.xml
 
 lazyload:
-  enable: true
+  enable: false
   onlypost: false
   loadingImg: /img/loading0_2.gif
 
@@ -127,7 +127,7 @@ deploy:
 - type: git
   repo: coding.net
   branch: master
-	   
+
 # Markdown-it config 表情支持
 ## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
 ## http://www.cnblogs.com/fsong/p/5929773.html
@@ -189,7 +189,7 @@ restful:
     slug: true
     date: true
     updated: true
-    comments: true
+    comments: false
     path: true
     excerpt: true
     cover: true      # 封面图，取文章第一张图片
