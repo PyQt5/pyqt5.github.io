@@ -152,3 +152,28 @@ markdown:
     permalink: true
     permalinkClass: header-anchor
     permalinkSymbol: ''
+
+# json api
+jsonContent:
+  meta: true
+  dafts: false
+  pages: false
+  dateFormat: YYYY-MM-DD HH:mm:ss
+  file: content.json
+  posts:
+    title: true
+    slug: true
+    date: true
+    updated: false
+    comments: false
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: false
+    text: false
+    raw: true
+    content: false
+    author: true
+    categories: true
+    tags: true
