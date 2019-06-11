@@ -203,4 +203,4 @@ restful:
   tags: true               # 标签数据
   use_tag_slug: false      # Use slug for filename of tag data
   post: true               # 文章数据
-  pages: false             # 额外的 Hexo 页面数据, 如 About
+  pages: true             # 额外的 Hexo 页面数据, 如 About
