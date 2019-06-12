@@ -3,6 +3,7 @@
 var pagination = require('hexo-pagination');
 var _pick = require('lodash.pick');
 var _moment = require('moment');
+var _host = '';
 
 function filterHTMLTags(str) {
     return str ? str
@@ -15,6 +16,13 @@ function fetchCovers(str) {
         imgURLs = [],
         rex = /<img[^>]+src="?([^"\s]+)"(.*)>/g;
     while ( temp = rex.exec( str ) ) {
+        if ( temp[1].startsWith("http") == false ) {
+            if ( temp[1].startsWith("/") == false ) {
+                temp[1] = _host + "/" + temp[1];
+            } else {
+                temp[1] = _host + temp[1];
+            }
+        }
         imgURLs.push( temp[1] );
     }
     return imgURLs.length > 0 ? imgURLs : null;
@@ -25,7 +33,7 @@ function fetchCover(str) {
 }
 
 module.exports = function (cfg, site) {
-
+    _host = cfg.url;
     var restful = cfg.hasOwnProperty('restful') ? cfg.restful :
         {
             site: true,
@@ -69,7 +77,7 @@ module.exports = function (cfg, site) {
                 author: post.author,
                 title: posts_props('title', post.title),
                 slug: posts_props('slug', post.slug),
-                date: posts_props('date', _moment(post.date).format('YYYY-MM-DD')),
+                date: posts_props('date', _moment(post.date).format('YYYY-MM-DD HH:mm:ss')),
                 updated: posts_props('updated', post.updated),
                 comments: posts_props('comments', post.comments),
                 path: posts_props('path', 'api/articles/' + post.slug + '.json'),
@@ -237,7 +245,7 @@ module.exports = function (cfg, site) {
                     author: post.author,
                     title: post.title,
                     slug: post.slug,
-                    date: _moment(post.date).format('YYYY-MM-DD'),
+                    date: _moment(post.date).format('YYYY-MM-DD HH:mm:ss'),
                     updated: post.updated,
                     comments: post.comments,
                     path: path,
@@ -274,7 +282,7 @@ module.exports = function (cfg, site) {
                 path: path,
                 data: JSON.stringify({
                     title: page.title,
-                    date: _moment(page.date).format('YYYY-MM-DD'),
+                    date: _moment(page.date).format('YYYY-MM-DD HH:mm:ss'),
                     updated: page.updated,
                     comments: page.comments,
                     path: path,
