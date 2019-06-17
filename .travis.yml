@@ -31,7 +31,7 @@ before_script:
   - chmod +x _travis.sh
 
 script:
-  - mkdir tmp
+  - mkdir -p tmp
   - hexo clean && hexo g && hexo g
 #  - gulp
 
