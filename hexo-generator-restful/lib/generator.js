@@ -3,39 +3,131 @@
 var pagination = require('hexo-pagination');
 var _pick = require('lodash.pick');
 var _moment = require('moment');
+var gm = require('gm');
+var fs = require('fs');
+var _path = require('path');
+var request = require('sync-request');
 var _host = '';
+
+// 创建缩略图存放路径
+var thumbnailpath = 'source/images/';
+fs.accessSync('tmp', fs.constants.R_OK | fs.constants.W_OK, (err) => {
+    if (err) {
+        fs.mkdirSync('tmp');
+    }
+});
+fs.accessSync(thumbnailpath, fs.constants.R_OK | fs.constants.W_OK, (err) => {
+    if (err) {
+        fs.mkdirSync(thumbnailpath, {
+            recursive: true
+        }, (err) => {});
+    }
+});
 
 function filterHTMLTags(str) {
     return str ? str
-            .replace(/\<(?!img|br).*?\>/g, "")
-            .replace(/\r?\n|\r/g, '')
-            .replace(/<img(.*)>/g, ' [Figure] ') : null
+        .replace(/\<(?!img|br).*?\>/g, "")
+        .replace(/\r?\n|\r/g, '')
+        .replace(/<img(.*)>/g, ' [图片] ') : null
 }
+
 function fetchCovers(str) {
     var temp,
         imgURLs = [],
         rex = /<img[^>]+src="?([^"\s]+)"(.*)>/g;
-    while ( temp = rex.exec( str ) ) {
-        if ( temp[1].startsWith("http") == false ) {
+    while (temp = rex.exec(str)) {
+        /* if ( temp[1].startsWith("http") == false ) {
             if ( temp[1].startsWith("/") == false ) {
                 temp[1] = _host + "/" + temp[1];
             } else {
                 temp[1] = _host + temp[1];
             }
-        }
-        imgURLs.push( temp[1] );
+        } */
+        imgURLs.push(temp[1]);
     }
     return imgURLs.length > 0 ? imgURLs : null;
 }
+
 function fetchCover(str) {
-    var covers = fetchCovers(str)
-    return covers ? covers[0] : null; 
+    var covers = fetchCovers(str);
+    return covers ? covers[0] : null;
+}
+
+function createThumbnail(url) {
+    // 生成缩略图
+    var savePath = thumbnailpath + _path.basename(url).split('.')[0] + '_thumb.jpg' // 文件名
+    try {
+        // 如果缩略图已经存在则跳过
+        fs.accessSync(savePath, fs.constants.R_OK | fs.constants.W_OK);
+        console.log('跳过缩略图: ' + savePath);
+        return savePath;
+    } catch (err) {}
+
+    if (url.startsWith("http") == false) {
+        // 本地文件
+        var srcPath = 'source' + url;
+        try {
+            // 生成缩略图
+            fs.accessSync(srcPath, fs.constants.R_OK | fs.constants.W_OK);
+            console.log('本地文件生成缩略图: ' + srcPath);
+            gm(srcPath).resize(80, 80).setFormat('JPEG').quality(70).strip().autoOrient().write(savePath, function (err) {
+                if (err) {
+                    console.log("err: " + err);
+                    console.log("err src: " + srcPath);
+                    console.log("err save: " + savePath);
+                }
+            });
+            try {
+                fs.accessSync(savePath, fs.constants.R_OK | fs.constants.W_OK);
+                return savePath;
+            } catch (err) {
+                return null;
+            }
+        } catch (err) {
+            if (err)
+                console.log(err);
+        }
+    } else {
+        // 下载远程文件
+        var srcPath = 'tmp/' + _path.basename(url) // 临时路径文件名
+        try {
+            // 如果缩略图已经存在则跳过
+            fs.accessSync(srcPath, fs.constants.R_OK | fs.constants.W_OK);
+            console.log('跳过已下载: ' + srcPath);
+        } catch (err) {
+            // 不存在则重新下载
+            var res = request('GET', url);
+            fs.writeFileSync(srcPath, res.getBody());
+        }
+
+        try {
+            // 生成缩略图
+            fs.accessSync(srcPath, fs.constants.R_OK | fs.constants.W_OK);
+            console.log('远程图片生成缩略图: ' + url);
+            gm(srcPath).resize(80, 80).setFormat('JPEG').quality(70).strip().autoOrient().write(savePath, function (err) {
+                if (err) {
+                    console.log("err: " + err);
+                    console.log("err src: " + srcPath);
+                    console.log("err save: " + savePath);
+                }
+            });
+            try {
+                fs.accessSync(savePath, fs.constants.R_OK | fs.constants.W_OK);
+                return savePath;
+            } catch (err) {
+                return null;
+            }
+        } catch (err) {
+            if (err)
+                console.log(err);
+        }
+    }
+    return null;
 }
 
 module.exports = function (cfg, site) {
     _host = cfg.url;
-    var restful = cfg.hasOwnProperty('restful') ? cfg.restful :
-        {
+    var restful = cfg.hasOwnProperty('restful') ? cfg.restful : {
             site: true,
             posts_size: 10,
             posts_props: {
@@ -73,6 +165,14 @@ module.exports = function (cfg, site) {
         })(),
 
         postMap = function (post) {
+            // 获取图片并生成缩略图
+            var cover = posts_props('cover', post.cover || fetchCover(post.content));
+            if (cover != null) {
+                cover = createThumbnail(cover);
+                cover = cover ? cover.replace('source/', '') : 'images/default_thumb.jpg';
+            } else {
+                cover = 'images/default_thumb.jpg';
+            }
             return {
                 author: post.author,
                 title: posts_props('title', post.title),
@@ -84,7 +184,7 @@ module.exports = function (cfg, site) {
                 excerpt: posts_props('excerpt', filterHTMLTags(post.excerpt)),
                 keywords: posts_props('keywords', cfg.keywords),
                 // cover: posts_props('cover',  fetchCover(post.content)),
-                cover: posts_props('cover', post.cover || fetchCover(post.content)),
+                cover: cover,
                 // 去掉posts分页查询里面包含内容，只显示简介
                 // content: posts_props('content', post.content),
                 // raw: posts_props('raw', post.raw),

@@ -1,7 +1,7 @@
 {
   "name": "hexo-generator-restful",
   "version": "0.2.3",
-  "description": "Generate restful json data for Hexo plugins.",
+  "description": "Generate restful json data for Hexo plugins. 修改版. 增加缩略图",
   "main": "index.js",
   "keywords": [
     "hexo",
@@ -16,6 +16,13 @@
   "author": "yusen",
   "license": "MIT",
   "dependencies": {
+    "hexo-pagination": "^0.1.0",
+    "lodash.pick": "^4.4.0",
+    "moment": "^2.24.0",
+    "gm": "^1.23.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sync-request": "^6.1.0"
   },
   "__npminstall_done": "Tue Jun 11 2019 22:19:13 GMT+0800 (GMT+08:00)",
   "_from": "hexo-generator-restful@0.2.3",
