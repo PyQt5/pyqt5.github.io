@@ -19,6 +19,7 @@ notifications:
 
 # S: Build Lifecycle
 install:
+  - sudo apt-get install netcat
   - sudo apt-get install graphicsmagick
   - npm install --save
 #  - gem install travis
