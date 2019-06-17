@@ -19,8 +19,8 @@ notifications:
 
 # S: Build Lifecycle
 install:
-  - sudo apt-get install netcat
-  - sudo apt-get install graphicsmagick
+  - sudo pip install requests
+  - sudo pip install pillow
   - npm install --save
 #  - gem install travis
 #  - travis login --pro --github-token ${GH_TOKEN}
@@ -31,6 +31,7 @@ before_script:
   - chmod +x _travis.sh
 
 script:
+  - mkdir tmp
   - hexo clean && hexo g && hexo g
 #  - gulp
 

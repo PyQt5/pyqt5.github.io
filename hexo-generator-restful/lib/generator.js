@@ -3,26 +3,12 @@
 var pagination = require('hexo-pagination');
 var _pick = require('lodash.pick');
 var _moment = require('moment');
-var gm = require('gm');
 var fs = require('fs');
+var format = require('string-format');
 var _path = require('path');
-var request = require('sync-request');
+var _process = require('child_process');
 var _host = '';
-
-// 创建缩略图存放路径
 var thumbnailpath = 'source/images/';
-fs.accessSync('tmp', fs.constants.R_OK | fs.constants.W_OK, (err) => {
-    if (err) {
-        fs.mkdirSync('tmp');
-    }
-});
-fs.accessSync(thumbnailpath, fs.constants.R_OK | fs.constants.W_OK, (err) => {
-    if (err) {
-        fs.mkdirSync(thumbnailpath, {
-            recursive: true
-        }, (err) => {});
-    }
-});
 
 function filterHTMLTags(str) {
     return str ? str
@@ -53,6 +39,16 @@ function fetchCover(str) {
     return covers ? covers[0] : null;
 }
 
+function runCommand(command) {
+    _process.execSync(command, function (error, stdout, stderr) {
+        if (error) {
+            console.log(error.stack);
+            console.log('Error code: ' + error.code);
+            console.log('Signal received: ' + error.signal);
+        }
+    });
+}
+
 function createThumbnail(url) {
     // 生成缩略图
     var savePath = thumbnailpath + _path.basename(url).split('.')[0] + '_thumb.jpg' // 文件名
@@ -70,19 +66,7 @@ function createThumbnail(url) {
             // 生成缩略图
             fs.accessSync(srcPath, fs.constants.R_OK | fs.constants.W_OK);
             console.log('本地文件生成缩略图: ' + srcPath);
-            gm(srcPath).resize(80, 80).setFormat('JPEG').quality(70).strip().autoOrient().write(savePath, function (err) {
-                if (err) {
-                    console.log("err: " + err);
-                    console.log("err src: " + srcPath);
-                    console.log("err save: " + savePath);
-                }
-            });
-            try {
-                fs.accessSync(savePath, fs.constants.R_OK | fs.constants.W_OK);
-                return savePath;
-            } catch (err) {
-                return null;
-            }
+            runCommand(format('python createThumb.py {0} {1}', srcPath, savePath));
         } catch (err) {
             if (err)
                 console.log(err);
@@ -94,35 +78,21 @@ function createThumbnail(url) {
             // 如果缩略图已经存在则跳过
             fs.accessSync(srcPath, fs.constants.R_OK | fs.constants.W_OK);
             console.log('跳过已下载: ' + srcPath);
+            runCommand(format('python createThumb.py {0} {1}', srcPath, savePath));
         } catch (err) {
             // 不存在则重新下载
-            var res = request('GET', url);
-            fs.writeFileSync(srcPath, res.getBody());
-        }
-
-        try {
-            // 生成缩略图
-            fs.accessSync(srcPath, fs.constants.R_OK | fs.constants.W_OK);
-            console.log('远程图片生成缩略图: ' + url);
-            gm(srcPath).resize(80, 80).setFormat('JPEG').quality(70).strip().autoOrient().write(savePath, function (err) {
-                if (err) {
-                    console.log("err: " + err);
-                    console.log("err src: " + srcPath);
-                    console.log("err save: " + savePath);
-                }
-            });
-            try {
-                fs.accessSync(savePath, fs.constants.R_OK | fs.constants.W_OK);
-                return savePath;
-            } catch (err) {
-                return null;
-            }
-        } catch (err) {
-            if (err)
-                console.log(err);
+            console.log('下载远程文件生成缩略图: ' + url);
+            runCommand(format('python createThumb.py {0} {1} {2}', url, srcPath, savePath));
         }
     }
-    return null;
+
+    // 检测结果
+    try {
+        fs.accessSync(savePath, fs.constants.R_OK | fs.constants.W_OK);
+        return savePath;
+    } catch (err) {
+        return null;
+    }
 }
 
 module.exports = function (cfg, site) {
