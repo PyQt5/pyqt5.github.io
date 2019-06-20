@@ -31,4 +31,4 @@ share: false
 
 ## 捐助支持
 
-<a href="#" alt="微信"><img src="images/weixin.png" height="350" width="350"></a>or<a href="#" alt="支付宝"><img src="images/zhifubao.png" height="350" width="350"></a>
+![微信](images/weixin.png) or ![支付宝](images/zhifubao.png)
