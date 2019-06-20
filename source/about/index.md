@@ -31,4 +31,4 @@ share: false
 
 ## 捐助支持
 
-![微信](images/weixin.png) or ![支付宝](images/zhifubao.png)
+![微信](/images/weixin.png) or ![支付宝](/images/zhifubao.png)
