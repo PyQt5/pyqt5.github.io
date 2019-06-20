@@ -12,7 +12,12 @@ Created on 2019年6月17日
 from PIL import Image
 import requests
 import sys
+import os
 
+try:
+    os.mkdir('tmp')
+except:
+    pass
 
 def download(url, src, dst):
     resp = requests.get(url)
