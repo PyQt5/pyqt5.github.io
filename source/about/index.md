@@ -31,4 +31,4 @@ share: false
 
 ## 捐助支持
 
-<a href="#" alt="微信"><img src="https://github.com/PyQt5/PyQt/blob/master/Donate/weixin.png" height="350" width="350"></a>or<a href="#" alt="支付宝"><img src="https://github.com/PyQt5/PyQt/blob/master/Donate/zhifubao.png" height="350" width="350"></a>
+<a href="#" alt="微信"><img src="images/weixin.png" height="350" width="350"></a>or<a href="#" alt="支付宝"><img src="images/zhifubao.png" height="350" width="350"></a>

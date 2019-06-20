@@ -6,8 +6,8 @@ https://pyqt5.com
 
 1. 先 fork 本项目 或者 作为协作者加入本项目
 2. 在 [source/_posts](source/_posts) 目录中编写文章
-3. 图片文件放到[source/images](source/images)，在文章中使用的时候 `![xx](/images/xx.png)`
-4. 其它文件放到[source/files](source/files)，在文章中使用的时候 `[xx](/files/xx.zip)`
+3. 图片文件放到[source/images](source/images)，在文章中使用的时候 `![xx](images/xx.png)`
+4. 其它文件放到[source/files](source/files)，在文章中使用的时候 `[xx](files/xx.zip)`
 5. 文章格式见下面
 6. 提交代码
 
