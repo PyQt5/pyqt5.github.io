@@ -9,9 +9,7 @@ subtitle: 学习交流
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  主页: /
   学无止境: /archives/
-  #随笔: /tags/随笔
   分类标签: /tags/
   常见问题: /faq/
   温馨留言: /guestbook/
