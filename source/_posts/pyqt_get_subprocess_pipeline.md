@@ -1,7 +1,7 @@
 ---
 author: 人间白头　
 title: python 获取子进程print信息 　
-date: 2019年5月24日14:39:44
+date: 2019-05-24 14:39:44
 top: 1
 tags:
  - Python
