@@ -2,6 +2,10 @@
 
 https://pyqt5.com
 
+## 微信博客小程序
+
+<img src="source/images/wxblog.jpg" height="250" width="250">
+
 ## 提交文章说明
 
 1. 先 fork 本项目 或者 作为协作者加入本项目
