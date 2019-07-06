@@ -11,6 +11,7 @@ Created on 2019年6月17日
 """
 from PIL import Image
 import requests
+import traceback
 import sys
 import os
 
@@ -20,16 +21,22 @@ except:
     pass
 
 def download(url, src, dst):
-    resp = requests.get(url)
-    open(src, 'wb').write(resp.content)
-    thumbnail(src, dst)
+    try:
+        resp = requests.get(url)
+        open(src, 'wb').write(resp.content)
+        thumbnail(src, dst)
+    except:
+        traceback.print_exc()
 
 
 def thumbnail(src, dst):
-    img = Image.open(src)
-    img = img.convert('RGB')
-    img.thumbnail((80, 80), Image.ANTIALIAS)
-    img.save(dst)
+    try:
+        img = Image.open(src)
+        img = img.convert('RGB')
+        img.thumbnail((80, 80), Image.ANTIALIAS)
+        img.save(dst)
+    except:
+        traceback.print_exc()
 
 
 if __name__ == '__main__':
