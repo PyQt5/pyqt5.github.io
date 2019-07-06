@@ -46,9 +46,11 @@ categories: 随笔
 将`call` 和`return` 给加进去.
 
 - 4 .增加阶段关键字；
+
 ![eric6启动阶段](https://upload-images.jianshu.io/upload_images/10769157-c39d01a02149e808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![image.png](https://upload-images.jianshu.io/upload_images/10769157-aef5704c36824dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 加`#000` 是为了方便搜索 。
 需要自己手动折叠 。
 可以发现 每个`splash.showMessage()` 都是一个阶段 ， 展开折叠之后就是每个阶段具体执行细节 。 
