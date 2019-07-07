@@ -357,7 +357,6 @@ module.exports = function (cfg, site) {
                     updated: page.updated,
                     comments: page.comments,
                     path: path,
-                    url: post.permalink,
                     covers: fetchCovers(page.content),
                     excerpt: filterHTMLTags(page.excerpt),
                     content: posts_props('content', page.content),
