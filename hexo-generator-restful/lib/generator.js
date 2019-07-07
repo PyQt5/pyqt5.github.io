@@ -323,7 +323,7 @@ module.exports = function (cfg, site) {
                     excerpt: filterHTMLTags(post.excerpt),
                     covers: fetchCovers(post.content),
                     keywords: cfg.keyword,
-                    // content: post.content,
+                    content: post.content,
                     content: posts_props('content', post.content),
                     // more: post.more,
                     raw: posts_props('raw', post.raw),
