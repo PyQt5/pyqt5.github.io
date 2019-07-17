@@ -57,7 +57,8 @@ if __name__ == '__main__':
     sys.exit(app.exec_())
 ```
 
-更详细例子 : [pyqt中使用keyboard全局热键]([https://github.com/PyQt5/PyQt/blob/63c6376358acb1863313fb5593097e6e0210cad6/Test/%E5%85%A8%E5%B1%80%E7%83%AD%E9%94%AE/HotKey.py](qq://txfile/#)
-)
+更详细例子 : [pyqt中使用keyboard全局热键](https://github.com/PyQt5/PyQt/blob/63c6376358acb1863313fb5593097e6e0210cad6/Test/%E5%85%A8%E5%B1%80%E7%83%AD%E9%94%AE/HotKey.py)
+
 优点: 跨平台 ;
+
 缺点: 模块名字取得太差, 不容易被发现.
