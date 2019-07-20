@@ -32,4 +32,8 @@ python的状态机模块挺多的 , 不过好像很多都不更新了.
 2的设计更人性化一些 , 包括状态改变`before`和 `after` , 不过由于是装饰器实现的动态增加属性 , 有些地方编辑器智能提示可能就靠不上了.
 
 两者实现实现方式不一样 , 有兴趣可以读读源码 .
-    
+
+3. qt内置状态机框架
+https://blog.csdn.net/amnes1a/article/details/62418196
+https://blog.csdn.net/dongfenghuojian/article/details/78187131
+http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html (系列教程)    
