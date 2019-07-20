@@ -36,5 +36,7 @@ python的状态机模块挺多的 , 不过好像很多都不更新了.
 3. qt内置状态机框架
 
 https://blog.csdn.net/amnes1a/article/details/62418196
+
 https://blog.csdn.net/dongfenghuojian/article/details/78187131
+
 http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html (系列教程)    
