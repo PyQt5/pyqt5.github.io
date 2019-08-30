@@ -30,6 +30,10 @@ cat <<EOF >> README.md
 
 https://pyqt5.com
 
+## Build Status
+
+[![Build Status](https://www.travis-ci.org/PyQt5/blog.svg?branch=dev)](https://www.travis-ci.org/PyQt5/blog)
+
 ## 部署结果
 部署状态 | 集成结果 | 参考值
 ---|---|---

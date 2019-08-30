@@ -10,7 +10,7 @@ tags:
 categories: 随笔
 ---
 
-pyqt线程读取子进程python脚本的print输出流。
+在PyQt中使用子线程读取子进程Python脚本的print输出流内容。
 
 <!-- more -->
 
