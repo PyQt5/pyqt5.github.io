@@ -291,7 +291,7 @@ share:
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
 baidu_site:
-google_site:L09MDi9gA7mFqsqWfcVVtK_yhV7tPcfBIthuPs-zK4g
+google_site: "L09MDi9gA7mFqsqWfcVVtK_yhV7tPcfBIthuPs-zK4g"
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X
 google:
