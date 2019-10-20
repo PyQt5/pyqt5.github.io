@@ -7,17 +7,19 @@ share: false
 
 <script src="/js/template-web.js"></script>
 <script>
+	// 标准语法的界定符规则
+	template.defaults.rules[1].test = /<<([@#]?)[ \t]*(\/?)([\w\W]*?)[ \t]*>>/;
 	template.defaults.imports.dateFormat = function (value) {
 		return value.split("T")[0];
 	}
 </script>
 <script src="/js/issues.js"></script>
 <script id="tpl-issues" type="text/html">
-	{{each issues}}
+	<<each issues>>
 	<article id="post-python_statemachine" class="article article-type-post" itemscope itemprop="blogPost">
 		<div class="article-meta">
 			<a href="/python_statemachine.html" class="article-date">
-				<time datetime="{{$value.created_at}}" itemprop="datePublished">{{$value.created_at | dateFormat}}</time>
+				<time datetime="<<$value.created_at>>" itemprop="datePublished"><<$value.created_at | dateFormat>></time>
 			</a>
 		</div>
 		<div class="ui piled raised segment box-archive-item" itemscope itemtype="http://schema.org/Article"
@@ -27,27 +29,27 @@ share: false
 				<span class="archive-item-title"
 					style="display:block; height:100%; max-width:400px;white-space:nowrap; text-transform:capitalize;">
 					<h1 itemprop="name">
-						<a class="article-title" href="{{$value.html_url}}" target="_blank">{{$value.title}}</a>
+						<a class="article-title" href="<<$value.html_url>>" target="_blank"><<$value.title>></a>
 					</h1>
 				</span>
 			</div>
-			<div onclick="window.open('{{$value.html_url}}','_blank')" id="id_description_div"
+			<div onclick="window.open('<<$value.html_url>>','_blank')" id="id_description_div"
 				style="margin-top:20px; line-height: 1.65em;cursor:pointer">
-				<p>{{$value.body}}</p>
+				<p><<$value.body>></p>
 			</div>
 			<div class="article-info article-info-index">
 				<div class="article-tag tagcloud">
 					<ul class="article-tag-list">
-						{{set labels = $value.labels}}
-						{{each labels}}
+						<<set labels = $value.labels>>
+						<<each labels>>
 						<li class="article-tag-list-item"><a class="article-tag-list-link"
-								href="{{$value.url}}">{{$value.name}}</a>
+								href="<<$value.url>>"><<$value.name>></a>
 						</li>
-						{{/each}}
+						<</each>>
 					</ul>
 				</div>
 				<p class="article-more-link">
-					<a href="{{$value.html_url}}"> <span class="link link--yaku">
+					<a href="<<$value.html_url>>"> <span class="link link--yaku">
 							<span>发</span><span>现</span><span>更</span><span>多 >></span>
 						</span>
 					</a>
@@ -56,24 +58,24 @@ share: false
 			</div>
 		</div>
 	</article>
-	{{/each}}
-	{{if pages}}
+	<</each>>
+	<<if pages>>
 	<nav id="page-nav" >
-		{{if pages.current_page && pages.prev_page !== pages.current_page}}
-		<a class="extend prev" rel="prev" href="{{pages.href}}?page={{pages.prev_page}}">&laquo; Prev</a>
-		{{/if}}
-		{{each pages.pages}}
-		{{if pages.current_page === $value}}
-		<span class="page-number current">{{$value}}</span>
-		{{else}}
-		<a class="page-number" href="{{pages.href}}?page={{$value}}">{{$value}}</a>
-		{{/if}}
-		{{/each}}
-		{{if pages.next_page && pages.total_page !== pages.current_page}}
-		<a class="extend next" rel="next" href="{{pages.href}}?page={{pages.next_page}}">Next &raquo;</a>
-		{{/if}}
+		<<if pages.current_page && pages.prev_page !== pages.current_page>>
+		<a class="extend prev" rel="prev" href="<<pages.href>>?page=<<pages.prev_page>>">&laquo; Prev</a>
+		<</if>>
+		<<each pages.pages>>
+		<<if pages.current_page === $value>>
+		<span class="page-number current"><<$value>></span>
+		<<else>>
+		<a class="page-number" href="<<pages.href>>?page=<<$value>>"><<$value>></a>
+		<</if>>
+		<</each>>
+		<<if pages.next_page && pages.total_page !== pages.current_page>>
+		<a class="extend next" rel="next" href="<<pages.href>>?page=<<pages.next_page>>">Next &raquo;</a>
+		<</if>>
 	</nav>
-	{{/if}}
+	<</if>>
 </script>
 
 <div id="issues-list"></div>
