@@ -5,6 +5,8 @@ date: 2019-10-20 23:24:25
 share: false
 ---
 
+<link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/0.19.3/css/semantic.min.css" data-no-instant>
+<script src="//cdn.bootcss.com/semantic-ui/0.19.3/javascript/semantic.min.js" data-no-instant></script>
 <script src="/js/template-web.js"></script>
 <script>
 	// 标准语法的界定符规则
