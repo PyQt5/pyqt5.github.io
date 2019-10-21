@@ -8,7 +8,7 @@ $(function () {
 
     function queryParse(name, content) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-        var r = encodeURI(content || window.location.search).substr(1).match(reg);
+        var r = content.match(reg) || encodeURI(window.location.search).substr(1).match(reg);
         if (r != null) return decodeURI(unescape(r[2]));
         return null;
     }
