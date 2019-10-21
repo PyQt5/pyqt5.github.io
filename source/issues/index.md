@@ -16,6 +16,16 @@ home: true
 	template.defaults.imports.dateFormat = function (value) {
 		return value.split("T")[0];
 	}
+	template.defaults.imports.randomColor = function () {
+		var color_map = ['black', 'green', 'red', 'blue', 'orange', 'purple', 'teal'];
+		var color = 'teal';
+		var color_index = Math.ceil(Math.random()*(color_map.length-1));
+		color = color_map[color_index];
+		if (!color) {
+			color = 'teal';
+		}
+		return color;
+	}
 	template.defaults.imports.replaceLabelUrl = function (value) {
 		return value.replace("api.", "").replace("/repos/", "/").replace("labels/", "issues?q=label%3A");
 	}
@@ -32,7 +42,7 @@ home: true
 		<div class="ui piled raised segment box-archive-item" itemscope itemtype="http://schema.org/Article"
 			style="background-color:#fafafa !important">
 			<input type="hidden" class="isFancy" />
-			<div class="ui purple ribbon label" style="line-height: 1.3; min-width:100px; max-width:450px;">
+			<div class="ui <<randomColor>> ribbon label" style="line-height: 1.3; min-width:100px; max-width:450px;">
 				<span class="archive-item-title"
 					style="display:block; height:100%; max-width:400px;white-space:nowrap; text-transform:capitalize;">
 					<h1 itemprop="name">

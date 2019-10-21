@@ -19,6 +19,9 @@ $(function () {
     }
 
     function getIssues(current_page) {
+        try {
+            Pace.restart();
+        } catch (error) {}
         $.ajax({
             type: "GET",
             url: "https://api.github.com/repos/PyQt5/PyQt/issues",
@@ -84,6 +87,9 @@ $(function () {
                     resetTags();
                 } catch (error) {
                 }
+                try {
+                    Pace.stop();
+                } catch (error) {}
             },
             error: function (xhr, errorType, error) {
                 console.error(xhr);
@@ -106,12 +112,23 @@ $(function () {
 
     var code = queryParse("code");
     if (code) {
-        $.post("https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token", { client_id: client_id, client_secret: client_secret, code: code },
-            function (response) {
+        try {
+            Pace.restart();
+        } catch (error) {}
+        $.ajax({
+            type: "POST",
+            url: "https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token",
+            data: { client_id: client_id, client_secret: client_secret, code: code },
+            dataType: "json",
+            success: function (response, status, xhr) {
                 access_token = response.access_token;
                 localStorage.setItem("GT_ACCESS_TOKEN", access_token);
                 window.location.href = window.location.href.split("?")[0];
-            }, "json");
+            },
+            error: function (xhr, errorType, error) {
+                console.error(xhr);
+            }
+        });
     } else {
         if (access_token === null || access_token.length === 0) {
             // 未登录
