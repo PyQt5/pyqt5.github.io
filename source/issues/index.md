@@ -20,7 +20,7 @@ home: true
 		return value.replace("api.", "").replace("/repos/", "/").replace("labels/", "issues?q=label%3A");
 	}
 </script>
-<script src="/js/issues.js"></script>
+<script src="/js/issues.min.js"></script>
 <script id="tpl-issues" type="text/html">
 	<<each issues>>
 	<article id="post-<<$value.number>>" class="article article-type-post" itemscope itemprop="blogPost">

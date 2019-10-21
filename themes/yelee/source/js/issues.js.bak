@@ -90,6 +90,19 @@ $(function () {
             }
         });
     }
+    
+    function getIssuesData() {
+        // 获取issues列表
+        var current_page = queryParse("page");
+        if (current_page) {
+            try {
+                current_page = parseInt(current_page) || 1;
+            } catch (error) {
+                current_page = 1;
+            }
+        }
+        getIssues(current_page);
+    }
 
     var code = queryParse("code");
     if (code) {
@@ -97,7 +110,8 @@ $(function () {
             function (response) {
                 access_token = response.access_token;
                 localStorage.setItem("GT_ACCESS_TOKEN", access_token);
-                window.location.href = window.location.href.split("?")[0]
+                window.location.href = window.location.href.split("?")[0];
+                return;
             }, "json");
     } else {
         if (access_token === null || access_token.length === 0) {
@@ -105,17 +119,8 @@ $(function () {
             login();
             return;
         }
+        getIssuesData();
     }
 
-    // 获取issues列表
-    var current_page = queryParse("page");
-    if (current_page) {
-        try {
-            current_page = parseInt(current_page) || 1;
-        } catch (error) {
-            current_page = 1;
-        }
-    }
-    getIssues(current_page);
 
 });
