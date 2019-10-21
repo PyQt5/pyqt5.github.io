@@ -6,9 +6,9 @@ $(function () {
     var scope = "read:user";
     var access_token = localStorage.getItem("GT_ACCESS_TOKEN");
 
-    function queryParse(name) {
+    function queryParse(name, content) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-        var r = encodeURI(window.location.search).substr(1).match(reg);
+        var r = encodeURI(content || window.location.search).substr(1).match(reg);
         if (r != null) return decodeURI(unescape(r[2]));
         return null;
     }
@@ -119,14 +119,10 @@ $(function () {
             type: "POST",
             url: "https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token",
             data: { client_id: client_id, client_secret: client_secret, code: code },
-            dataType: "json",
             success: function (response, status, xhr) {
-                access_token = response.access_token;
+                access_token = queryParse("access_token", response);
                 localStorage.setItem("GT_ACCESS_TOKEN", access_token);
                 window.location.href = window.location.href.split("?")[0];
-            },
-            error: function (xhr, errorType, error) {
-                console.error(xhr);
             }
         });
     } else {
