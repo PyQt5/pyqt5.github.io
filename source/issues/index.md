@@ -3,6 +3,8 @@ title: PyQt5讨论
 comments: false
 date: 2019-10-20 23:24:25
 share: false
+description: PyQt5 Issues 论坛 讨论
+home: true
 ---
 
 <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/semantic-ui/0.19.3/css/semantic.min.css" data-no-instant>
@@ -14,13 +16,16 @@ share: false
 	template.defaults.imports.dateFormat = function (value) {
 		return value.split("T")[0];
 	}
+	template.defaults.imports.replaceLabelUrl = function (value) {
+		return value.replace("api.", "").replace("/repos/", "/").replace("labels/", "issues?q=label%3A");
+	}
 </script>
 <script src="/js/issues.js"></script>
 <script id="tpl-issues" type="text/html">
 	<<each issues>>
-	<article id="post-python_statemachine" class="article article-type-post" itemscope itemprop="blogPost">
+	<article id="post-<<$value.number>>" class="article article-type-post" itemscope itemprop="blogPost">
 		<div class="article-meta">
-			<a href="/python_statemachine.html" class="article-date">
+			<a href="<<$value.html_url>>" class="article-date" target="_blank">
 				<time datetime="<<$value.created_at>>" itemprop="datePublished"><<$value.created_at | dateFormat>></time>
 			</a>
 		</div>
@@ -37,21 +42,23 @@ share: false
 			</div>
 			<div onclick="window.open('<<$value.html_url>>','_blank')" id="id_description_div"
 				style="margin-top:20px; line-height: 1.65em;cursor:pointer">
-				<p><<$value.body>></p>
+				<p style="display: -webkit-box;overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 5;-webkit-box-orient: vertical;"><<$value.body>></p>
 			</div>
 			<div class="article-info article-info-index">
+				<<set labels = $value.labels>>
+                <<if labels && labels.length > 0>>
 				<div class="article-tag tagcloud">
 					<ul class="article-tag-list">
-						<<set labels = $value.labels>>
 						<<each labels>>
 						<li class="article-tag-list-item"><a class="article-tag-list-link"
-								href="<<$value.url>>"><<$value.name>></a>
+								href="<<$value.url | replaceLabelUrl>>" target="_blank"><<$value.name>></a>
 						</li>
 						<</each>>
 					</ul>
 				</div>
+				<</if>>
 				<p class="article-more-link">
-					<a href="<<$value.html_url>>"> <span class="link link--yaku">
+					<a href="<<$value.html_url>>" target="_blank"> <span class="link link--yaku">
 							<span>发</span><span>现</span><span>更</span><span>多 >></span>
 						</span>
 					</a>
@@ -80,4 +87,4 @@ share: false
 	<</if>>
 </script>
 
-<div id="issues-list"></div>
+<div id="issues-list" style=""></div>

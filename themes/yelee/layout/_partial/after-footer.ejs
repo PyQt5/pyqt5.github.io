@@ -90,7 +90,7 @@
 
     function is_home(){
       var url = window.location.pathname;
-      if(url == '/'){
+      if(url == '/' || url.indexOf('/issues/') > -1){
         return true;
       }
       return false;
