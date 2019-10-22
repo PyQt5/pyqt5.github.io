@@ -2,7 +2,7 @@ $(function () {
 
     var client_id = "af9b8f167a9402815013";//545b4972e16c6d7ac22c
     var client_secret = "255e90346c6e3bf6de23bcdebcc1fcebc5694c41";//443e8bcbe931f64f212882fc3d1e246aa416bdec
-    var redirect_uri = "https://pyqt5.com/issues/index.html";//https://892768447.github.io/static/index.html
+    var redirect_uri = "https://blog.pyqt5.com/issues/index.html";//https://892768447.github.io/static/index.html
     var scope = "read:user";
     var access_token = localStorage.getItem("GT_ACCESS_TOKEN");
 
