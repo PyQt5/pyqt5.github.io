@@ -5,8 +5,7 @@
             <div class="footer-left" style="vertical-align:middle;margin-top:2px">
                 <img src="" style="vertical-align:middle; opacity:0" height="24">
                 <i class="fa fa-copyright" style="vertical-align:middle;"></i>
-                <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-		<a href="http://www.miitbeian.gov.cn"><%= config.record %></a>
+                <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><a href="http://www.miitbeian.gov.cn" class="display: none;"><%= config.record %></a>
             </div>
 
 			<div id="footer_right_div" class="footer-right" style="text-align:center;overflow:hidden;">
