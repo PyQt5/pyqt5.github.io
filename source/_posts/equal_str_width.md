@@ -31,3 +31,8 @@ categories: 随笔
 
 ![image.png](https://upload-images.jianshu.io/upload_images/10769157-411570eeadf51793.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+---
+
+【专家】北京-BUG开发-黑择明       (996742224) 11:29:04
+fm = QFontMetrics(QFont())
+fm.width("qweqwe")
