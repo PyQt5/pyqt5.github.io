@@ -8,6 +8,15 @@ tags:
 categories: 教程
 ---
 
+步骤分别是 :
+
+1. 点击 开始扫描 弹出 选择路径窗口 ;
+
+2. 勾选路基 ;
+
+3.点击确定 ;
+<!-- more -->
+
 大概想测一下这个界面 :
 
 ![image.png](https://upload-images.jianshu.io/upload_images/10769157-c1ed0bd52808c5b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
