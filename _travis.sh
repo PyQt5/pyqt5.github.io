@@ -32,7 +32,7 @@ function default(){
   git commit -m "${msg}"
 
   # Coding Pages
-  git push --force "https://pt8jx6hv3i9m:${CO_TOKEN}@${CO_REF}"
+  git push --force --set-upstream "https://pt8jx6hv3i9m:${CO_TOKEN}@${CO_REF}" master
 }
 
 case $1 in

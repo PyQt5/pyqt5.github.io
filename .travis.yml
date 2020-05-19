@@ -32,7 +32,7 @@ before_script:
 
 script:
   - mkdir -p tmp
-  - hexo clean && hexo g && hexo g
+#  - hexo clean && hexo g && hexo g
 #  - gulp
 
 after_success:
