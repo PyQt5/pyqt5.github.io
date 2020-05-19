@@ -58,7 +58,7 @@ EOF
   git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
   # Coding Pages
-  git push --force --quiet "https://892768447:${CO_TOKEN}@${CO_REF}" master:master
+  git push --force --quiet "https://pt8jx6hv3i9m:${CO_TOKEN}@${CO_REF}" master:master
 }
 
 case $1 in
