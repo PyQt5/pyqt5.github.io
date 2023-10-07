@@ -4,6 +4,7 @@ share: false
 toc: false
 comments: false
 permalink: /404
+type: "404"
 date: 2016-08-14 18:12:17
 ---
 

@@ -2,6 +2,7 @@
 title: 常见问题
 date: 2019-06-20 10:58:20
 share: false
+type: "faq"
 ---
 
 # 常见问题整理

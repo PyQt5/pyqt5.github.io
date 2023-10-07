@@ -4,6 +4,7 @@ layout: about
 comments: false
 date: 2019-04-30 11:38:36
 share: false
+type: "about"
 ---
 
 ## 为什么要搭建这个社区
