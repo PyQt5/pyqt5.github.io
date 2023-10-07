@@ -1,0 +1,12 @@
+<script>
+  volantis.layoutHelper("page-plugins",`<div class="post-content"><div id="cf-container"><%- theme.plugins.fcircle.message %></div></div>`,{pjax:false}) // 外层有 pjax 标签
+</script>
+<script type="text/javascript">
+    var fdataUser = {
+        apiurl: '<%- theme.plugins.fcircle.api %>'
+    }
+</script>
+<link rel="stylesheet" href="<%- theme.plugins.fcircle.css %>">
+<script type="text/javascript"
+    src="<%- theme.plugins.fcircle.js %>">
+</script>

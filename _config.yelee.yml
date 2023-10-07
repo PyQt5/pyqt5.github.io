@@ -1,0 +1,133 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+language: zh-Hans
+
+# hexo-tag-cloud
+tag_cloud:
+    textFont: Trebuchet MS, Helvetica
+    textColour: \#333
+    textHeight: 25
+    outlineColour: \#ffffff
+
+
+# Writing
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: 
+
+#prettify 插件位置
+# enable 启用和不启用
+# theme 使用prettify高亮主题名称
+prettify:
+  enable: true
+  theme: tomorrow-night-eighties ##这里你可以定义上面下载的themes主题包里面样式文件名，不带.css后缀
+
+archive_generator:
+  per_page: 10 ##归档页面默认10篇文章标题
+  yearly: true  ##生成年视图
+  monthly: true ##生成月视图
+
+tag_generator:
+  per_page: 10 ##标签分类页面默认10篇文章
+
+category_generator: 
+  per_page: 10 ###分类页面默认10篇文章
+
+feed:
+  type: atom ##feed类型 atom或者rss2
+  path: atom.xml ##feed路径
+  limit: 20  ##feed文章最小数量
+
+#sitemap
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
+
+lazyload:
+  enable: false
+  onlypost: false
+  loadingImg: /img/loading0_2.gif
+
+# Markdown-it config 表情支持
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+## http://www.cnblogs.com/fsong/p/5929773.html
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji  # add emoji
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ''
+
+# json api
+jsonContent:
+  meta: true
+  dafts: false
+  pages: false
+  dateFormat: YYYY-MM-DD HH:mm:ss
+  file: content.json
+  posts:
+    title: true
+    slug: true
+    date: true
+    updated: false
+    comments: false
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: false
+    text: false
+    raw: true
+    content: false
+    author: true
+    categories: true
+    tags: true
+
+# restful api
+restful:
+  # site 可配置为数组选择性生成某些属性
+  site: ['title', 'subtitle', 'description', 'author', 'since', email', 'favicon', 'avatar']
+  # site: true        # hexo.config mix theme.config
+  posts_size: 10    # 文章列表分页，0 表示不分页
+  posts_props:      # 文章列表项的需要生成的属性
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: false
+    path: true
+    excerpt: true
+    cover: true      # 封面图，取文章第一张图片
+    content: true
+    raw: true
+    keywords: false
+    categories: true
+    tags: true
+  categories: true         # 分类数据
+  use_category_slug: false # Use slug for filename of category data
+  tags: true               # 标签数据
+  use_tag_slug: false      # Use slug for filename of tag data
+  post: true               # 文章数据
+  pages: true             # 额外的 Hexo 页面数据, 如 About

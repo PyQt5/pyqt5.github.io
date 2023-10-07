@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="<%- config.language %>">
+  <%- partial('_partial/scripts/_ctrl') _%>
+  <%- partial('_partial/head') _%>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <!-- import body_begin begin-->
+    <%_ if (config.import && config.import.body_begin){ _%>
+      <%_ getList(config.import.body_begin).forEach(function(item){ _%>
+        <%- item %>
+      <%_ }) _%>
+    <%_ } _%>
+    <!-- import body_begin end-->
+    <!-- Custom Files bodyBegin begin-->
+    <%- volantis_inject('bodyBegin') %>
+    <!-- Custom Files bodyBegin end-->
+    <!-- front-matter body_begin begin -->
+    <%_ if (page.import && page.import.body_begin){ _%>
+      <%_ getList(page.import.body_begin).forEach(function(item){ _%>
+        <%- item %>
+      <%_ }) _%>
+    <%_ } _%>
+    <!-- front-matter body_begin end -->
+    <%- partial('_partial/header', null, {cache: false, path: path}) %>
+    <div id="l_body">
+      <%- partial('_partial/cover') %>
+      <div id="safearea">
+        <div class="body-wrapper">
+          <%- body %>
+          <%- partial('_plugins/pjax/pdata') %>
+        </div>
+        <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+        <a id="s-top" class="fa-solid fa-arrow-up fa-fw" href="/" onclick="return false;" title="top"></a>
+      </div>
+    </div>
+    <div>
+      <%- partial('_partial/scripts/index') %>
+      <% if (theme.plugins.pjax.enable){ %>
+        <%- partial('_plugins/pjax/index') %>
+      <% } %>
+    </div>
+    <!-- import body_end begin-->
+    <%_ if (config.import && config.import.body_end){ _%>
+      <%_ getList(config.import.body_end).forEach(function(item){ _%>
+        <%- item %>
+      <%_ }) _%>
+    <%_ } _%>
+    <!-- import body_end end-->
+    <!-- Custom Files bodyEnd begin-->
+    <%- volantis_inject('bodyEnd') %>
+    <!-- Custom Files bodyEnd end-->
+    <!-- front-matter body_end begin -->
+    <%_ if (page.import && page.import.body_end){ _%>
+      <%_ getList(page.import.body_end).forEach(function(item){ _%>
+        <%- item %>
+      <%_ }) _%>
+    <%_ } _%>
+    <!-- front-matter body_end end -->
+  </body>
+</html>

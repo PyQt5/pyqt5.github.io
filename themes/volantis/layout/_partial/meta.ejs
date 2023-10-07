@@ -1,0 +1,66 @@
+<%
+var topMetas = theme.article.body.top_meta || [];
+if (post.top_meta == false) {
+  topMetas = [];
+}
+var bottomMetas = theme.article.body.bottom_meta || [];
+if (post.bottom_meta == false) {
+  bottomMetas = [];
+}
+%>
+
+<% if (position == 'top') { %>
+  <% if (post.headimg) { %>
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='<%- post.headimg %>'/>
+      </a>
+    </div>
+  <% } else { %>
+    <span hidden>
+      <meta itemprop="image" content="<%- theme.structured_data.data.logo.path %>">
+    </span>
+  <% } %>
+  <div class="article-meta" id="top">
+    <% if (post.music && post.music.enable != false) { %>
+      <%- partial('../_plugins/aplayer/layout', {post: post, where: 'meta'}) %>
+    <% } %>
+    <% if (post.thumbnail && post.thumbnail.length){ %>
+      <a title='<%- post.title %>' href='<%- url_for(post.link || post.path) %>'>
+        <img itemprop="image" class='thumbnail' src='<%- post.thumbnail %>'>
+      </a>
+    <% } %>
+    <% if (post.title) { %>
+      <h1 class="title" itemprop="name headline">
+        <%- post.title %>
+      </h1>
+      <div class='new-meta-box'>
+        <% getList(topMetas).forEach(function(meta) { %>
+          <% if (meta in theme.article.body.meta_library){ %>
+            <%- partial('../_meta/' + meta, {post: post}) %>
+          <% } %>
+        <% }) %>
+        <!-- Custom Files topMeta begin-->
+        <%- volantis_inject('topMeta') %>
+        <!-- Custom Files topMeta end-->
+      </div>
+    <% } else { %>
+      <span hidden itemprop="name headline">
+        <%- post.title %>
+      </span>
+    <% } %>
+  </div>
+<% } else if (position == 'bottom') { %>
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      <% getList(bottomMetas).forEach(function(meta){ %>
+        <% if (meta in theme.article.body.meta_library) { %>
+          <%- partial('../_meta/' + meta, {post: post}) %>
+        <% } %>
+      <% }) %>
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    <%- volantis_inject('bottomMeta') %>
+    <!-- Custom Files bottomMeta end -->
+  </div>
+<% } %>

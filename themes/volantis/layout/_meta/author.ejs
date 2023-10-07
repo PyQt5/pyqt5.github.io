@@ -1,0 +1,13 @@
+<%
+let author = theme.article.body.meta_library.author;
+let aid = post.author;
+if (aid && site.data && site.data.author && (aid in site.data.author)) {
+  author = site.data.author[aid];
+}
+%>
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="<%- author.url %>" rel="nofollow">
+    <img itemprop="image" src="<%- author.avatar %>">
+    <p itemprop="name"><%- author.name %></p>
+  </a>
+</div>

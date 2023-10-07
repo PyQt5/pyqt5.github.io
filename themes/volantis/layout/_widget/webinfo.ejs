@@ -1,0 +1,58 @@
+<%- partial('_pre') %>
+<section class="widget <%- page.widget_platform %> <%- page.widget_pjax %>">
+  <%- partial('header', {item: item}) %>
+  <div class='content'>
+    <div class="webinfo">
+      <% if (item.type.article.enable) { %>
+        <div class="webinfo-item">
+          <div><%= item.type.article.text %></div>
+          <div><%= site.posts.length %> <%= item.type.article.unit %></div>
+        </div>
+      <% } %>
+
+      <% if (item.type.runtime.enable) { %>
+        <div class="webinfo-item">
+          <div><%= item.type.runtime.text %></div>
+          <div id="webinfo-runtime-count"></div>
+        </div>
+      <% } %>
+
+
+      <% if (item.type.wordcount.enable && theme.plugins.wordcount.enable) { %>
+        <div class="webinfo-item">
+          <div><%= item.type.wordcount.text %></div>
+          <div><%= totalcount(site) %> <%= item.type.wordcount.unit %></div>
+        </div>
+      <% } %>
+
+      <% if (item.type.visitcounter.siteuv.enable && (!!theme.analytics.busuanzi || !!theme.analytics.leancloud.app_id)) { %>
+        <div class="webinfo-item">
+          <div><%= item.type.visitcounter.siteuv.text %></div>
+          <% if (!!theme.analytics.busuanzi) {%>
+          <div><span id="busuanzi_value_site_uv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> <%= item.type.visitcounter.siteuv.unit %></div>
+          <% } else { %>
+          <div><span id="lc-uv"><span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span></span> <%= item.type.visitcounter.siteuv.unit %></div>
+          <% } %>
+        </div>
+      <% } %>
+
+      <% if (item.type.visitcounter.sitepv.enable && (!!theme.analytics.busuanzi || !!theme.analytics.leancloud.app_id)) { %>
+        <div class="webinfo-item">
+          <div><%= item.type.visitcounter.sitepv.text %></div>
+          <% if (!!theme.analytics.busuanzi) {%>
+          <div><span id="busuanzi_value_site_pv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> <%= item.type.visitcounter.sitepv.unit %></div>
+          <% } else { %>
+          <div><span id="lc-sv"><span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span></span> <%= item.type.visitcounter.sitepv.unit %></div>
+          <% } %>
+        </div>
+      <% } %>
+
+      <% if (item.type.lastupd.enable) { %>
+        <div class="webinfo-item">
+          <div><%= item.type.lastupd.text %></div>
+          <div id="last-update-show"><%- date(Date.now()) %> <%= item.type.lastupd.unit %></div>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</section>
