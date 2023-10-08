@@ -1,0 +1,15 @@
+- class_name: 网站
+  class_desc: 一些常用的网站
+  link_list:
+    - name: Qt
+      link: https://doc.qt.io/qt-5/qwidget.html
+      avatar: https://d33sqmjvzgs8hq.cloudfront.net/wp-content/themes/oneqt/assets/images/favicon-32x32.png
+      descr: Qt官方文档
+    - name: Python
+      link: https://www.python.org/
+      avatar: https://www.python.org/static/favicon.ico
+      descr: 强有力的编程语言
+    - name: GitHub
+      link: https://github.com/
+      avatar: https://github.githubassets.com/favicons/favicon.png
+      descr: 全球最大的交友网站

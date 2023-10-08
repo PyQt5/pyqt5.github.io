@@ -111,7 +111,13 @@ deploy:
     repo: https://github.com/PyQt5/blog
     branch: [master]
     message: [message]
-    token: $GIT_TOKEN
+    token: $GITHUB_TOKEN
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
 
 # 备案
 record: "蜀ICP备18031575号-1"
@@ -132,71 +138,83 @@ feed:
   path: atom.xml ##feed路径
   limit: 20 ##feed文章最小数量
 
+nofollow:
+  enable: true
+  field: site
+  exclude:
+
 #sitemap
 sitemap:
   path: sitemap.xml
+  rel: false
+  tags: true
+  categories: true
+
+marked:
+  smartypants: false
+  descriptionLists: false
 
 baidusitemap:
   path: baidusitemap.xml
 
-# json api
-jsonContent:
-  meta: true
-  dafts: false
-  pages: false
-  dateFormat: YYYY-MM-DD HH:mm:ss
-  file: content.json
-  posts:
-    title: true
-    slug: true
-    date: true
-    updated: false
-    comments: false
-    path: true
-    link: true
-    permalink: true
-    excerpt: true
-    keywords: false
-    text: false
-    raw: true
-    content: false
-    author: true
-    categories: true
-    tags: true
+# # json api
+# jsonContent:
+#   meta: true
+#   dafts: false
+#   pages: false
+#   dateFormat: YYYY-MM-DD HH:mm:ss
+#   file: content.json
+#   posts:
+#     title: true
+#     slug: true
+#     date: true
+#     updated: false
+#     comments: false
+#     path: true
+#     link: true
+#     permalink: true
+#     excerpt: true
+#     keywords: false
+#     text: false
+#     raw: true
+#     content: false
+#     author: true
+#     categories: true
+#     tags: true
 
-# restful api
-restful:
-  # site 可配置为数组选择性生成某些属性
-  site:
-    [
-      "title",
-      "subtitle",
-      "description",
-      "author",
-      "since",
-      email',
-      "favicon",
-      "avatar",
-    ]
-  # site: true        # hexo.config mix theme.config
-  posts_size: 10 # 文章列表分页，0 表示不分页
-  posts_props: # 文章列表项的需要生成的属性
-    title: true
-    slug: true
-    date: true
-    updated: true
-    comments: false
-    path: true
-    excerpt: true
-    cover: true # 封面图，取文章第一张图片
-    content: true
-    raw: true
-    keywords: false
-    categories: true
-    tags: true
-  categories: true # 分类数据
-  use_category_slug: false # Use slug for filename of category data
-  tags: true # 标签数据
-  use_tag_slug: false # Use slug for filename of tag data
-  post: true # 文章数据
-  pages: true # 额外的 Hexo 页面数据, 如 About
+# # restful api
+# restful:
+#   # site 可配置为数组选择性生成某些属性
+#   site:
+#     [
+#       "title",
+#       "subtitle",
+#       "description",
+#       "author",
+#       "since",
+#       "email",
+#       "favicon",
+#       "avatar",
+#     ]
+#   # site: true        # hexo.config mix theme.config
+#   posts_size: 10 # 文章列表分页，0 表示不分页
+#   posts_props: # 文章列表项的需要生成的属性
+#     title: true
+#     slug: true
+#     date: true
+#     updated: true
+#     comments: false
+#     path: true
+#     excerpt: true
+#     cover: true # 封面图，取文章第一张图片
+#     content: true
+#     raw: true
+#     keywords: false
+#     categories: true
+#     tags: true
+#   categories: true # 分类数据
+#   use_category_slug: false # Use slug for filename of category data
+#   tags: true # 标签数据
+#   use_tag_slug: false # Use slug for filename of tag data
+#   post: true # 文章数据
+#   pages: true # 额外的 Hexo 页面数据, 如 About

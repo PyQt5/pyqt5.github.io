@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 """
 Created on 2019年6月17日
 @author: Irony
@@ -9,23 +8,25 @@ Created on 2019年6月17日
 @file: 
 @description: 生成缩略图
 """
-from PIL import Image
-import requests
-import traceback
-import sys
 import os
+import sys
+import traceback
+
+import requests
+from PIL import Image
 
 try:
     os.mkdir('tmp')
-except:
+except Exception:
     pass
+
 
 def download(url, src, dst):
     try:
         resp = requests.get(url)
         open(src, 'wb').write(resp.content)
         thumbnail(src, dst)
-    except:
+    except Exception:
         traceback.print_exc()
 
 
@@ -35,7 +36,7 @@ def thumbnail(src, dst):
         img = img.convert('RGB')
         img.thumbnail((80, 80), Image.ANTIALIAS)
         img.save(dst)
-    except:
+    except Exception:
         traceback.print_exc()
 
 
@@ -48,4 +49,7 @@ if __name__ == '__main__':
     elif length == 4:
         # 远程文件生成缩略图
         _, url, src, dst = sys.argv
-        download(url, src, dst)
+        if url.find('jsdelivr') > -1 or url.find('jsd.') > -1:
+            print('ignore cdn file')
+        else:
+            download(url, src, dst)

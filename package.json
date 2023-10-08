@@ -5,6 +5,12 @@
   "hexo": {
     "version": "6.3.0"
   },
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
   "dependencies": {
     "hexo": "^6.3.0",
     "hexo-algoliasearch": "^1.0.0",
@@ -17,7 +23,6 @@
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
-    "hexo-generator-restful": "^0.2.3",
     "hexo-generator-search": "^2.4.3",
     "hexo-generator-seo-friendly-sitemap": "^0.2.1",
     "hexo-generator-sitemap": "^3.0.1",

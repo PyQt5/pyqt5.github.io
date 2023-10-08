@@ -15,15 +15,15 @@ nav:
 
 # Menu 目錄
 menu:
-  Home: / || fas fa-home
-  Archives: /archives/ || fas fa-archive
-  Tags: /tags/ || fas fa-tags
-  Categories: /categories/ || fas fa-folder-open
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  Link: /link/ || fas fa-link
-  About: /about/ || fas fa-heart
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -39,10 +39,11 @@ code_word_wrap: true
 # formal:
 #   icon: link || the description || color
 social:
-  fab fa-qq: https://jq.qq.com/?_wv=1027&k=5QVVEdF || QQ || '#4a7dbe'
+  fab fa-qq: https://jq.qq.com/?_wv=1027&k=5QVVEdF || QQ || '#68B2F6'
   far fa-comment: https://pd.qq.com/s/157c1hiay || Comment || '#4a7dbe'
   fab fa-github: https://github.com/PyQt5 || Github || '#24292e'
   fas fa-envelope: mailto:892768447@qq.com || Email || '#4a7dbe'
+  fas fa-rss: /atom.xml || RSS
 
 # Image (圖片設置)
 # --------------------------------------
@@ -59,17 +60,17 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: /images/bg-2.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: /images/bg-2.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: /images/bg-2.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:
+tag_img: /images/bg-2.jpg
 
 # The banner image of tag page
 # format:
@@ -78,7 +79,7 @@ tag_per_img:
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img:
+category_img: /images/bg-2.jpg
 
 # The banner image of category page
 # format:
@@ -94,8 +95,17 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
-  default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+  default_cover: # https://jsd.012700.xyz/gh/jerryc127/butterfly_cdn@2.1.0/top_img/default.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-2.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-1.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-3.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-5.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-4.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-7.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-9.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-8.png
+    - https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-10.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -105,18 +115,18 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: 'Page Not Found'
+  subtitle: '页面没有找到'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
   page: # Home Page
-    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
     tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
-    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    date_type: created # created or updated or both 文章頁日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
@@ -134,10 +144,10 @@ index_post_content:
 # anchor
 anchor:
   button:
-    enable: false
+    enable: true
     always_show: false
     icon: # the unicode value of Font Awesome icon, such as '\3423'
-  auto_update: false # when you scroll in post, the URL will update according to header id.
+  auto_update: true # when you scroll in post, the URL will update according to header id.
 
 # figcaption (圖片描述文字)
 photofigcaption: true
@@ -148,7 +158,7 @@ copy:
   enable: true
   copyright:
     enable: true
-    limit_count: 50
+    limit_count: 150
 
 # Post
 # --------------------------------------
@@ -156,9 +166,9 @@ copy:
 # toc (目錄)
 toc:
   post: true
-  page: true
+  page: false
   number: true
-  expand: false
+  expand: true
   style_simple: false # for post
   scroll_percent: true
 
@@ -183,10 +193,10 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url:
+  url: https://github.com/PyQt5/blog/edit/dev/source/
 
 # Related Articles
 related_post:
@@ -199,16 +209,16 @@ related_post:
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 2
+post_pagination: 1
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
   enable: true
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 730 # When will it be shown
   position: top # position: top/bottom
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 距离上次更新已经过了
+  message_next: 天，文章所描述的内容可能已经发生变化，请留意。
 
 # Footer Settings
 # --------------------------------------
@@ -216,7 +226,7 @@ footer:
   owner:
     enable: true
     since: 2018
-  custom_text: '<a href="http://www.miitbeian.gov.cn" class="display: none;">蜀ICP备18031575号-1</a>'
+  custom_text: '<a href="http://www.miitbeian.gov.cn" style="display: none;">蜀ICP备18031575号-1</a>'
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
@@ -238,11 +248,20 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
+      text: PyQt Github
       link: https://github.com/PyQt5
   card_announcement:
     enable: true
-    content: '<a href="https://jq.qq.com/?_wv=1027&k=5QVVEdF" alt="PyQt 学习" target="_blank"><img src="/images/PyQt_Group.png" width="241px"></a> or <a href="https://pd.qq.com/s/157c1hiay" alt="PyQt 频道" target="_blank"><img src="/images/PyQt_Guild.png" width="241px"></a>'
+    content:
+      '<div class="aside-qrcode">
+      <a href="https://jq.qq.com/?_wv=1027&k=5QVVEdF" alt="PyQt 学习" target="_blank">
+      <img src="/images/PyQt_Group.png" width="241px">
+      </a>
+      <p style="text-align: center"> or </p>
+      <a href="https://pd.qq.com/s/157c1hiay" alt="PyQt 频道" target="_blank">
+      <img src="/images/PyQt_Guild.png" width="241px">
+      </a>
+      </div>'
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -250,8 +269,8 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
     enable: true
-    limit: 8 # if set 0 will show all
-    expand: none # none/true/false
+    limit: 0 # if set 0 will show all
+    expand: false # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
@@ -263,7 +282,7 @@ aside:
   card_archives:
     enable: true
     type: monthly # yearly or monthly
-    format: MMMM YYYY # eg: YYYY年MM月
+    format: YYYY年MM月 # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
@@ -284,7 +303,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 1/1/2018 00:00:00
+  publish_date: 2018/1/1 00:00:00
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -299,7 +318,7 @@ newest_comments:
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: true
+  enable: false
   # The text of a button
   default: 简
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -499,13 +518,16 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo:
-  repo_id:
-  category_id:
+  repo: PyQt5/blog
+  repo_id: MDEwOlJlcG9zaXRvcnkxODM3MTg4NDA=
+  category_id: DIC_kwDOCvNTuM4CZ8zK
   theme:
     light: light
     dark: dark
   option:
+    data-lang: zh-CN
+    data-loading: lazy
+    data-category: Announcements
 
 # Remark42
 # https://remark42.com/docs/configuration/frontend/
@@ -642,16 +664,16 @@ index_top_img_height:
 # The user interface setting of category and tag page (category和tag頁的UI設置)
 # index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
 # default - same as archives UI 默認跟archives頁面UI一樣
-category_ui: # 留空或 index
-tag_ui: # 留空或 index
+category_ui: index # 留空或 index
+tag_ui: index # 留空或 index
 
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: /images/bg-2.jpg
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # Add mask to header or footer (为 header 或 footer 添加黑色半透遮罩)
 mask:
@@ -682,8 +704,8 @@ canvas_ribbon:
   size: 150
   alpha: 0.6
   zIndex: -1
-  click_to_change: false
-  mobile: false
+  click_to_change: true
+  mobile: true
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
@@ -728,24 +750,24 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size:
   code-font-size:
-  font-family:
-  code-font-family:
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link:
-  font-family:
+  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -758,14 +780,10 @@ subtitle:
   enable: true
   # Typewriter Effect (打字效果)
   effect: true
-  startDelay: 300 # time before typing starts in milliseconds
-  typeSpeed: 150 # type speed in milliseconds
-  backSpeed: 50 # backspacing speed in milliseconds
-  # loop (循环打字)
-  loop: true
   # Customize typed.js (配置typed.js)
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
+    loop: true
   # source 調用第三方服務
   # source: false 關閉調用
   # source: 1  調用一言網的一句話（簡體） https://hitokoto.cn/
@@ -775,6 +793,8 @@ subtitle:
   source: 1
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
+    - 今日事&#44;今日毕
+    - Never put off till tomorrow what you can do today
 
 # Loading Animation (加載動畫)
 preloader:
@@ -812,8 +832,8 @@ fancybox: true
 # abcjs (樂譜渲染)
 # See https://github.com/paulrosen/abcjs
 abcjs:
-  enable: false
-  per_page: true
+  enable: true
+  per_page: false
 
 # mermaid
 # see https://github.com/mermaid-js/mermaid
@@ -847,8 +867,7 @@ note:
 pjax:
   enable: true
   exclude:
-    # - xxxx
-    # - xxxx
+    - /talking/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -860,7 +879,7 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: true
+  enable: false
   position: bottom-center
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
@@ -878,9 +897,9 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # site/post
-  placeholder:
+  placeholder: /images/2.gif
   blur: false
 
 # PWA
@@ -915,9 +934,10 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="preconnect" href="https://jsd.012700.xyz">
+    - <link href="/self/btf.css" rel="stylesheet">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script data-pjax src="/self/btf.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -926,19 +946,19 @@ CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主題只能設置為 local )
-  internal_provider: local
+  internal_provider: custom
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # when set it to local, you need to install hexo-butterfly-extjs
-  third_party_provider: jsdelivr
+  third_party_provider: custom
 
   # Add version number to url, true or false
   version: false
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  custom_format: https://jsd.012700.xyz/npm/${name}@latest/${min_file}
 
   option:
     # main_css:
