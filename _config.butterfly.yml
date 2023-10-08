@@ -518,13 +518,15 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: PyQt5/blog
+  repo: PyQt5/pyqt5.github.io
   repo_id: MDEwOlJlcG9zaXRvcnkxODM3MTg4NDA=
   category_id: DIC_kwDOCvNTuM4CZ8zK
   theme:
     light: light
     dark: dark
   option:
+    data-strict: 0
+    data-emit-metadata: 1
     data-lang: zh-CN
     data-loading: lazy
     data-category: Announcements
