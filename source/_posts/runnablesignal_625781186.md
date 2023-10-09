@@ -2,7 +2,6 @@
 author: 不许人间见白头
 title: QRunnable线程池发信号
 date: 2019-04-30 15:58:09
-top: 1
 tags: 
  - PyQt
  - 信号

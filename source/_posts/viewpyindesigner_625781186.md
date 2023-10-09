@@ -2,7 +2,6 @@
 author: 不许人间见白头
 title: 如何和设计师中查看ui转换的py代码
 date: 2019-04-30 13:11:09
-top: 1
 tags: 
  - PyQt
  - Designer

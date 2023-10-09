@@ -2,7 +2,6 @@
 author: Irony
 title: 异常捕获之cgitb模块
 date: 2018-09-17 23:17:06
-top: 1
 tags: 
  - Python
  - 异常

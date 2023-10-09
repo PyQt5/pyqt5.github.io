@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5动画边框阴影
 date: 2018-09-25 23:38:12
-top: 1
 tags: 
  - PyQt
  - 动画

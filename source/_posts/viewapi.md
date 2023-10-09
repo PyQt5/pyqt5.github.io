@@ -2,7 +2,6 @@
 author: Irony
 title: 如何查阅Qt文档
 date: 2019-05-04 20:50:20
-top: 1
 tags: 
  - PyQt
 categories: 笔记

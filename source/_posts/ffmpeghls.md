@@ -2,7 +2,6 @@
 author: Irony
 title: FFmpeg合成加密HLS记录
 date: 2019-01-12 19:28:06
-top: 1
 tags: 
  - Python
  - FFmpeg

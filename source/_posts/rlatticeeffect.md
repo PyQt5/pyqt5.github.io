@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5仿网页鼠标移动点阵特效
 date: 2018-10-29 16:49:10
-top: 1
 tags: 
  - PyQt
  - 动画

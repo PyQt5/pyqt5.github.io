@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5结合Asyncio异步
 date: 2018-10-24 14:32:26
-top: 1
 tags: 
  - PyQt
  - Asyncio

@@ -2,7 +2,7 @@
 author: Irony
 title: PyQt学习心得
 date: 2019-08-26 09:00:00
-top: 888
+sticky: 888
 tags: 
  - PyQt
 categories: 笔记

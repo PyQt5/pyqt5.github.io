@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5窗口跟随其它窗口
 date: 2018-10-23 15:08:56
-top: 1
 tags: 
  - PyQt
  - 窗口

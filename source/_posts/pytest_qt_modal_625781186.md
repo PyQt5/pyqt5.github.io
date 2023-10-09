@@ -2,7 +2,6 @@
 author: 人间白头
 title: pytest-qt 测试模态窗体.
 date: 2020年4月27日22:19:27
-top: 1
 tags: 
  - pytest-qt
 categories: 教程

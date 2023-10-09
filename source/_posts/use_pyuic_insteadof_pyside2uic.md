@@ -2,7 +2,6 @@
 author: 人间白头　
 title: 修改pyuic代替pyside2-uic.
 date: 2019-12-26 19:49:41
-top: 1
 tags:
  - PyQt5 PySide2
  

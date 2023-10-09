@@ -2,7 +2,6 @@
 author: 人间白头　
 title: python 判断屏幕等宽字符串的长度 　
 date: 2019-12-26 19:49:41
-top: 1
 tags:
  - Python
  

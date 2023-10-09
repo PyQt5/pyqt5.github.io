@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5显示.9格式的PNG图片
 date: 2018-10-26 10:00:08
-top: 1
 tags: 
  - PyQt
  - 图片

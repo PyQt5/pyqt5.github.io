@@ -2,7 +2,6 @@
 author: 人间白头　
 title: python 拷贝虚拟环境(一) 　
 date: 2019-05-02 15:21:01
-top: 1
 tags:
  - Python
  - virtualenvwrapper

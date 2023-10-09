@@ -2,7 +2,6 @@
 author: Irony
 title: 解决GitHub下载速度缓慢的问题
 date: 2019-04-18 08:59:06
-top: 1
 tags: 
  - Github
 categories: 笔记

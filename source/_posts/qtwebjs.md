@@ -2,7 +2,6 @@
 author: Irony
 title: QtWebkit和QWebEngineView与Javascript交互
 date: 2019-05-22 11:30:36
-top: 1
 tags: 
  - PyQt
  - QWebView

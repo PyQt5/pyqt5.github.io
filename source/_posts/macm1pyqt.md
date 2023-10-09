@@ -2,7 +2,6 @@
 author: Irony
 title: 如何在Mac M1上快速安装PyQt5
 date: 2023-10-07 14:08:06
-top: 1
 tags: 
  - PyQt
  - Mac

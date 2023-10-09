@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5无边框圆角阴影
 date: 2019-04-26 00:06:26
-top: 1
 tags: 
  - PyQt
  - 无边框

@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5之QSlider滑动条点击定位
 date: 2018-11-05 23:12:26
-top: 1
 tags: 
  - PyQt
  - 滑动条

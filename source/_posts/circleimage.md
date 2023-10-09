@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5圆形图片
 date: 2018-09-25 22:13:26
-top: 1
 tags: 
  - PyQt
  - 圆形

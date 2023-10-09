@@ -2,7 +2,6 @@
 author: 人间白头　
 title: python 状态机模块 　
 date: 2019-7-17 17:03:33
-top: 1
 tags:
  - Python
  - python 状态机

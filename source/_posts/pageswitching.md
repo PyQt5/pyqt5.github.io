@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5之图片轮播
 date: 2018-11-24 21:45:06
-top: 1
 tags: 
  - PyQt
  - 轮播

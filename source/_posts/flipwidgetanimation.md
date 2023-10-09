@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5窗口翻转动画
 date: 2019-05-15 22:48:00
-top: 1
 tags: 
  - PyQt
  - 动画

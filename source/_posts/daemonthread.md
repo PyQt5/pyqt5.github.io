@@ -2,7 +2,6 @@
 author: 丑读书穷加班
 title: 多线程之守护线程和阻塞线程
 date: 2018-10-24 15:51:15
-top: 1
 tags: 
  - Python
  - 线程

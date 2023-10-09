@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5菜单之多选功能
 date: 2018-10-25 09:53:34
-top: 1
 tags: 
  - PyQt
  - 菜单

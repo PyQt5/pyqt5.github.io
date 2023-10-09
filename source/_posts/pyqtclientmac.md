@@ -2,7 +2,6 @@
 author: myphper
 title: 在Mac上以正确的姿势使用PyQtClient看Demo
 date: 2019-04-02 17:18:43
-top: 1
 tags: 
  - PyQt
 categories: 教程

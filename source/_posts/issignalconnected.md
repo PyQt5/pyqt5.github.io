@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5判断信号是否连接
 date: 2019-04-26 22:06:26
-top: 1
 tags: 
  - PyQt
  - 信号

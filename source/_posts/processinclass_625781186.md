@@ -2,7 +2,6 @@
 author: 不许人间见白头
 title: python 在类里使用进程池
 date: 2018-11-16 21:37:31
-top: 1
 tags: 
  - 进程
 categories: 笔记

@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt属性动画(QPropertyAnimation)
 date: 2019-05-08 15:43:06
-top: 1
 tags: 
  - PyQt
  - 动画

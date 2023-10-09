@@ -2,7 +2,6 @@
 author: Irony
 title: PyQt5调整窗口显示边框
 date: 2019-04-26 22:19:26
-top: 1
 tags: 
  - PyQt
  - 边框

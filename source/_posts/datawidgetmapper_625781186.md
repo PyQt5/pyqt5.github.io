@@ -2,7 +2,6 @@
 author: 不许人间见白头
 title: QDataWidgetMapper 数据库绑定 QLineEdit控件
 date: 2018-10-29 16:17:59
-top: 1
 tags: 
  - PyQt
  - Model

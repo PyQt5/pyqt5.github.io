@@ -2,7 +2,6 @@
 author: Irony
 title: 三种方式绑定信号槽
 date: 2019-05-04 16:07:06
-top: 1
 tags: 
  - PyQt
  - 信号

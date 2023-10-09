@@ -2,8 +2,7 @@
 author: Irony
 title: PyQtClient例子客户端
 date: 2019-02-02 15:15:06
-top: 999
-sticky: true
+sticky: 999
 tags: 
  - PyQt
 categories: 随笔
