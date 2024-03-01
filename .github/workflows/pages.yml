@@ -27,10 +27,18 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Deploy
+      - name: page deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           force_orphan: true
           publish_branch: master
           publish_dir: ./public
+      - name: ssh deploy
+        uses: easingthemes/ssh-deploy@v5.0.3
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.REMOTE_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          SOURCE: "public/*"
+          TARGET: ${{ secrets.REMOTE_TARGET }}
