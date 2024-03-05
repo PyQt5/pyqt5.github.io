@@ -39,3 +39,11 @@ M1上的Python不能直接使用x64的 PyQt5。但是M1上可以运行x64的Pyth
 ```
 
 ![step3.png](/images/macpyqtstep3.png)
+
+
+
+📢📢📢
+
+也可以直接安装 [Miniconda](https://docs.anaconda.com/free/miniconda/miniconda-install/)
+
+然后：conda install -c conda-forge pyqt
