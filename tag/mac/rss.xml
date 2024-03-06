@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;mac&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 07 Oct 2023 06:08:06 +0000</pubDate>
+        <lastBuildDate>Sat, 07 Oct 2023 06:08:06 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>异常</category>
+        <category>截图</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/macm1pyqt.html</guid>
+            <title>如何在Mac M1上快速安装PyQt5</title>
+            <link>https://pyqt5.com/macm1pyqt.html</link>
+            <category>PyQt</category>
+            <category>Mac</category>
+            <category>M1</category>
+            <pubDate>Sat, 07 Oct 2023 06:08:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;由于官方并没有在 M1 上编译 PyQt 导致安装存在一些问题。&lt;br&gt;
+M1 上的 Python 不能直接使用 x64 的 PyQt5。但是 M1 上可以运行 x64 的 Python。所以通过安装 x64 的 Python 然后再安装 PyQt5 即可。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;strong&gt;1. 安装 Python&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.python.org/ftp/python/3.9.13/python-3.9.13-macosx10.9.pkg&#34;&gt;python-3.9.13-macosx10.9.pkg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 勾选自定义同时只勾选安装 pip&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/macpyqtstep1.png&#34; alt=&#34;step1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/macpyqtstep2.png&#34; alt=&#34;step1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 设置 pip 源&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/pip3 &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; pqi
+/Library/Frameworks/Python.framework/Versions/3.9/bin/pqi use tuna&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;4. 安装 PyQt5&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/pip3 &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; PyQt5&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;5. 测试&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/images/macpyqtstep3.png&#34; alt=&#34;step3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;📢📢📢&lt;/p&gt;
+&lt;p&gt;也可以直接安装 &lt;a href=&#34;https://docs.anaconda.com/free/miniconda/miniconda-install/&#34;&gt;Miniconda&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然后：conda install -c conda-forge pyqt&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

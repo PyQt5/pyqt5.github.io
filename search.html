@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>请稍候</title>
+        <script>
+            var search = window.location.search;
+            if (search.indexOf("?m=google") >= 0) {
+                window.location.href = "https://vip.kuaimen.bid/search?safe=strict&hl=zh-CN&q=" + search.replace("?m=google&w=", "");
+            } else if (search.indexOf("?m=baidu") >= 0) {
+                window.location.href = "https://www.baidu.com/s?ie=utf8&oe=utf8&wd=" + search.replace("?m=baidu&w=", "");
+            } else {
+                window.location.href = "https://pyqt5.com";
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

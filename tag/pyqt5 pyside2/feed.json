@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"pyqt5 pyside2\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/use_pyuic_insteadof_pyside2uic.html",
+            "url": "https://pyqt5.com/use_pyuic_insteadof_pyside2uic.html",
+            "title": "修改pyuic代替pyside2-uic.",
+            "date_published": "2019-12-26T11:49:41.000Z",
+            "content_html": "<p>修改 pyuic 代替 pyside2-uic</p>\n<span id=\"more\"></span>\n<p>修改 pyuic 代替 pyside2-uic.</p>\n<p>最近看到挺多人用 pyside2 的 uic 编译 ui 文件有问题 .<br>\n 写个解决办法.</p>\n<p>首先，<br>\n <code>pip install qtpy</code>  ,<br>\n 这个是兼容 pyqt5 和 pyside2 的，无缝转换 .</p>\n<p>然后，<br>\n 修改 pyqt5 的 uic ,</p>\n<p><img src=\"https://upload-images.jianshu.io/upload_images/10769157-2ed1053f322c26a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></p>\n<p>最后用 pyuic5 , 生成 Ui_XXX.py 文件 .</p>\n",
+            "tags": [
+                "PyQt5 PySide2"
+            ]
+        }
+    ]
+}

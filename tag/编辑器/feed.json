@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"编辑器\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/suggesteditor.html",
+            "url": "https://pyqt5.com/suggesteditor.html",
+            "title": "推荐编辑器LiClipse",
+            "date_published": "2019-05-04T10:04:08.000Z",
+            "content_html": "<p>关于 Python 的开发编辑器有很多，每个人有每个人的喜好，经常看到很多在问什么编辑器好用，有人推荐 Sublime，有人推荐 Pycharm 等等，这里就不去比较其它编辑器的优缺点了，只谈谈关于 LiClipse 这个编辑器在初级使用阶段的智能提示功能等。开箱即用，支持多种语言，RST，Markdown 和 HTML 编辑器的 HTML 预览。</p>\n<span id=\"more\"></span>\n<p>其实 LiClipse 这个编辑器就是以前的 PyDev 插件的独立版本，基于 Eclipse 编辑器开发，去掉了 Java 的相关开发功能，关于软件的详细说明可以去官网查看： <a href=\"http://www.liclipse.com/\">http://www.liclipse.com/</a></p>\n<p>编辑器只需要少量的配置，打开即可使用，快速自动 import，也可以根据需要安装自己所需的插件，比如 json、svn、主题插件等。个人推荐：适合刚入门的新手使用</p>\n<p>由于新版的 PyQt 和 PyDev 去掉了详细的函数提示，所以 PyQt 的智能提示只有函数和返回值，并没有英文注释，但是以前的比如 PyQt4 的智能提示应该是有详细的英文注释提示。</p>\n<h2 id=\"界面预览\"><a class=\"markdownIt-Anchor\" href=\"#界面预览\">#</a> 界面预览</h2>\n<ol>\n<li>主界面<br>\n<img src=\"/images/editor1.png\" alt=\"editor1\"></li>\n<li>鼠标悬停提示<br>\n<img src=\"/images/editor2.png\" alt=\"editor2\"></li>\n<li>输入提示<br>\n<img src=\"/images/editor3.png\" alt=\"editor3\"></li>\n<li>Git 面板<br>\n<img src=\"/images/editor4.png\" alt=\"editor4\"></li>\n<li>全局搜索（Ctrl + H）<br>\n<img src=\"/images/editor5.png\" alt=\"editor5\"><br>\n<img src=\"/images/editor6.png\" alt=\"editor6\"></li>\n</ol>\n<h2 id=\"自动导包\"><a class=\"markdownIt-Anchor\" href=\"#自动导包\">#</a> 自动导包</h2>\n<p>其实这个功能我是非常喜欢的，通过按下快捷键即可自动寻找包名导入，快捷键 Ctrl + Shift + O</p>\n<p><img src=\"/images/editor_import.png\" alt=\"editor_import\"></p>\n<p>也可以在标红的代码上按下 Ctrl + F1 进行导入</p>\n<p><img src=\"/images/editor_import2.png\" alt=\"editor_import2\"></p>\n<h2 id=\"配置\"><a class=\"markdownIt-Anchor\" href=\"#配置\">#</a> 配置</h2>\n<p>打开编辑器后首先要配置【Window -&gt; Preferences】的就是 Python 的环境变量，可以同时添加多个 Python 版本</p>\n<p><img src=\"/images/editor_env.png\" alt=\"editor_env\"></p>\n<h2 id=\"tab等设置\"><a class=\"markdownIt-Anchor\" href=\"#tab等设置\">#</a> Tab 等设置</h2>\n<ol>\n<li>Insert spaces for tabs        tab 转空格</li>\n<li>Show line numbers             显示行号</li>\n</ol>\n<p><img src=\"/images/editor_tab.png\" alt=\"editor_tab\"></p>\n<h2 id=\"模版\"><a class=\"markdownIt-Anchor\" href=\"#模版\">#</a> 模版</h2>\n<p>这个功能可以快速插入自己定义好的模版代码，比如  <code>if __name__ == '__main__':</code>  等等，比如我这里配置的创建文件的模版</p>\n<p><img src=\"/images/editor_tpl.png\" alt=\"editor_tpl\"></p>\n<h2 id=\"常用快捷键\"><a class=\"markdownIt-Anchor\" href=\"#常用快捷键\">#</a> 常用快捷键</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\"></th>\n<th style=\"text-align:center\"></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">格式化对齐</td>\n<td style=\"text-align:center\">Ctrl + Shift + F</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">自动导包</td>\n<td style=\"text-align:center\">Ctrl + Shift + O</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">快捷提示</td>\n<td style=\"text-align:center\">Alt + /</td>\n</tr>\n</tbody>\n</table>\n",
+            "tags": [
+                "编辑器"
+            ]
+        }
+    ]
+}

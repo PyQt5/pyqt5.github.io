@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"github\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/speedgithub.html",
+            "url": "https://pyqt5.com/speedgithub.html",
+            "title": "解决GitHub下载速度缓慢的问题",
+            "date_published": "2019-04-18T00:59:06.000Z",
+            "content_html": "<p>由于 Github 的下载走的是 AWS - 亚马逊的路线，，so slow，跟乌龟一样慢。。照着一些方法改了 hosts 文件，偶尔能提提速度。</p>\n<span id=\"more\"></span>\n<h2 id=\"windows\"><a class=\"markdownIt-Anchor\" href=\"#windows\">#</a> Windows</h2>\n<p>Hosts 文件的路径是：</p>\n<p>C:\\Windows\\System32\\drivers\\etc</p>\n<h2 id=\"mac\"><a class=\"markdownIt-Anchor\" href=\"#mac\">#</a> Mac</h2>\n<p>终端内输入：</p>\n<p>sudo vim /etc/hosts</p>\n<h2 id=\"追加域名的ip地址\"><a class=\"markdownIt-Anchor\" href=\"#追加域名的ip地址\">#</a> 追加域名的 IP 地址</h2>\n<p>利用 https://www.ipaddress.com/ 来获得以下两个 GitHub 域名的 IP 地址：</p>\n<p>(1) <a href=\"http://github.com\">github.com</a></p>\n<p>(2) <a href=\"http://github.global.ssl.fastly.net\">github.global.ssl.fastly.net</a></p>\n<p>打开网页后，利用输入框内分别查询两个域名</p>\n<p>将以上两段 IP 写入 Hosts 文件中：</p>\n<pre class=\"line-numbers language-none\"><code class=\"language-none\">192.30.253.112               github.com\n151.101.185.194              github.global.ssl.fastly.net<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span></span></code></pre>\n<p>保存。</p>\n<p>刷新 DNS 缓存</p>\n<p>在终端或 CMD 中，执行以下命令：</p>\n<p>ipconfig /flushdns</p>\n",
+            "tags": [
+                "Github"
+            ]
+        }
+    ]
+}

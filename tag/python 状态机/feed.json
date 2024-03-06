@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"python 状态机\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/python_statemachine_625781186.html",
+            "url": "https://pyqt5.com/python_statemachine_625781186.html",
+            "title": "python 状态机模块 　",
+            "date_published": "2019-07-17T09:03:33.000Z",
+            "content_html": "<p>用状态来取代 if…else 判断。</p>\n<span id=\"more\"></span>\n<p>GUI 涉及到挺多的状态改变，以前一直用 if…else 来判断，最近读了设计模式，发现有个状态模式，随后发现了状态机这个东西 .</p>\n<p>python 的状态机模块挺多的，不过好像很多都不更新了.<br>\n 推荐 2 个状态机模块，但是也没有太深入的使用经验，就跑跑例子，以后有更详细的 pyqt 例子再补上 .</p>\n<p>1:  <code>pip install python-statemachine</code></p>\n<p>官方例子 : <a href=\"https://github.com/fgmacedo/python-statemachine\">https://github.com/fgmacedo/python-statemachine</a></p>\n<p>2. <code>pip install state_machine</code></p>\n<p>官方例子 : <a href=\"https://github.com/jtushman/state_machine\">https://github.com/jtushman/state_machine</a></p>\n<p>1 的 最近一次更新在 6 个月以前，使用 <code>类继承</code> 和 <code>mixin</code>  方式，不过有些地方不如 2 个人性化；</p>\n<p>2 的设计更人性化一些，包括状态改变 <code>before</code>  和  <code>after</code>  , 不过由于是装饰器实现的动态增加属性，有些地方编辑器智能提示可能就靠不上了.</p>\n<p>两者实现实现方式不一样，有兴趣可以读读源码 .</p>\n<ol start=\"3\">\n<li>qt 内置状态机框架</li>\n</ol>\n<p><a href=\"https://blog.csdn.net/amnes1a/article/details/62418196\">https://blog.csdn.net/amnes1a/article/details/62418196</a></p>\n<p><a href=\"https://blog.csdn.net/dongfenghuojian/article/details/78187131\">https://blog.csdn.net/dongfenghuojian/article/details/78187131</a></p>\n<p><a href=\"http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html\">http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html</a> (系列教程)</p>\n",
+            "tags": [
+                "Python",
+                "python 状态机"
+            ]
+        }
+    ]
+}

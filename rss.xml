@@ -1,0 +1,1303 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 06 Mar 2024 03:27:02 +0000</pubDate>
+        <lastBuildDate>Wed, 06 Mar 2024 03:27:02 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>异常</category>
+        <category>截图</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pytest_qt_modal_625781186.html</guid>
+            <title>pytest-qt 测试模态窗体.</title>
+            <link>https://pyqt5.com/pytest_qt_modal_625781186.html</link>
+            <category>pytest-qt</category>
+            <pubDate>Wed, 06 Mar 2024 03:27:02 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;步骤分别是 :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;点击 开始扫描 弹出 选择路径窗口；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;勾选路基；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;3. 点击确定；&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;大概想测一下这个界面 :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-c1ed0bd52808c5b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;步骤分别是 :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;点击 开始扫描 弹出 选择路径窗口；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;勾选路基；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;3. 点击确定；&lt;/p&gt;
+&lt;p&gt;需要测试的函数 :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-b5265859d74b269d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;测试函数 :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-58f4310a54a815ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;可以发现断言失败 .&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-939c73b5be19c21e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;官方文档：测试模态窗体.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://pytest-qt.readthedocs.io/en/latest/note_dialogs.html&#34;&gt;https://pytest-qt.readthedocs.io/en/latest/note_dialogs.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用的是官方的  &lt;code&gt;monkeypatch&lt;/code&gt;  方式 .&lt;/p&gt;
+&lt;p&gt;大致意思就是替换  &lt;code&gt;FileSelectPathDialog&lt;/code&gt;  类的 exec 函数.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/macm1pyqt.html</guid>
+            <title>如何在Mac M1上快速安装PyQt5</title>
+            <link>https://pyqt5.com/macm1pyqt.html</link>
+            <category>PyQt</category>
+            <category>Mac</category>
+            <category>M1</category>
+            <pubDate>Sat, 07 Oct 2023 06:08:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;由于官方并没有在 M1 上编译 PyQt 导致安装存在一些问题。&lt;br&gt;
+M1 上的 Python 不能直接使用 x64 的 PyQt5。但是 M1 上可以运行 x64 的 Python。所以通过安装 x64 的 Python 然后再安装 PyQt5 即可。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;strong&gt;1. 安装 Python&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.python.org/ftp/python/3.9.13/python-3.9.13-macosx10.9.pkg&#34;&gt;python-3.9.13-macosx10.9.pkg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. 勾选自定义同时只勾选安装 pip&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/macpyqtstep1.png&#34; alt=&#34;step1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/macpyqtstep2.png&#34; alt=&#34;step1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. 设置 pip 源&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/pip3 &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; pqi
+/Library/Frameworks/Python.framework/Versions/3.9/bin/pqi use tuna&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;4. 安装 PyQt5&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/pip3 &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; PyQt5&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;5. 测试&lt;/strong&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;/Library/Frameworks/Python.framework/Versions/3.9/bin/python3&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/images/macpyqtstep3.png&#34; alt=&#34;step3.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;📢📢📢&lt;/p&gt;
+&lt;p&gt;也可以直接安装 &lt;a href=&#34;https://docs.anaconda.com/free/miniconda/miniconda-install/&#34;&gt;Miniconda&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然后：conda install -c conda-forge pyqt&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/equal_str_width_625781186.html</guid>
+            <title>python 判断屏幕等宽字符串的长度 　</title>
+            <link>https://pyqt5.com/equal_str_width_625781186.html</link>
+            <category>Python</category>
+            <pubDate>Thu, 26 Dec 2019 11:49:41 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;判断屏幕等宽字符串的长度？&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;判断屏幕等宽字符串的长度？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-58b19652011e153a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:41:50  @北京 - BUG 开发 - 黑择明 求指点&lt;br&gt;
+【专家】北京 - BUG 开发 - 黑择明  22:43:04  fontMetrics&lt;br&gt;
+【专家】 &lt;a href=&#34;https://pyqt.site&#34;&gt;https://pyqt.site&lt;/a&gt; (892768447) 22:43:54  QFontMetrics&lt;br&gt;
+【专家】 &lt;a href=&#34;https://pyqt.site&#34;&gt;https://pyqt.site&lt;/a&gt; (892768447) 22:44:09  通过 QLabel.font ().fontMetrics () 得到&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:52:00&lt;br&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/35771863/how-to-calculate-length-of-string-in-pixels-for-specific-font-and-size&#34;&gt;https://stackoverflow.com/questions/35771863/how-to-calculate-length-of-string-in-pixels-for-specific-font-and-size&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-9dc2f83609106252.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:53:15  感觉和 fontMetrics 应该是差不多的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-411570eeadf51793.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;【专家】北京 - BUG 开发 - 黑择明       (996742224) 11:29:04&lt;br&gt;
+fm = QFontMetrics(QFont())&lt;br&gt;
+fm.width(“qweqwe”)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/use_pyuic_insteadof_pyside2uic.html</guid>
+            <title>修改pyuic代替pyside2-uic.</title>
+            <link>https://pyqt5.com/use_pyuic_insteadof_pyside2uic.html</link>
+            <category>PyQt5 PySide2</category>
+            <pubDate>Thu, 26 Dec 2019 11:49:41 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;修改 pyuic 代替 pyside2-uic&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;修改 pyuic 代替 pyside2-uic.&lt;/p&gt;
+&lt;p&gt;最近看到挺多人用 pyside2 的 uic 编译 ui 文件有问题 .&lt;br&gt;
+ 写个解决办法.&lt;/p&gt;
+&lt;p&gt;首先，&lt;br&gt;
+ &lt;code&gt;pip install qtpy&lt;/code&gt;  ,&lt;br&gt;
+ 这个是兼容 pyqt5 和 pyside2 的，无缝转换 .&lt;/p&gt;
+&lt;p&gt;然后，&lt;br&gt;
+ 修改 pyqt5 的 uic ,&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-2ed1053f322c26a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;最后用 pyuic5 , 生成 Ui_XXX.py 文件 .&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/studynotes.html</guid>
+            <title>PyQt学习心得</title>
+            <link>https://pyqt5.com/studynotes.html</link>
+            <category>PyQt</category>
+            <pubDate>Mon, 26 Aug 2019 01:00:00 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在学习 PyQt 的过程中由于资料的缺乏或者没有中文导致大多数人感叹资料太少，学习困难，又或者急于求进，赶鸭子上架的情况，此时有系统的学习方法很重要。每个人都需要有自己的学习方法，别人的学习方法并不一定适合自己但可以采纳一些。笔者在这里列举了一些当初自己自学的一些心得和方法，希望帮助大家建立一套自己的学习 PyQt 的方法，提高自身的学习能力。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;python基础&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python基础&#34;&gt;#&lt;/a&gt; Python 基础&lt;/h2&gt;
+&lt;p&gt;在学习和使用 PyQt 之前需要熟练使用 Python，经过对 QQ 群里经常提问的问题的分析，发现大部分人对 Python 中的基础知识掌握不牢固导致很多基础问题，如果要想更好的使用 Python 以及它的扩展必需要进行系统的学习。这里列举一下常用的知识点。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;类　　　　　　　 　&lt;a href=&#34;https://www.runoob.com/python3/python3-class.html&#34;&gt;参考资料&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;类的继承&lt;/li&gt;
+&lt;li&gt;类的多继承&lt;/li&gt;
+&lt;li&gt;类方法重写　　　　 &lt;a href=&#34;https://www.runoob.com/w3cnote/python-extends-init.html&#34;&gt;参考资料&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;类中的 super 函数　　&lt;a href=&#34;https://www.runoob.com/python/python-func-super.html&#34;&gt;参考资料&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;函数调用 / 参数类型&lt;/li&gt;
+&lt;li&gt;对象调用 (参考第 1 点)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;必须熟练掌握上面的知识点后入门 PyQt 才比较容易，如果初学者对上面的知识点还不是很了解，本文不适合继续往下阅读。&lt;/p&gt;
+&lt;h2 id=&#34;设计师&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#设计师&#34;&gt;#&lt;/a&gt; 设计师&lt;/h2&gt;
+&lt;p&gt;Qt 设计师除了方便快速设计一些简单的界面外，其实笔者觉得更大的作用在于帮助用户熟悉各类控件、属性、信号等&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;这里建议初学者不要急于求成，打开设计师新建一个 &lt;code&gt;Widget&lt;/code&gt;  的窗口，比如&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/studynotes/desiger_create.png&#34; alt=&#34;desiger_create&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;然后把左侧的所有控件挨个拖动到中间的窗口中，比如这里拖动一个&lt;strong&gt; Push Button&lt;/strong&gt; 按钮&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/studynotes/desiger_drag.png&#34; alt=&#34;desiger_drag&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在设计师右下角的属性编辑器中列举了该控件的所有父类，意味着可以调用和重写父类的所有方法，建议初学者把这个属性编辑器的所有属性挨个调整看看效果，部分控件可能需要&lt;strong&gt; Ctrl+R&lt;/strong&gt; 预览界面才能看到，同时像&lt;strong&gt; QListWidget，QTreeWidget，QTableWidget&lt;/strong&gt; 等某些控件需要在控件上右键增加数据才可以&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/studynotes/desiger_property.png&#34; alt=&#34;desiger_property&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/studynotes/desiger_property2.png&#34; alt=&#34;desiger_property2&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;两个控件之间简单的信号槽关联可以通过设计师快速的设置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/studynotes/desiger_signal.png&#34; alt=&#34;desiger_signal&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/studynotes/desiger_signal2.png&#34; alt=&#34;desiger_signal2&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;提高进阶的方法，当你需要手动写代码实现界面的时候，不妨把 UI 文件转出 PY 文件，看看是如何构造的（这里涉及到布局等知识见后文）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#布局&#34;&gt;#&lt;/a&gt; 布局&lt;/h2&gt;
+&lt;p&gt;Qt 界面提供了方便的 4 种基本布局，&lt;strong&gt;QVboxLayout，QHboxLayout，QFormLayout，QGridLayout&lt;/strong&gt;，初学者需要数量掌握这 4 种布局外加 2 种拉伸器（占位挤压）&lt;/p&gt;
+&lt;p&gt;首先需要知道 Qt 界面的中控件的层级顺序以及 parent，parent 的作用既作为子控件的父元素也可以自动管理 Qt 的对象（具体可以搜索下关于 Qt parent 的资料）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在没有布局的情况下，在设计师中拖动摆放的控件是一层一层的叠加覆盖，此时每个添加的子控件的 parent 都是最外层的控件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/studynotes/desiger_stack.png&#34; alt=&#34;desiger_stack&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;如果需要界面中的控件自动适应高度宽度，此时则需要使用 4 种布局来包裹里面的子控件，注意的是：布局不是控件不能设置高度宽度和样式等，是一个抽象的东西，就好比是一根橡皮筋包裹几个矩形的物品；布局也可以设置一些属性（在设计师属性编辑器中），比如设置两者直接的间距，设置距离上下左右的间距，设置比例等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/studynotes/desiger_layout.png&#34; alt=&#34;desiger_layout&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在没有布局或者有布局的时候。可以添加容器控件（&lt;strong&gt;QWidget，QFrame，QGroupBox，QScrollArea，QToolBox，QTabWidget，QStackedWidget，QMidArea，QDockWidget&lt;/strong&gt;）这些容器可以放置子控件，从而循环嵌套。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;例子&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#例子&#34;&gt;#&lt;/a&gt; 例子&lt;/h2&gt;
+&lt;p&gt;在 PyQt5.5 的时候自带了一个例子文件夹（后面的版本没有的话可以下载 PyQt5 源码，里面有个 examples 文件夹），想要熟练的掌握 PyQt 还需要从自带的例子中学习，必须要每个例子都运行一次然后看看这个例子实现了什么，这样才能记忆深刻。&lt;br&gt;
+同时很多开发者在&lt;a href=&#34;https://github.com/PyQt5/PyQt&#34;&gt; https://github.com/PyQt5/PyQt&lt;/a&gt; 分享了各类进阶例子，同时也欢迎大家共同完善该项目，提供更多更好的例子。另外也可以下载该项目的客户端&lt;a href=&#34;https://github.com/PyQt5/PyQtClient/releases&#34;&gt; PyQtClient&lt;/a&gt; 软件，支持运行其中的例子&lt;/p&gt;
+&lt;p&gt;建议在更深入的学习 PyQt 之前多看看一些例子。&lt;/p&gt;
+&lt;h2 id=&#34;文档&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文档&#34;&gt;#&lt;/a&gt; 文档&lt;/h2&gt;
+&lt;p&gt;接下来要说的就是 Qt 的 api 文档，&lt;a href=&#34;https://doc.qt.io/qt-5/classes.html&#34;&gt;官网文档&lt;/a&gt;，这里其实不要害怕是英文就不想看，觉得看不懂了，其实官网的文档还是比较简洁的，而且函数名也比较直观就能知道意思。也可以用谷歌浏览器打开右键翻译，基本上都能看懂。笔者前期写过一篇&lt;a href=&#34;/viewapi.html&#34;&gt;如何查阅 Qt 文档&lt;/a&gt;的文档可以阅读学习一番。&lt;/p&gt;
+&lt;p&gt;这里就拿&lt;a href=&#34;https://doc.qt.io/qt-5/qwebengineview.html&#34;&gt; QWebEngineView&lt;/a&gt; 举一个例子，首先初学者在使用这个浏览器控件时候，会有诸多的问题比如：Cookie，拦截器等就不知道如何去调用函数来设置&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先打开官网文档 &lt;a href=&#34;https://doc.qt.io/qt-5/qwebengineview.html&#34;&gt;https://doc.qt.io/qt-5/qwebengineview.html&lt;/a&gt;，可以看到只有少量的函数可以调用，寻找一番并没有发现和 Cookie 相关的东西，这个时候就需要把重点放在有特俗返回值的函数上，比如：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-c++&#34; data-language=&#34;c++&#34;&gt;&lt;code class=&#34;language-c++&#34;&gt;QWebEngineHistory *	          history() const
+QWebEnginePage *	          page() const
+QWebEngineSettings *	      settings() const&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这三个函数返回了一个类实例，就意味着可以调用其中的方法。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;点击&lt;strong&gt; page ()&lt;strong&gt; 打开 &lt;a href=&#34;https://doc.qt.io/qt-5/qwebenginepage.html&#34;&gt;https://doc.qt.io/qt-5/qwebenginepage.html&lt;/a&gt;，发现没有 cookie 相关的东西，只有&lt;/strong&gt; QWebEngineProfile *	profile () const&lt;/strong&gt; 这个函数比较可疑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 **profile ()** 打开 &lt;a href=&#34;https://doc.qt.io/qt-5/qwebengineprofile.html&#34;&gt;https://doc.qt.io/qt-5/qwebengineprofile.html&lt;/a&gt;，在浏览器中搜索 &lt;code&gt;cookie&lt;/code&gt;  发现这个类中包含大量和 cookie 相关的东西，比如：**QWebEngineCookieStore *	cookieStore ()`** 从名字上可以猜测大概意思为 cookie 储存&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 **cookieStore ()** 打开 &lt;a href=&#34;https://doc.qt.io/qt-5/qwebenginecookiestore.html&#34;&gt;https://doc.qt.io/qt-5/qwebenginecookiestore.html&lt;/a&gt;，此时就会发现这个类里面包含了删除和设置 cookie 的方法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;但是找到了这些方法后，面对初学者又一个问题来了，该如何去用？根据上面 4 点整理一下，把他们当做简单的 Python 对象，方法和操作方法和 class 一样的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;webview &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QWebEngineView&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# 得到page&lt;/span&gt;
+page &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;webview&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;page&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# 得到profile&lt;/span&gt;
+profile &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; page&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;profile&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# 得到cookieStore&lt;/span&gt;
+cookieStore &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; profile&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;cookieStore&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# 清空cookie&lt;/span&gt;
+cookieStore&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;deleteAllCookies&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# 用简短代码来表达就是&lt;/span&gt;
+cookieStore &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;webview&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;page&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;profile&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;cookieStore&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+cookieStore&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;deleteAllCookies&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;异常调试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#异常调试&#34;&gt;#&lt;/a&gt; 异常调试&lt;/h2&gt;
+&lt;p&gt;可能有时候由于粗心，或者调用了一些非法函数，参数错误等会导致程序出现一些异常，首先第一步复制最后一行的错误去百度或者谷歌搜索，大多时候能找到问题所在。其次如果搜索不到或者自己的异常可能是由于某个变量的值不对引起的，就需要在编辑器中打断点使用 DEBUG 模式调试变量值（如果不会可以采用麻烦一点的办法：用 &lt;code&gt;print&lt;/code&gt;  打印出变量值）&lt;/p&gt;
+&lt;p&gt;遇到问题后首先需要自己多调试排查问题，不要一遇到问题就去问，自己多尝试一个一个排查直到找到问题所在并解决，这也是一种提高自身能力的地方。&lt;/p&gt;
+&lt;h2 id=&#34;检索资料&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#检索资料&#34;&gt;#&lt;/a&gt; 检索资料&lt;/h2&gt;
+&lt;p&gt;作为一个开发人员确实需要具备查阅文档、查询资料等基础技能，会为自己的开发带来很大的帮助，要善于搜索，通过不同的方式去搜索才能找到自己需要的东西。信息检索是每个程序猿必备的能力之一，其好处在于可以更快更准确的在茫茫网络海洋中找到自己所需要的东西，这个过程需要长期不断积累和练习。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;中文搜索引擎：采用多个关键词 以空格分开搜索，如：PyQt 拖拽&lt;/li&gt;
+&lt;li&gt;英文搜索引擎：采用多个关键词 以空格分开搜索，如：PyQt Drag Drop&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;片尾&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#片尾&#34;&gt;#&lt;/a&gt; 片尾&lt;/h2&gt;
+&lt;p&gt;好了，笔者基本上的学习过程就整理如上，这并不是说每个人都适合这样的方法，但至少笔者是这样一步一步走过来的。当你养成了一个学习、发现和解决问题的好习惯时就会慢慢得心应手。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/python_statemachine_625781186.html</guid>
+            <title>python 状态机模块 　</title>
+            <link>https://pyqt5.com/python_statemachine_625781186.html</link>
+            <category>Python</category>
+            <category>python 状态机</category>
+            <pubDate>Wed, 17 Jul 2019 09:03:33 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;用状态来取代 if…else 判断。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;GUI 涉及到挺多的状态改变，以前一直用 if…else 来判断，最近读了设计模式，发现有个状态模式，随后发现了状态机这个东西 .&lt;/p&gt;
+&lt;p&gt;python 的状态机模块挺多的，不过好像很多都不更新了.&lt;br&gt;
+ 推荐 2 个状态机模块，但是也没有太深入的使用经验，就跑跑例子，以后有更详细的 pyqt 例子再补上 .&lt;/p&gt;
+&lt;p&gt;1:  &lt;code&gt;pip install python-statemachine&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;官方例子 : &lt;a href=&#34;https://github.com/fgmacedo/python-statemachine&#34;&gt;https://github.com/fgmacedo/python-statemachine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2. &lt;code&gt;pip install state_machine&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;官方例子 : &lt;a href=&#34;https://github.com/jtushman/state_machine&#34;&gt;https://github.com/jtushman/state_machine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1 的 最近一次更新在 6 个月以前，使用 &lt;code&gt;类继承&lt;/code&gt; 和 &lt;code&gt;mixin&lt;/code&gt;  方式，不过有些地方不如 2 个人性化；&lt;/p&gt;
+&lt;p&gt;2 的设计更人性化一些，包括状态改变 &lt;code&gt;before&lt;/code&gt;  和  &lt;code&gt;after&lt;/code&gt;  , 不过由于是装饰器实现的动态增加属性，有些地方编辑器智能提示可能就靠不上了.&lt;/p&gt;
+&lt;p&gt;两者实现实现方式不一样，有兴趣可以读读源码 .&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;qt 内置状态机框架&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/amnes1a/article/details/62418196&#34;&gt;https://blog.csdn.net/amnes1a/article/details/62418196&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/dongfenghuojian/article/details/78187131&#34;&gt;https://blog.csdn.net/dongfenghuojian/article/details/78187131&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html&#34;&gt;http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html&lt;/a&gt; (系列教程)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pyqt5_hook_key_625781186.html</guid>
+            <title>在pyqt中使用python全局钩子模块</title>
+            <link>https://pyqt5.com/pyqt5_hook_key_625781186.html</link>
+            <category>Python</category>
+            <category>pyqt hook key</category>
+            <pubDate>Sat, 06 Jul 2019 17:37:22 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在某些时候需要为自己的软件增加全局键盘监听，比如软件最小化隐藏后可以通过热键唤醒，又或者比如像 QQ 一样可以全局热键截图。这里介绍几个方法实现在 PyQt 中使用 Python 全局钩子模块实现全局热键功能。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;pyHook3&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;安装命令 :  &lt;code&gt;pip install pyhook3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/q871063970/article/details/86648386&#34;&gt;https://blog.csdn.net/q871063970/article/details/86648386&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;似乎将 pyhook 支持 py3 版本的了？没有太多研究.&lt;/p&gt;
+&lt;p&gt;缺点：只支持 win 平台.&lt;/p&gt;
+&lt;p&gt;2. &lt;code&gt;keyboard&lt;/code&gt;  &amp;amp;  &lt;code&gt;mouse&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装命令:  &lt;code&gt;pip install keyboard mouse&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;
+from PyQt5 import  QtGui, QtWidgets, QtCore
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+import keyboard
+class Window(QWidget):
+
+    def __init__(self, *args, **kwargs):
+        super(Window, self).__init__(*args, **kwargs)
+        layout &amp;#x3D; QVBoxLayout(self)
+        self.testBtn &amp;#x3D; QPushButton(self)
+        layout.addWidget(self.testBtn)
+
+        keyboard.add_hotkey(&amp;#39;ctrl+shift+x&amp;#39;, lambda:print(&amp;#39;triggered&amp;#39;, &amp;#39;hotkey&amp;#39;))
+        keyboard.add_hotkey(&amp;#39;ctrl+shift+c&amp;#39;, self.abc,args&amp;#x3D;(&amp;#39;aa&amp;#39;,&amp;quot;bb&amp;quot;,&amp;quot;cc&amp;quot;))
+
+    def abc(self,a,b,c):
+        print(a,b,c)
+        
+if __name__ &amp;#x3D;&amp;#x3D; &amp;#39;__main__&amp;#39;:
+    import sys
+    from PyQt5.QtWidgets import QApplication
+    app &amp;#x3D; QApplication(sys.argv)
+    w &amp;#x3D; Window()
+    w.show()
+    sys.exit(app.exec_())&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更详细例子 : &lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/63c6376358acb1863313fb5593097e6e0210cad6/Test/%E5%85%A8%E5%B1%80%E7%83%AD%E9%94%AE/HotKey.py&#34;&gt;pyqt 中使用 keyboard 全局热键&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;优点：跨平台；&lt;/p&gt;
+&lt;p&gt;缺点：模块名字取得太差，不容易被发现.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/read_open_source.html</guid>
+            <title>像读文章一样读源码</title>
+            <link>https://pyqt5.com/read_open_source.html</link>
+            <category>Python</category>
+            <category>debug</category>
+            <category>snoop</category>
+            <pubDate>Sat, 06 Jul 2019 17:37:22 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;使用 snoop, 像读文章一样读源码。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;不得不说 开源项目没有一个提纲 ， 看起来太操蛋了。问了作者， 作者说 ， 你运行下主函数， 然后慢慢跟 。。。&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-b274b7acaecf49bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;没有目的地概览 ， 不知不觉就追究到细节里面去了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-1304cc87fcd42cae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以这一篇文章的目地就是 ， 如何在没有提纲的情况下 ， 能更好的只关注流程 ， 而不是细节 。&lt;/p&gt;
+&lt;p&gt;开始 ：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;python DEBUG 模块介绍 :&lt;br&gt;
+　前段时间看过挺多文章提到 pysoonper 这个调试模块，有兴趣的可以百度一下.&lt;br&gt;
+ 个人尝试了一下，篇幅过大的 DEBUG 不适合用 pysoonper , 因为没有缩进！&lt;br&gt;
+　这几天偶然遇到一个二次封装的模块&lt;a href=&#34;%5Bhttps://github.com/alexmojaki/snoop%5D(https://github.com/alexmojaki/snoop)&#34;&gt; snoop&lt;/a&gt;, 完美地解决了这个问题.&lt;/li&gt;
+&lt;li&gt;操作步骤 :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;1 .  在 &lt;code&gt;eric6.py&lt;/code&gt;  的 &lt;code&gt;main()&lt;/code&gt;  函数上加 snoop 装饰器；&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-74129f6a6c303b25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;2 . 用 vscode 打开  &lt;code&gt;eric6start_.log&lt;/code&gt;   文件 (8 层深度 log 文件 34W 行，pycharm 对大文件支持很差);&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-ae946c117a082c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;log文件&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;发现可以折叠 ， 但是最大可折叠等级只到 5 级 ， 而且无法对对应等级折叠 ， 有点遗憾 。也许是.log 格式选得不太好， 不知道是否有更好的后缀格式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 . vscode 配置 log 文件关键字高亮；&lt;br&gt;
+安装高亮插件&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-8f6fee2356d7071d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 配置高亮关键字&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-a135fd015409b3da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将 &lt;code&gt;call&lt;/code&gt;  和 &lt;code&gt;return&lt;/code&gt;  给加进去.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 . 增加阶段关键字；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-c39d01a02149e808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;eric6启动阶段&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-aef5704c36824dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;加 &lt;code&gt;#000&lt;/code&gt;  是为了方便搜索 。&lt;br&gt;
+需要自己手动折叠 。&lt;br&gt;
+可以发现 每个 &lt;code&gt;splash.showMessage()&lt;/code&gt;  都是一个阶段 ， 展开折叠之后就是每个阶段具体执行细节 。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢&#34;&gt;#&lt;/a&gt; ps: vscode 阅读 log 文件还是有一些不方便的地方，除了在 2. 中提到的，还有包括关闭文件再打开，折叠状态不会保留，有其他更好的方式 请留言告诉我，谢谢.&lt;/h3&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pyqt_get_subprocess_pipeline_625781186.html</guid>
+            <title>python 获取子进程print信息 　</title>
+            <link>https://pyqt5.com/pyqt_get_subprocess_pipeline_625781186.html</link>
+            <category>Python</category>
+            <category>subprocess.Popen</category>
+            <category>拦截print</category>
+            <pubDate>Fri, 24 May 2019 06:39:44 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在 PyQt 中使用子线程读取子进程 Python 脚本的 print 输出流内容。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;问题所在：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/24/5ce793171984f27031.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果模块都由自己开发， 正常操作&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/24/5ce7933994a0090037.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但是因为不能改，所以只能拦截：&lt;br&gt;
+代码：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;pythonPath &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pythonPath_cb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;currentText&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; suffix &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;py&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 首次&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pyCommand &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;pythonPath&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; path&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;modifiedReloadPython&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;modifiedReloadPython&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; path_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;chdir&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;dirname&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 子进程调用&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Popen&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pyCommand&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stdout&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;PIPE&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stderr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;STDOUT&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# self.stdoutWorker.p = self.p&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Worker&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;connect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;lambda&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;error_te&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;PYDEBUG:\n&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Worker&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QThread&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    stdout_signal &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pyqtSignal&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; p&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; parent&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;parent&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; p
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            QApplication&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;processEvents&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                line &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;readline&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# line = line.strip()&lt;/span&gt;
+                &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; line &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;b&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                    &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                        info &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; line&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decode&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;emit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;info&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                    &lt;span class=&#34;token keyword&#34;&gt;except&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;emit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;repr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;line&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/qtwebjs.html</guid>
+            <title>QtWebkit和QWebEngineView与Javascript交互</title>
+            <link>https://pyqt5.com/qtwebjs.html</link>
+            <category>PyQt</category>
+            <category>QWebView</category>
+            <category>QWebEngineView</category>
+            <category>浏览器</category>
+            <pubDate>Wed, 22 May 2019 03:30:36 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;以前还是 &lt;code&gt;QWebView&lt;/code&gt;  的时候和 &lt;code&gt;Javascript&lt;/code&gt;  交互起来很方便，但是到了 Qt5.6 以后改用了 &lt;code&gt;QWebEngineView&lt;/code&gt; ，并通过其提供的 &lt;code&gt;qwebchannel.js&lt;/code&gt;  来进行交互。可能是由于刚出来的原因，这玩意儿有个 bug 就是必须在每次加载页面的时候手动注入，跳转页面后就失效了，需要手动注入，目前有没有修复具体未测试。这里对 &lt;code&gt;QWebView&lt;/code&gt;  和 &lt;code&gt;QWebEngineView&lt;/code&gt;  与 Js 交互都做了一个示例。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#说明&#34;&gt;#&lt;/a&gt; 说明&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;针对 &lt;code&gt;QWebView&lt;/code&gt;  通过 &lt;code&gt;QWebFrame&lt;/code&gt;  的 &lt;code&gt;addToJavaScriptWindowObject&lt;/code&gt;  把对象传递到 &lt;code&gt;Javascript&lt;/code&gt;  中&lt;/li&gt;
+&lt;li&gt;针对 &lt;code&gt;QWebEngineView&lt;/code&gt;  通过 &lt;code&gt;QWebChannel.registerObject(&#39;Bridge&#39;, QObject)&lt;/code&gt;  把对象传递到 &lt;code&gt;Javascript&lt;/code&gt;  中&lt;/li&gt;
+&lt;li&gt;可以通过 &lt;code&gt;@pyqtSlot&lt;/code&gt;  装饰器来申明该方法可以暴露给 &lt;code&gt;Javascript&lt;/code&gt;  调用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@pyqtSlot&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;callFromJs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; text&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    QMessageBox&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;information&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;提示&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;来自js调用：&amp;#123;&amp;#125;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;text&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;针对 &lt;code&gt;QWebView&lt;/code&gt;  在 &lt;code&gt;Javascript&lt;/code&gt;  中获取该对象，可以通过该对象对窗口属性以及信号和暴露出的方法进行调用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-javascript&#34; data-language=&#34;javascript&#34;&gt;&lt;code class=&#34;language-javascript&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;// 这里绑定窗口的标题变化信号（这个信号是由QWidget内部的）&lt;/span&gt;
+Bridge&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;windowTitleChanged&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;connect&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token function-variable function&#34;&gt;fun&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;
+    &lt;span class=&#34;token function&#34;&gt;showLog&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;标题被修改为：&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; title&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;fun&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;// 绑定自定义的信号customSignal&lt;/span&gt;
+Bridge&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;customSignal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;connect&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token function-variable function&#34;&gt;fun&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;
+    &lt;span class=&#34;token function&#34;&gt;showLog&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;收到自定义信号内容：&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; text&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;fun&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;针对 &lt;code&gt;QWebEngineView&lt;/code&gt;  在 &lt;code&gt;Javascript&lt;/code&gt;  中获取该对象，可以通过该对象对窗口属性以及信号和暴露出的方法进行调用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-javascript&#34; data-language=&#34;javascript&#34;&gt;&lt;code class=&#34;language-javascript&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;QWebChannel&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;webChannelTransport&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;channel&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;
+        window&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Bridge &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; channel&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;objects&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Bridge&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+        
+        &lt;span class=&#34;token comment&#34;&gt;// 这里绑定窗口的标题变化信号（这个信号是由QWidget内部的）&lt;/span&gt;
+        Bridge&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;windowTitleChanged&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;connect&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;
+            &lt;span class=&#34;token function&#34;&gt;showLog&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;标题被修改为：&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; title&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+        
+        &lt;span class=&#34;token comment&#34;&gt;// 绑定自定义的信号customSignal&lt;/span&gt;
+        Bridge&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;customSignal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;connect&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token parameter&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;
+           &lt;span class=&#34;token function&#34;&gt;showLog&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;收到自定义信号内容：&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; text&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;
+    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;
+&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;QWebView&lt;/code&gt; ： &lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QWebView/JsSignals.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/QWebView/JsSignals.py&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;QWebEngineView&lt;/code&gt; ： &lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QWebEngineView/JsSignals.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/QWebEngineView/JsSignals.py&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;针对 &lt;code&gt;QWebView&lt;/code&gt;  的核心实现&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;WebView&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWebView&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    customSignal &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pyqtSignal&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;WebView&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;initSettings&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 暴露接口对象&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;page&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;mainFrame&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;javaScriptWindowObjectCleared&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;connect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_exposeInterface&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;_exposeInterface&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;向Js暴露调用本地方法接口
+        &#34;&#34;&#34;&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;page&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;mainFrame&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addToJavaScriptWindowObject&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Bridge&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# 注意pyqtSlot用于把该函数暴露给js可以调用&lt;/span&gt;
+    &lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@pyqtSlot&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;callFromJs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; text&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        QMessageBox&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;information&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;提示&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;来自js调用：&amp;#123;&amp;#125;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;text&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sendCustomSignal&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 发送自定义信号&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;customSignal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;emit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;当前时间: &#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;time&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;针对 &lt;code&gt;QWebEngineView&lt;/code&gt;  的核心实现&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;WebEngineView&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWebEngineView&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    customSignal &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pyqtSignal&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;WebEngineView&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;channel &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QWebChannel&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 把自身对象传递进去&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;channel&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;registerObject&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Bridge&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 设置交互接口&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;page&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setWebChannel&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;channel&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# 注意pyqtSlot用于把该函数暴露给js可以调用&lt;/span&gt;
+    &lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@pyqtSlot&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;callFromJs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; text&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        QMessageBox&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;information&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;提示&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;来自js调用：&amp;#123;&amp;#125;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;text&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sendCustomSignal&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 发送自定义信号&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;customSignal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;emit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;当前时间: &#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;time&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/PyQt5/PyQt/raw/master/QWebEngineView/ScreenShot/JsSignals.gif&#34; alt=&#34;JsSignals&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/flipwidgetanimation.html</guid>
+            <title>PyQt5窗口翻转动画</title>
+            <link>https://pyqt5.com/flipwidgetanimation.html</link>
+            <category>PyQt</category>
+            <category>动画</category>
+            <category>翻转</category>
+            <pubDate>Wed, 15 May 2019 14:48:00 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;QQ 的界面一直是用来模仿练习做界面的好东西，这里就有一个类似 QQ 登录界面的实现翻转效果，当然这里并没有用两个窗口去做，而是用了 &lt;code&gt;QStackedWidget&lt;/code&gt;  包含两个控件做切换，同时单独使用一个窗口做动画绘制。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;原理说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#原理说明&#34;&gt;#&lt;/a&gt; 原理说明&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;用了两个 &lt;code&gt;QLabel&lt;/code&gt;  来显示模拟的图片界面，并实现鼠标点击模拟真实的窗口对应位置点击&lt;/li&gt;
+&lt;li&gt;用了 &lt;code&gt;QStackedWidget&lt;/code&gt;  来存放上面的两个界面 &lt;code&gt;QLabel&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点击切换时主要是对上面的两个界面进行截图并传递给翻转动画窗口&lt;/li&gt;
+&lt;li&gt;通过 &lt;code&gt;setWindowOpacity&lt;/code&gt;  控制主窗口的显示隐藏（保留任务栏），当然也可以用 &lt;code&gt;hide&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;动画窗口 &lt;code&gt;FlipWidget.py&lt;/code&gt;  主要实现两张图片的翻转显示，考虑到 0-90 和 90-180 之前的情况，以及图片的缩放动画&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;核心实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#核心实现&#34;&gt;#&lt;/a&gt; 核心实现&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;主要是在 &lt;code&gt;paintEvent&lt;/code&gt;  方法中使用 &lt;code&gt;QTransform&lt;/code&gt;  对 &lt;code&gt;QPainter&lt;/code&gt;  进行圆心变换以及 &lt;code&gt;rotate&lt;/code&gt;  设置翻转角度&lt;/li&gt;
+&lt;li&gt;同时根据翻转的角度范围对图片进行切换和缩放&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;paintEvent&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; event&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;FlipWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;paintEvent&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;event&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;hasattr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;image1&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;hasattr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;image2&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;isVisible&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+        painter &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPainter&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Antialiasing&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothPixmapTransform&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        &lt;span class=&#34;token comment&#34;&gt;# 变换&lt;/span&gt;
+        transform &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QTransform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 把圆心设置为矩形中心&lt;/span&gt;
+        transform&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;translate&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;90&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 当翻转角度在90范围内显示第一张图，且从大图缩放到小图的过程&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;save&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 设置翻转角度&lt;/span&gt;
+            transform&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;rotate&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;YAxis&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setTransform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;transform&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 缩放图片高度&lt;/span&gt;
+            width &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;
+            height &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;
+                         &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;abs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Scale&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            image &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;scaled&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; height&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;IgnoreAspectRatio&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothTransformation&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drawPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                QPointF&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;height &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; image&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;restore&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 当翻转角度在90范围内显示第二张图，且从小图缩放到原图的过程&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;save&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                angle &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;180&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle
+            &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                angle &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;180&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 设置翻转角度， 注意这里角度有差异&lt;/span&gt;
+            transform&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;rotate&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;angle&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;YAxis&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setTransform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;transform&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 缩放图片高度&lt;/span&gt;
+            width &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;
+            height &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;
+                         &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;360&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;abs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;angle&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Scale &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            image &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;scaled&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; height&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;IgnoreAspectRatio&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothTransformation&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drawPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                QPointF&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;height &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; image&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;restore&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QPropertyAnimation/FlipWidgetAnimation.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/QPropertyAnimation/FlipWidgetAnimation.py&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/PyQt5/PyQt/raw/master/QPropertyAnimation/ScreenShot/FlipWidgetAnimation.gif&#34; alt=&#34;FlipWidgetAnimation&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/QPropertyAnimation.html</guid>
+            <title>PyQt属性动画(QPropertyAnimation)</title>
+            <link>https://pyqt5.com/QPropertyAnimation.html</link>
+            <category>PyQt</category>
+            <category>动画</category>
+            <pubDate>Wed, 08 May 2019 07:43:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;code&gt;QPropertyAnimation&lt;/code&gt;  继承自 &lt;code&gt;QVariantAnimation&lt;/code&gt; ，其作为 Qt 的属性动画用于针对控件的属性或者继承自 &lt;code&gt;QObject&lt;/code&gt;  的对象中定义的属性做修改，&lt;br&gt;
+简单来说就是基类是 &lt;code&gt;QObject&lt;/code&gt;  且定义了属性变量，就可以用 &lt;code&gt;QPropertyAnimation&lt;/code&gt;  来做属性动画。同时也可以通过 &lt;code&gt;pyqtProperty&lt;/code&gt;  来增加自定义属性。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;首先，通过构造函数 &lt;code&gt;QPropertyAnimation(QObject, Union[QByteArray, bytes, bytearray], parent: QObject = None)&lt;/code&gt;  创建一个对象，其中&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一个参数是动画作用的对象，也可以通过 &lt;code&gt;setTargetObject&lt;/code&gt;  设置&lt;/li&gt;
+&lt;li&gt;第二个参数是属性名，在 py3 中类型是 bytes，也可以通过 &lt;code&gt;setPropertyName&lt;/code&gt;  设置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#函数&#34;&gt;#&lt;/a&gt; 函数&lt;/h2&gt;
+&lt;p&gt;一些常见的设置函数&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setPropertyName&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;设置属性名&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setTargetObject&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;设置动画作用对象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setDuration&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;设置动画持续时间（毫秒）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setStartValue&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;设置开始值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setEndValue&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;设置结束值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setEasingCurve&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;设置动画曲线&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setKeyValueAt&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;插入线性值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;setLoopCount&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;设置循环次数（-1 为永久）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;示例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#示例&#34;&gt;#&lt;/a&gt; 示例&lt;/h2&gt;
+&lt;p&gt;比如这个例子：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;修改控件的 &lt;code&gt;geometry&lt;/code&gt;  大小&lt;/li&gt;
+&lt;li&gt;修改自定义属性&lt;/li&gt;
+&lt;li&gt;修改进度条的 value 值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/QPropertyAnimation.gif&#34; alt=&#34;QPropertyAnimation&#34;&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
+Created on 2019年5月8日
+@author: Irony
+@site: https://pyqt5.com https://github.com/892768447
+@email: 892768447@qq.com
+@file: 
+@description: 
+&#34;&#34;&#34;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtCore &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QPropertyAnimation&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QRect&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; pyqtProperty&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QEasingCurve
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QPushButton&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;\
+    QLabel&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QProgressBar&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QSpacerItem&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QSizePolicy
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Irony&#39;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Copyright (c) 2019 Irony&#39;&lt;/span&gt;
+__Version__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1.0&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWidget&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Window&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;resize&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;400&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;400&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_value &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPushButton&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;属性动画测试&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;clicked&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;connect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;doStart&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setGeometry&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;buttonc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPushButton&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;自定义属性 测试&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;buttonc&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;clicked&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;connect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;doStartCustom&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;label &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QLabel&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;progressbar &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QProgressBar&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;progressbar&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRange&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;99&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addItem&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QSpacerItem&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+            &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QSizePolicy&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Fixed&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QSizePolicy&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Fixed&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;buttonc&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;label&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;progressbar&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        &lt;span class=&#34;token comment&#34;&gt;# 进度条动画&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;progressStart&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# 此处是自定义属性，并通过动画修改后，设置QLabel的值&lt;/span&gt;
+    &lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@pyqtProperty&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_value
+
+    &lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@value&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setter&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;value&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; v&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_value &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; v
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;label&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setText&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;当前值：&amp;#123;&amp;#125;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;v&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;doStart&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 第一个参数是要执行的对象&lt;/span&gt;
+        animation &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPropertyAnimation&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;b&#39;geometry&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setDuration&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 持续时间&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 缓和曲线风格,加了曲线动画会很大程度影响&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setEasingCurve&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QEasingCurve&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;OutBounce&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setStartValue&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setEndValue&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;250&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;250&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;DeleteWhenStopped&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;doStartCustom&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 自定义属性动画&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 由于定义的属性是在继承的QWidget, 所以第一个参数是self&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 第二个参数就是 value&lt;/span&gt;
+        animation &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPropertyAnimation&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;b&#39;value&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setDuration&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 持续时间&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setStartValue&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setEndValue&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;DeleteWhenStopped&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;progressStart&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 进度条动画&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 这里 value是QProgressBar自带的属性，具体可以看文档&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# https://doc.qt.io/qt-5/qprogressbar.html#properties&lt;/span&gt;
+        animation &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPropertyAnimation&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;progressbar&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;b&#39;value&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setDuration&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2000&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 持续时间&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setLoopCount&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 这里采用插入线性值,第一个参数的范围是（0-1）&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 第二个参数的范围是进度（最小值-最大值）&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setKeyValueAt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;progressbar&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;minimum&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setKeyValueAt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setKeyValueAt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setKeyValueAt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setKeyValueAt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.7&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;80&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setKeyValueAt&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;progressbar&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;maximum&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;animation&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;DeleteWhenStopped&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; __name__ &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;__main__&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys
+    &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QApplication
+    app &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QApplication&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;argv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Window&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;app&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exec_&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/viewapi.html</guid>
+            <title>如何查阅Qt文档</title>
+            <link>https://pyqt5.com/viewapi.html</link>
+            <category>PyQt</category>
+            <pubDate>Sat, 04 May 2019 12:50:20 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;很多网友在问有没有 PyQt5 的文档之类的问题，在 PyQt4 的时候 PyQt 官网有了英文版的文档，随后有网友翻译成了中文。不过现在 PyQt5 官方的文档都指向了 C&lt;ins&gt; 的 Qt 文档，其实 C&lt;/ins&gt; 的 Qt API 文档结构很清晰，翻阅很容易的，需要注意几点。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;作为一个开发人员确实需要具备查阅文档、查询资料等基础技能，会为自己的开发带来很大的帮助，要善于搜索，通过不同的方式去搜索才能找到自己需要的东西。&lt;/p&gt;
+&lt;p&gt;拿 Qt C++ 文档来说，官网地址是：&lt;a href=&#34;https://doc.qt.io/qt-5/qtwidgets-module.html&#34;&gt;https://doc.qt.io/qt-5/qtwidgets-module.html&lt;/a&gt; 这里面记录了所有控件的详细函数文档。&lt;/p&gt;
+&lt;p&gt;比如拿 输入框  &lt;code&gt;QLineEdit&lt;/code&gt;  来说，怎么去查询它的用法和信号槽等资料？&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://doc.qt.io/qt-5/qlineedit.html&#34;&gt;https://doc.qt.io/qt-5/qlineedit.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;左侧目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#左侧目录&#34;&gt;#&lt;/a&gt; 左侧目录&lt;/h2&gt;
+&lt;p&gt;在文档左侧目录中有如下几个：&lt;/p&gt;
+&lt;p&gt;Properties - 控件里的属性（比如宽高等，通常需要当作函数调用）&lt;/p&gt;
+&lt;p&gt;Public Slots - 这个是控件自己的槽函数（当作普通函数就行）&lt;/p&gt;
+&lt;p&gt;Signals - 这个是输入框的包含的信号&lt;/p&gt;
+&lt;p&gt;Public Functions、Reimplemented Public Functions、Static Public Members、Protected Functions、Reimplemented Protected Functions - 这几个都是函数列表&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/howtoviewapi1.png&#34; alt=&#34;howtoviewapi1&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;类说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#类说明&#34;&gt;#&lt;/a&gt; 类说明&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/images/howtoviewapi2.png&#34; alt=&#34;howtoviewapi2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里有两个注意点&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;红色方框内的表示该控件（输入框）继承于 &lt;code&gt;QWidget&lt;/code&gt; ，所以该控件（输入框）拥有父类的所有方法和信号，当当前文档找不到相关资料和函数时，可以去父类找找看。&lt;/li&gt;
+&lt;li&gt;紫色方框内表示列举所有的方法（包括父类）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;函数列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#函数列表&#34;&gt;#&lt;/a&gt; 函数列表&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/images/howtoviewapi3.png&#34; alt=&#34;howtoviewapi3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里列举的就是该控件（输入框）的函数，同理点击上面的紫色方框是查看所有方法，一般这里主要用来查询你需要的功能函数，Qt 的函数名比较容易理解，比如：只读 ReadOnly，选择文字：setSelection。&lt;/p&gt;
+&lt;p&gt;所以再查下这部分资料的时候建议在浏览器中 Ctrl + F 打开浏览器的搜索框，并输入英文关键词来检索你所需要的函数在哪里。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/howtoviewapi8.png&#34; alt=&#34;howtoviewapi8&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;槽函数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#槽函数&#34;&gt;#&lt;/a&gt; 槽函数&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/images/howtoviewapi4.png&#34; alt=&#34;howtoviewapi4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这部分列举的是槽函数，其实在 PyQt 中槽函数可以当作普通的函数。普通的函数也可以作为槽函数，直接通过信号连接即可，注意方框所示，还有很多函数是在父类里面。&lt;/p&gt;
+&lt;h2 id=&#34;信号&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#信号&#34;&gt;#&lt;/a&gt; 信号&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/images/howtoviewapi5.png&#34; alt=&#34;howtoviewapi5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这部分列举了该控件（输入框）所定义的信号，主要还是看名字，大多都能知道是做什么的，比如：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;editingFinished - 编辑完成信号&lt;/li&gt;
+&lt;li&gt;returnPressed - 回车键信号&lt;/li&gt;
+&lt;li&gt;textChanged (const QString &amp;amp;text) - 内容改变信号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这里还有个问题就是参数问题，一般 &amp;amp; 后面的 text 作为参数传递到槽函数中&lt;/p&gt;
+&lt;h2 id=&#34;函数详细说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#函数详细说明&#34;&gt;#&lt;/a&gt; 函数详细说明&lt;/h2&gt;
+&lt;p&gt;当不明确这个函数是做什么的，可以点击该函数跳转到下面的说明，比如回车键信号 &lt;code&gt;returnPressed&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/howtoviewapi6.png&#34; alt=&#34;howtoviewapi6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如图上所示，用翻译插件翻译，大部分就明白了，如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/howtoviewapi7.png&#34; alt=&#34;howtoviewapi7&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;关于如何搜索资料&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于如何搜索资料&#34;&gt;#&lt;/a&gt; 关于如何搜索资料&lt;/h2&gt;
+&lt;p&gt;比如当你要搜索输入框内容改变事件，一般建议两种搜索，且搜索的时候用空格把关键词分开搜索，而且直接用控件名&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;中文搜索引擎：QLineEdit 内容 改变&lt;/li&gt;
+&lt;li&gt;英文搜索引擎：QLineEdit text change&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/suggesteditor.html</guid>
+            <title>推荐编辑器LiClipse</title>
+            <link>https://pyqt5.com/suggesteditor.html</link>
+            <category>编辑器</category>
+            <pubDate>Sat, 04 May 2019 10:04:08 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;关于 Python 的开发编辑器有很多，每个人有每个人的喜好，经常看到很多在问什么编辑器好用，有人推荐 Sublime，有人推荐 Pycharm 等等，这里就不去比较其它编辑器的优缺点了，只谈谈关于 LiClipse 这个编辑器在初级使用阶段的智能提示功能等。开箱即用，支持多种语言，RST，Markdown 和 HTML 编辑器的 HTML 预览。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;其实 LiClipse 这个编辑器就是以前的 PyDev 插件的独立版本，基于 Eclipse 编辑器开发，去掉了 Java 的相关开发功能，关于软件的详细说明可以去官网查看： &lt;a href=&#34;http://www.liclipse.com/&#34;&gt;http://www.liclipse.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;编辑器只需要少量的配置，打开即可使用，快速自动 import，也可以根据需要安装自己所需的插件，比如 json、svn、主题插件等。个人推荐：适合刚入门的新手使用&lt;/p&gt;
+&lt;p&gt;由于新版的 PyQt 和 PyDev 去掉了详细的函数提示，所以 PyQt 的智能提示只有函数和返回值，并没有英文注释，但是以前的比如 PyQt4 的智能提示应该是有详细的英文注释提示。&lt;/p&gt;
+&lt;h2 id=&#34;界面预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#界面预览&#34;&gt;#&lt;/a&gt; 界面预览&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;主界面&lt;br&gt;
+&lt;img src=&#34;/images/editor1.png&#34; alt=&#34;editor1&#34;&gt;&lt;/li&gt;
+&lt;li&gt;鼠标悬停提示&lt;br&gt;
+&lt;img src=&#34;/images/editor2.png&#34; alt=&#34;editor2&#34;&gt;&lt;/li&gt;
+&lt;li&gt;输入提示&lt;br&gt;
+&lt;img src=&#34;/images/editor3.png&#34; alt=&#34;editor3&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Git 面板&lt;br&gt;
+&lt;img src=&#34;/images/editor4.png&#34; alt=&#34;editor4&#34;&gt;&lt;/li&gt;
+&lt;li&gt;全局搜索（Ctrl + H）&lt;br&gt;
+&lt;img src=&#34;/images/editor5.png&#34; alt=&#34;editor5&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/editor6.png&#34; alt=&#34;editor6&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;自动导包&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#自动导包&#34;&gt;#&lt;/a&gt; 自动导包&lt;/h2&gt;
+&lt;p&gt;其实这个功能我是非常喜欢的，通过按下快捷键即可自动寻找包名导入，快捷键 Ctrl + Shift + O&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_import.png&#34; alt=&#34;editor_import&#34;&gt;&lt;/p&gt;
+&lt;p&gt;也可以在标红的代码上按下 Ctrl + F1 进行导入&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_import2.png&#34; alt=&#34;editor_import2&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置&#34;&gt;#&lt;/a&gt; 配置&lt;/h2&gt;
+&lt;p&gt;打开编辑器后首先要配置【Window -&amp;gt; Preferences】的就是 Python 的环境变量，可以同时添加多个 Python 版本&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_env.png&#34; alt=&#34;editor_env&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tab等设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tab等设置&#34;&gt;#&lt;/a&gt; Tab 等设置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Insert spaces for tabs        tab 转空格&lt;/li&gt;
+&lt;li&gt;Show line numbers             显示行号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_tab.png&#34; alt=&#34;editor_tab&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;模版&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#模版&#34;&gt;#&lt;/a&gt; 模版&lt;/h2&gt;
+&lt;p&gt;这个功能可以快速插入自己定义好的模版代码，比如  &lt;code&gt;if __name__ == &#39;__main__&#39;:&lt;/code&gt;  等等，比如我这里配置的创建文件的模版&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_tpl.png&#34; alt=&#34;editor_tpl&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;常用快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用快捷键&#34;&gt;#&lt;/a&gt; 常用快捷键&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;格式化对齐&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl + Shift + F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;自动导包&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl + Shift + O&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;快捷提示&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Alt + /&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/bindsignals.html</guid>
+            <title>三种方式绑定信号槽</title>
+            <link>https://pyqt5.com/bindsignals.html</link>
+            <category>PyQt</category>
+            <category>信号</category>
+            <pubDate>Sat, 04 May 2019 08:07:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;网上关于 PyQt5 的信号绑定使用的教程比较上，很多还是以前的绑定方式，导致在 PyQt5 中无法使用，这里归纳总结下已有的几种绑定信号槽的方式，&lt;br&gt;
+这几种方式各有各的优点和缺点。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;方式一&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方式一&#34;&gt;#&lt;/a&gt; 方式一&lt;/h2&gt;
+&lt;p&gt;这个方式是最开始接触设计师的时候知道的，主要是通过控件的 &lt;code&gt;objectName&lt;/code&gt;  和 &lt;code&gt;QtCore.QMetaObject.connectSlotsByName(Form)&lt;/code&gt;  提供的连接函数来自动完成注册，&lt;br&gt;
+比如带有按钮的界面 ui 文件转成 py 文件后会发现如下代码：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pushButton &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QtWidgets&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QPushButton&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Form&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pushButton&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setGeometry&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QtCore&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;60&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;93&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pushButton&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setObjectName&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;pushButton&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# 通过这里自动完成连接信号槽&lt;/span&gt;
+QtCore&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QMetaObject&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;connectSlotsByName&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Form&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此时只需要继承该 UI 文件类然后增加如下方法：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;
+&lt;span class=&#34;token decorator annotation punctuation&#34;&gt;@pyqtSlot&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;on_pushButton_clicked&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;button clicked&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这里解释一下， &lt;code&gt;@pyqtSlot()&lt;/code&gt;  装饰器把函数 &lt;code&gt;on_pushButton_clicked&lt;/code&gt;  包装为一个槽函数，&lt;br&gt;
+而 &lt;code&gt;QtCore.QMetaObject.connectSlotsByName(Form)&lt;/code&gt;  这句代码的意思就是自动去寻找满足的槽函数&lt;/p&gt;
+&lt;p&gt;&lt;font color=red&gt;注意：这里有个规范（on_xxxx_clicked）&lt;/font&gt;，这里必须要满足 &lt;code&gt;on_控件的objectName_控件的信号&lt;/code&gt; 这样下划线连接起来的函数名才能被识别，&lt;br&gt;
+比如按钮的点击： &lt;code&gt;on_pushButton_clicked&lt;/code&gt; 、勾选框的选中： &lt;code&gt;on_checkbox_toggled(self, checked)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;方式二&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方式二&#34;&gt;#&lt;/a&gt; 方式二&lt;/h2&gt;
+&lt;p&gt;这种方式则直接通过代码里调用控件的信号的 &lt;code&gt;connect&lt;/code&gt;  方法来进行绑定，比如：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# 按钮点击函数&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;doClicked&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sender&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;clicked&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# 绑定点击信号&lt;/span&gt;
+self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pushButton&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;clicked&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;connect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;doClicked&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;font color=red&gt;注意： &lt;code&gt;connect&lt;/code&gt;  的是函数名字&lt;/font&gt;， &lt;code&gt;self.sender()&lt;/code&gt;  这句代码是获取信号发送者（比如这里就是得到这个按钮对象），&lt;br&gt;
+用处在于有时候要循环创建一堆按钮&lt;/p&gt;
+&lt;h2 id=&#34;方式三&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方式三&#34;&gt;#&lt;/a&gt; 方式三&lt;/h2&gt;
+&lt;p&gt;通过参数这种方式其实比较特殊，在 PyQt 中大部分存在，但是在 PySide 中则很少，原因是两者的封装方式不同。&lt;/p&gt;
+&lt;p&gt;同时该方式用于在纯代码中比较常见，而且需要对该控件有那些信号可以用要很熟习，比如：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;
+&lt;span class=&#34;token comment&#34;&gt;# 按钮点击函数&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;doClicked&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sender&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;clicked&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+pushButton &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPushButton&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;按钮&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; clicked&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;doClicked&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; minimumHeight&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;40&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这里可以通过参数（信号名字） = 函数来绑定信号&lt;/p&gt;
+&lt;p&gt;同时也可以设置其它参数，比如&lt;br&gt;
+ &lt;code&gt;button.setMinimumHeight(40)&lt;/code&gt;  也可以像参数里那样设置 &lt;code&gt;minimumHeight=40&lt;/code&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/virtualenvpy_625781186.html</guid>
+            <title>python 拷贝虚拟环境(一) 　</title>
+            <link>https://pyqt5.com/virtualenvpy_625781186.html</link>
+            <category>Python</category>
+            <category>virtualenvwrapper</category>
+            <category>virtualenv</category>
+            <pubDate>Thu, 02 May 2019 07:21:01 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;通常来说，刚开始使用 python 的时候都是把包装到全局路径，随着各个项目安装的包越来越多，之后每开始一个项目，pycharm 创建索引的时间都越来越漫长，所以不可避免得开始使用虚拟环境。&lt;br&gt;
+经过一番了解 ，虚拟环境的优点有这些：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改善 pycharm 索引时间；&lt;/li&gt;
+&lt;li&gt;各个项目的库不会冲突；&lt;/li&gt;
+&lt;li&gt;理论上虚拟环境可以给同版本的操作系统使用 (未试验过);&lt;/li&gt;
+&lt;li&gt;pip freeze &amp;gt; requestment.txt 导出的依赖清晰；&lt;/li&gt;
+&lt;li&gt;各个版本的 python 共存；&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;python 虚拟环境库除了自带的 venv , 还有三方库 &lt;code&gt;virtualenv&lt;/code&gt;  , 此外 在 &lt;code&gt;virtualenv&lt;/code&gt;  基础上又开发了 &lt;code&gt;virtualenvwrapper(virtualenvwrapper_win)&lt;/code&gt;  来管理&lt;/p&gt;
+&lt;p&gt;本文基于 &lt;code&gt;virtualenvwrapper&lt;/code&gt;  创建的虚拟环境来讲解.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;以下是收集的一些virtualenvwrapper配置教程:
+# linux平台
+https://www.cnblogs.com/netfoxman/p/5994697.html
+# window平台
+https://blog.csdn.net/shaququ/article/details/54292043  　
+https://blog.csdn.net/iaau0908/article/details/54021518
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;虚拟环境创建多了我们就会发现，&lt;br&gt;
+ 有时候使用相同版本的环境，一些常用的库是需要重新安装的，&lt;br&gt;
+ 那么能不能创建一个基础环境，默认拥有这些库，然后在这个基础环境上继续安装三方库呢？&lt;/p&gt;
+&lt;p&gt;本文经过试验发现是可行的:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;创建基础虚拟环境  &lt;code&gt;mkvirtualenv &amp;lt;环境名称&amp;gt; [-p空格python其他版本的解释器路径]&lt;/code&gt; .  例如  &lt;code&gt;mkvirtualenv py34 -p c:\Python34\python.exe&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切换到虚拟环境 &lt;code&gt;workon py34&lt;/code&gt;  , 然后安装一下三方库，然后复制 &lt;code&gt;py34&lt;/code&gt;  这个文件夹备份一下；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着复制这个 &lt;code&gt;py34&lt;/code&gt;  文件夹，把复制后的文件夹改名为我们需要需要的文件夹例如 &lt;code&gt;new34&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入 &lt;code&gt;new34文件夹&lt;/code&gt; ，用任意编辑器全路径搜索 &lt;code&gt;py34&lt;/code&gt;  (替换虚拟环境的路径)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除 &lt;code&gt;new34/Scripts&lt;/code&gt;  下的 &lt;code&gt;pip.exe, pip3.exe, pip3.x.exe, easy_install.exe&lt;/code&gt;  (因为安装路径硬编码到这里面了，改不了，需要重新安装)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/douniwan007009/article/details/81463958&#34;&gt;https://blog.csdn.net/douniwan007009/article/details/81463958&lt;/a&gt; 按方式二，源码安装  &lt;code&gt;setuptools&lt;/code&gt;  后再用 &lt;code&gt;easy_install pip&lt;/code&gt;  安装 pip 后，完成；&lt;br&gt;
+ 如果有问题，就继续按照方式一的源码安装 pip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;code&gt;new34&lt;/code&gt;  环境下 用 &lt;code&gt;pip show 三方库&lt;/code&gt;  来看一些库的位置，确保正确.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/runnablesignal_625781186.html</guid>
+            <title>QRunnable线程池发信号</title>
+            <link>https://pyqt5.com/runnablesignal_625781186.html</link>
+            <category>PyQt</category>
+            <category>信号</category>
+            <category>线程</category>
+            <pubDate>Tue, 30 Apr 2019 07:58:09 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;因为只有继承 &lt;code&gt;QObject&lt;/code&gt;  的类才能有信号和自定义信号，而 &lt;code&gt;QRunnable&lt;/code&gt;  并不是继承自 &lt;code&gt;QObject&lt;/code&gt; ，也不能用多继承的方式，这里考虑定义个全局的 QObject 变量用来存放一些定义好的可复用的信号。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;pools 是  &lt;code&gt;QThreadPool&lt;/code&gt;  实例&lt;/p&gt;
+&lt;h2 id=&#34;看图说话&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#看图说话&#34;&gt;#&lt;/a&gt; 看图说话&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;img src=&#34;/images/runnablesignal1.png&#34; alt=&#34;runnablesignal1&#34;&gt;&lt;/li&gt;
+&lt;li&gt;定义一个全局信号类&lt;br&gt;
+&lt;img src=&#34;/images/runnablesignal2.png&#34; alt=&#34;runnablesignal2&#34;&gt;&lt;/li&gt;
+&lt;li&gt;在 QRunnable 中发送&lt;br&gt;
+&lt;img src=&#34;/images/runnablesignal3.png&#34; alt=&#34;runnablesignal3&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/viewpyindesigner_625781186.html</guid>
+            <title>如何和设计师中查看ui转换的py代码</title>
+            <link>https://pyqt5.com/viewpyindesigner_625781186.html</link>
+            <category>PyQt</category>
+            <category>Designer</category>
+            <category>设计师</category>
+            <pubDate>Tue, 30 Apr 2019 05:11:09 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;通过 设计师  查看 ui 转换的 py 代码&lt;/p&gt;
+&lt;p&gt;当初我刚学 pyqt 的时候，也有很多疑惑，用什么属性把控件加到布局，改了这个属性会发生什么，为什么这个会这样，那个会那样 。。。 。。。&lt;/p&gt;
+&lt;p&gt;后来就看 ui 转成的 py 代码，注释一下，什么效果消失了，就是那个 api 引起的 。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;再来后发现了官方文档，查一查函数就行了 .&lt;/p&gt;
+&lt;p&gt;但是有些 api 文档找起来麻烦，用设计师点几下就行了，然后把转换出来的代码拷贝一下就完事了.&lt;/p&gt;
+&lt;p&gt;可是需要单独把 ui 转为 py 文件，之后再删除这个文件也是很烦的一件事 .&lt;/p&gt;
+&lt;p&gt;好，话不多说，接下来手把手教你如何快速在 ui 中查看 py 代码 .&lt;/p&gt;
+&lt;p&gt;官方也考虑过这种情况，所以 设计师中 是有这个功能的，但是 qt 的是没问题的，pyqt 的毕竟是绑定过来的，所以正常来说 你点击之后会弹出一个找不到应用程序的提示 .&lt;/p&gt;
+&lt;p&gt;看到这个东西是不是很眼熟，我们用的命令 pyuic5 和这个东西应该是一样的 .&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/viewpyindesigner1.jpg&#34; alt=&#34;viewpyindesigner1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以接下来，我们找找电脑上有没有这个东西&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/viewpyindesigner2.jpg&#34; alt=&#34;viewpyindesigner2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;果然在 pyqt5-toos 文件夹下有这个东西，&lt;/p&gt;
+&lt;p&gt;我们根据第一张图的提示，把这个东西拷贝到相应的目录 (如果没有那个 bin 文件夹，手动创建),&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/viewpyindesigner3.jpg&#34; alt=&#34;viewpyindesigner3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;好了，大功告成！&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/showframe.html</guid>
+            <title>PyQt5调整窗口显示边框</title>
+            <link>https://pyqt5.com/showframe.html</link>
+            <category>PyQt</category>
+            <category>边框</category>
+            <pubDate>Fri, 26 Apr 2019 14:19:26 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在 &lt;code&gt;windows&lt;/code&gt;  某些场景下调整窗口大小或者移动后就会导致里面的内容重绘（速度慢，卡顿，闪烁），其实在以前 &lt;code&gt;windows&lt;/code&gt;  在低配置设备为了减少这种频繁绘制的情况，默认会开启这种效果，不过目前设备越来越好了就关闭了该功能。具体是在控制面板中 -&amp;gt; 调整 &lt;code&gt;Windows&lt;/code&gt;  的外观和性能 -&amp;gt; 去掉勾选 拖动时显示窗口内容。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;由于这个开关是全局状态的，而我们只需要在自己的窗口中实现该效果有两种方式。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一种是自己绘制一个边框效果，放开鼠标时才操作真正的窗口。&lt;/li&gt;
+&lt;li&gt;二是替换窗口的处理过程函数 &lt;code&gt;wndproc&lt;/code&gt;  处理 &lt;code&gt;WM_NCLBUTTONDOWN&lt;/code&gt;  消息事件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;今天讲第二种方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;需要了解  &lt;code&gt;SystemParametersInfo&lt;/code&gt;  API 函数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SPI_GETDRAGFULLWINDOWS&lt;/code&gt; ：确定是否允许拖拉到最大窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SPI_SETDRAGFULLWINDOWS&lt;/code&gt; ：设置是否允许拖至最大窗口&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;效果就是这样的：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/PyQt5/PyQt/raw/master/Demo/ScreenShot/ShowFrameWhenDrag.gif&#34; alt=&#34;ShowFrameWhenDrag&#34;&gt;&lt;/p&gt;
+&lt;p&gt;正如图片所看的那样，窗体在移动的时候，窗体并没有绘制出来，而是绘制出窗体的边框，等到窗体不在移动的时候就直接把窗体图像数据全部绘制出来，这样就避免了窗体在移动的时候出现闪烁的现象。&lt;/p&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/Demo/ShowFrameWhenDrag.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/Demo/ShowFrameWhenDrag.py&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
+Created on 2019年4月23日
+@author: Irony
+@site: https://pyqt5.com https://github.com/892768447
+@email: 892768447@qq.com
+@file: ShowFrameWhenDrag
+@description: 调整窗口显示边框
+&#34;&#34;&#34;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; ctypes &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_int&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; byref&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_long&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_void_p&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_ulong&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_longlong&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;\
+    c_ulonglong&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; WINFUNCTYPE&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_uint
+
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QLabel
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Irony&#39;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Copyright (c) 2019 Irony&#39;&lt;/span&gt;
+__Version__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1.0&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_long&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_void_p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    WPARAM &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_ulong
+    LPARAM &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_long
+&lt;span class=&#34;token keyword&#34;&gt;elif&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_longlong&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_void_p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    WPARAM &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_ulonglong
+    LPARAM &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_longlong
+
+WM_NCLBUTTONDOWN &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0x00a1&lt;/span&gt;
+GWL_WNDPROC &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;
+SPI_GETDRAGFULLWINDOWS &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;38&lt;/span&gt;
+SPI_SETDRAGFULLWINDOWS &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;37&lt;/span&gt;
+WNDPROC &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; WINFUNCTYPE&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_long&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_void_p&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_uint&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; WPARAM&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; LPARAM&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    CallWindowProc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;CallWindowProcW
+    SetWindowLong &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SetWindowLongW
+    SystemParametersInfo &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SystemParametersInfoW
+&lt;span class=&#34;token keyword&#34;&gt;except&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    CallWindowProc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;CallWindowProcA
+    SetWindowLong &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SetWindowLongA
+    SystemParametersInfo &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SystemParametersInfoA
+
+
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;GetDragFullwindows&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    rv &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_int&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    SystemParametersInfo&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;SPI_GETDRAGFULLWINDOWS&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; byref&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;rv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; rv&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value
+
+
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;SetDragFullwindows&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    SystemParametersInfo&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;SPI_SETDRAGFULLWINDOWS&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; value&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWidget&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Window&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QLabel&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;拖动或者调整窗口试试看&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        &lt;span class=&#34;token comment&#34;&gt;# 重点替换窗口处理过程&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_newwndproc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; WNDPROC&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_wndproc&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_oldwndproc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; SetWindowLong&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+            &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;winId&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; GWL_WNDPROC&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_newwndproc&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;_wndproc&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; msg&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; wparam&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; lparam&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; msg &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; WM_NCLBUTTONDOWN&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 获取系统本身是否已经开启&lt;/span&gt;
+            isDragFullWindow &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; GetDragFullwindows&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; isDragFullWindow &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# 开启虚线框&lt;/span&gt;
+                SetDragFullwindows&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# 系统本身处理&lt;/span&gt;
+                ret &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; CallWindowProc&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_oldwndproc&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; msg&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; wparam&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; lparam&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# 关闭虚线框&lt;/span&gt;
+                SetDragFullwindows&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; ret
+        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; CallWindowProc&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_oldwndproc&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; msg&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; wparam&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; lparam&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; __name__ &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;__main__&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys
+    &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QApplication
+    app &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QApplication&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;argv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Window&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;app&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exec_&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;片尾&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#片尾&#34;&gt;#&lt;/a&gt; 片尾&lt;/h2&gt;
+&lt;p&gt;替换窗口过程可以处理很多系统窗口的处理过程，更多需要读者自行去发现。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/issignalconnected.html</guid>
+            <title>PyQt5判断信号是否连接</title>
+            <link>https://pyqt5.com/issignalconnected.html</link>
+            <category>PyQt</category>
+            <category>信号</category>
+            <pubDate>Fri, 26 Apr 2019 14:06:26 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在 &lt;code&gt;PyQt&lt;/code&gt;  中某些情况下需要取消原来的信号连接，此时需要使用 &lt;code&gt;disconnect&lt;/code&gt;  方法，但是在逻辑不严谨的情况下可能会导致多次调用 &lt;code&gt;disconnect&lt;/code&gt;  方法而导致报错，当然可以通过 try except 来包裹代码。这里通过  &lt;code&gt;isSignalConnected&lt;/code&gt;  来判断信号是否连接。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;在 QOjbect 文档中这样写到：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-c++&#34; data-language=&#34;c++&#34;&gt;&lt;code class=&#34;language-c++&#34;&gt;static const QMetaMethod valueChangedSignal &amp;#x3D; QMetaMethod::fromSignal(&amp;amp;MyObject::valueChanged);
+if (isSignalConnected(valueChangedSignal)) &amp;#123;
+    QByteArray data;
+    data &amp;#x3D; get_the_value();       &amp;#x2F;&amp;#x2F; expensive operation
+    emit valueChanged(data);
+&amp;#125;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;通过直接传入信号就行了，但是这在 PyQt 中不可行。需要这么做&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
+Created on 2019年2月24日
+@author: Irony
+@site: https://pyqt5.com https://github.com/892768447
+@email: 892768447@qq.com
+@file: IsSignalConnected
+@description: 判断信号是否连接
+&#34;&#34;&#34;&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QPushButton&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QTextBrowser
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;By: Irony
+QQ: 892768447
+Email: 892768447@qq.com&#34;&#34;&#34;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Copyright (c) 2019 Irony&#39;&lt;/span&gt;
+__Version__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1.0&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWidget&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; __init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Window&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button1 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPushButton&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;已连接&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; clicked&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;doTest&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button2 &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPushButton&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;未连接&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;retView &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QTextBrowser&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button1&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button2&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;retView&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; doTest&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;retView&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
+        # button1 clicked 是否连接: %s
+        # button2 clicked 是否连接: %s
+        &#34;&#34;&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;isSignalConnected&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;clicked()&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;isSignalConnected&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;button2&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;clicked()&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; isSignalConnected&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; obj&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;判断信号是否连接
+        :param obj:        对象
+        :param name:       信号名，如 clicked()
+        &#34;&#34;&#34;&lt;/span&gt;
+        index &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; obj&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;metaObject&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;indexOfMethod&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; index &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            method &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; obj&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;metaObject&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;method&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;index&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; method&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; obj&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;isSignalConnected&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;method&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; __name__ &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;__main__&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys
+    &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QApplication
+    app &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QApplication&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;argv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Window&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;app&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exec_&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/PyQt5/PyQt/raw/master/Demo/ScreenShot/IsSignalConnected.png&#34; alt=&#34;IsSignalConnected&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
