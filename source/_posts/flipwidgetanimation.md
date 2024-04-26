@@ -85,4 +85,4 @@ https://github.com/PyQt5/PyQt/blob/master/QPropertyAnimation/FlipWidgetAnimation
 
 ## 效果图
 
-![FlipWidgetAnimation](https://github.com/PyQt5/PyQt/raw/master/QPropertyAnimation/ScreenShot/FlipWidgetAnimation.gif)
+![FlipWidgetAnimation](/PyQt/QPropertyAnimation/ScreenShot/FlipWidgetAnimation.gif)

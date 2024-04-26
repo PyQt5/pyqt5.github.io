@@ -16,7 +16,7 @@ categories: 例子
 
 原理是利用QGraphicsDropShadowEffect添加边框阴影，然后使用动画不停改变阴影的模糊半径来达到效果，如图：
 
-![ShadowEffect](https://github.com/PyQt5/PyQt/raw/master/QGraphicsDropShadowEffect/ScreenShot/ShadowEffect.gif)
+![ShadowEffect](/PyQt/QGraphicsDropShadowEffect/ScreenShot/ShadowEffect.gif)
 
 ## 简单说明
 

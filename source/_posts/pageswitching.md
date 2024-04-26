@@ -54,4 +54,4 @@ https://github.com/PyQt5/PyQt/blob/master/QPropertyAnimation/PageSwitching.py
 
 ## 效果图
 
-![PageSwitching](https://github.com/PyQt5/PyQt/raw/master/QPropertyAnimation/ScreenShot/PageSwitching.gif)
+![PageSwitching](/PyQt/QPropertyAnimation/ScreenShot/PageSwitching.gif)

@@ -22,7 +22,7 @@ categories: 例子
 
 如图：
 
-![FramelessDialog1](https://github.com/PyQt5/PyQt/raw/master/Demo/ScreenShot/FramelessDialog1.png)
+![FramelessDialog1](/PyQt/Demo/ScreenShot/FramelessDialog1.png)
 
 ## 代码
 
@@ -100,7 +100,7 @@ if __name__ == '__main__':
 
 ## 效果图
 
-![FramelessDialog](https://github.com/PyQt5/PyQt/raw/master/Demo/ScreenShot/FramelessDialog.png)
+![FramelessDialog](/PyQt/Demo/ScreenShot/FramelessDialog.png)
 
 ## 下载
 

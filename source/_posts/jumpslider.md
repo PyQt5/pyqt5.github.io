@@ -115,5 +115,5 @@ if __name__ == '__main__':
 
 ## 效果图
 
-![ClickJumpSlider](https://github.com/PyQt5/PyQt/raw/master/QSlider/ScreenShot/ClickJumpSlider.gif)
+![ClickJumpSlider](/PyQt/QSlider/ScreenShot/ClickJumpSlider.gif)
 

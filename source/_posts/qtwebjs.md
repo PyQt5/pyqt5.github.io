@@ -121,4 +121,4 @@ class WebEngineView(QWebEngineView):
 
 ## 效果图
 
-![JsSignals](https://github.com/PyQt5/PyQt/raw/master/QWebEngineView/ScreenShot/JsSignals.gif)
+![JsSignals](/PyQt/QWebEngineView/ScreenShot/JsSignals.gif)

@@ -24,7 +24,7 @@ categories: 教程
 
 效果就是这样的：
 
-![ShowFrameWhenDrag](https://github.com/PyQt5/PyQt/raw/master/Demo/ScreenShot/ShowFrameWhenDrag.gif)
+![ShowFrameWhenDrag](/PyQt/Demo/ScreenShot/ShowFrameWhenDrag.gif)
 
 正如图片所看的那样，窗体在移动的时候，窗体并没有绘制出来，而是绘制出窗体的边框，等到窗体不在移动的时候就直接把窗体图像数据全部绘制出来，这样就避免了窗体在移动的时候出现闪烁的现象。
 

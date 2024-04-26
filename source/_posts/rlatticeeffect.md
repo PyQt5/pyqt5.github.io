@@ -264,5 +264,5 @@ if __name__ == '__main__':
 
 ## 效果图
 
-![RlatticeEffect](https://github.com/PyQt5/PyQt/raw/master/QPropertyAnimation/ScreenShot/RlatticeEffect.gif)
+![RlatticeEffect](/PyQt/QPropertyAnimation/ScreenShot/RlatticeEffect.gif)
 

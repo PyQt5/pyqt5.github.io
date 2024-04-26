@@ -106,4 +106,4 @@ if __name__ == '__main__':
 
 ## 效果图
 
-![ImageSlipped](https://github.com/PyQt5/PyQt/raw/master/QLabel/ScreenShot/ImageSlipped.gif)
+![ImageSlipped](/PyQt/QLabel/ScreenShot/ImageSlipped.gif)

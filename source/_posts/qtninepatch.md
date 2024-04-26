@@ -52,5 +52,5 @@ https://github.com/PyQt5/PyQt/tree/master/QLabel
 
 ## 效果图
 
-![NinePatchImage](https://github.com/PyQt5/PyQt/raw/master/QLabel/ScreenShot/NinePatchImage.gif)
+![NinePatchImage](/PyQt/QLabel/ScreenShot/NinePatchImage.gif)
 

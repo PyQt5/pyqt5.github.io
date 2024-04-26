@@ -117,4 +117,4 @@ if __name__ == '__main__':
 
 ## 效果图
 
-![MultiSelect](https://github.com/PyQt5/PyQt/raw/master/QMenu/ScreenShot/MultiSelect.gif)
+![MultiSelect](/PyQt/QMenu/ScreenShot/MultiSelect.gif)

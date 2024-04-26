@@ -93,4 +93,4 @@ if __name__ == '__main__':
 
 ## 效果图
 
-![FollowWindow](https://github.com/PyQt5/PyQt/raw/master/Demo/ScreenShot/FollowWindow.gif)
+![FollowWindow](/PyQt/Demo/ScreenShot/FollowWindow.gif)
