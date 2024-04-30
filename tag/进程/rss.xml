@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;进程&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 16 Nov 2018 13:37:31 +0000</pubDate>
+        <lastBuildDate>Fri, 16 Nov 2018 13:37:31 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/processinclass_625781186.html</guid>
+            <title>python 在类里使用进程池</title>
+            <link>https://pyqt5.com/processinclass_625781186.html</link>
+            <category>进程</category>
+            <pubDate>Fri, 16 Nov 2018 13:37:31 +0000</pubDate>
+            <description><![CDATA[ &lt;ol&gt;
+&lt;li&gt;首先， 进程池的作用就是减少进程的创建和释放 开销的， 所以在类中作为局部变量是不合适的；&lt;/li&gt;
+&lt;li&gt;其次， 进程池必须在 &lt;code&gt;if __name__ == &amp;quot;__main__&amp;quot; &lt;/code&gt; 里 ，否则会报 frozen_ 什么什么的错误；（这一点可能解释有误）;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;然后， 线程池的 &lt;code&gt;apply_async&lt;/code&gt;  中如果传入 &lt;code&gt;self.xxx&lt;/code&gt;  方法，会报 &lt;code&gt;multiprocessing.Pool pickling error&lt;/code&gt;  什么的错误， 具体解释见 https://blog.csdn.net/dutsoft/article/details/70336462， 里面有解决方法，但是我没有成功（最开始测试没有现在理解的透彻， 不过应该是可以的）; 由于第 1 点 不合理， 所以有什么办法在类 函数中获取 进程池对象 po 的地址：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/processinclass1.png&#34; alt=&#34;processinclass1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我的解决思路和方法是:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;通过 globals () 取得全局变量 ， 测试证明 ：不同文件的 &lt;code&gt;globals()&lt;/code&gt;  是不同的： 如 &lt;code&gt;Tab2.py &lt;/code&gt; 的  &lt;code&gt;globals()&lt;/code&gt;  和 &lt;code&gt; main_extra_func_file.py&lt;/code&gt;  中的  &lt;code&gt;globals() &lt;/code&gt; 是不同的 ， 所以 这样在 &lt;code&gt;Tab2.py&lt;/code&gt;  中取不到 po 对象；&lt;/li&gt;
+&lt;li&gt;通过 &lt;code&gt;__main__.po&lt;/code&gt;  来获取 （为什么会想到这个呢， 因为有时候导包 import .xxx 和 import xxx 会报  &lt;code&gt;__main__&lt;/code&gt;  没有什么属性什么的）：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;getPoolObject&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# po 的名字在main函数中定义&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# __main__ 模块在sys.modules 的键是&#34;__mp_main__&#34;&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;modules&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;__mp_main__&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;po&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ps : (图没截好 ，  &lt;code&gt;rglob_worker&lt;/code&gt;  是外部函数 ， 非类内函数 ，po = getPoolBojcet () 这一行是类内函数 ，红色箭头 2. 在的那条白色分割线 是 2 个函数。)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/processinclass2.png&#34; alt=&#34;processinclass2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;len(po._cache) == 1&lt;/code&gt;  : po._cache 是当前有任务的进程数， ==1 表示所有任务结束；利用回调 ， 可以更轻松地进行进程通信。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

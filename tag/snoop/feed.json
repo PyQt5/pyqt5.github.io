@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"snoop\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/read_open_source.html",
+            "url": "https://pyqt5.com/read_open_source.html",
+            "title": "像读文章一样读源码",
+            "date_published": "2019-07-06T17:37:22.000Z",
+            "content_html": "<p>使用 snoop, 像读文章一样读源码。</p>\n<span id=\"more\"></span>\n<p>不得不说 开源项目没有一个提纲 ， 看起来太操蛋了。问了作者， 作者说 ， 你运行下主函数， 然后慢慢跟 。。。<br>\n<img src=\"https://upload-images.jianshu.io/upload_images/10769157-b274b7acaecf49bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></p>\n<p>没有目的地概览 ， 不知不觉就追究到细节里面去了。</p>\n<p><img src=\"https://upload-images.jianshu.io/upload_images/10769157-1304cc87fcd42cae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></p>\n<p>所以这一篇文章的目地就是 ， 如何在没有提纲的情况下 ， 能更好的只关注流程 ， 而不是细节 。</p>\n<p>开始 ：</p>\n<ol>\n<li>python DEBUG 模块介绍 :<br>\n　前段时间看过挺多文章提到 pysoonper 这个调试模块，有兴趣的可以百度一下.<br>\n 个人尝试了一下，篇幅过大的 DEBUG 不适合用 pysoonper , 因为没有缩进！<br>\n　这几天偶然遇到一个二次封装的模块<a href=\"%5Bhttps://github.com/alexmojaki/snoop%5D(https://github.com/alexmojaki/snoop)\"> snoop</a>, 完美地解决了这个问题.</li>\n<li>操作步骤 :</li>\n</ol>\n<ul>\n<li>1 .  在 <code>eric6.py</code>  的 <code>main()</code>  函数上加 snoop 装饰器；<br>\n<img src=\"https://upload-images.jianshu.io/upload_images/10769157-74129f6a6c303b25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></li>\n<li>2 . 用 vscode 打开  <code>eric6start_.log</code>   文件 (8 层深度 log 文件 34W 行，pycharm 对大文件支持很差);<br>\n<img src=\"https://upload-images.jianshu.io/upload_images/10769157-ae946c117a082c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"log文件\"></li>\n</ul>\n<p>发现可以折叠 ， 但是最大可折叠等级只到 5 级 ， 而且无法对对应等级折叠 ， 有点遗憾 。也许是.log 格式选得不太好， 不知道是否有更好的后缀格式。</p>\n<ul>\n<li>3 . vscode 配置 log 文件关键字高亮；<br>\n安装高亮插件<br>\n<img src=\"https://upload-images.jianshu.io/upload_images/10769157-8f6fee2356d7071d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"><br>\n 配置高亮关键字<br>\n<img src=\"https://upload-images.jianshu.io/upload_images/10769157-a135fd015409b3da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></li>\n</ul>\n<p>将 <code>call</code>  和 <code>return</code>  给加进去.</p>\n<ul>\n<li>4 . 增加阶段关键字；</li>\n</ul>\n<p><img src=\"https://upload-images.jianshu.io/upload_images/10769157-c39d01a02149e808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"eric6启动阶段\"></p>\n<p><img src=\"https://upload-images.jianshu.io/upload_images/10769157-aef5704c36824dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></p>\n<p>加 <code>#000</code>  是为了方便搜索 。<br>\n需要自己手动折叠 。<br>\n可以发现 每个 <code>splash.showMessage()</code>  都是一个阶段 ， 展开折叠之后就是每个阶段具体执行细节 。</p>\n<hr>\n<h3 id=\"ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢\"><a class=\"markdownIt-Anchor\" href=\"#ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢\">#</a> ps: vscode 阅读 log 文件还是有一些不方便的地方，除了在 2. 中提到的，还有包括关闭文件再打开，折叠状态不会保留，有其他更好的方式 请留言告诉我，谢谢.</h3>\n",
+            "tags": [
+                "Python",
+                "debug",
+                "snoop"
+            ]
+        }
+    ]
+}

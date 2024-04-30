@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;窗口&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 23 Oct 2018 07:08:56 +0000</pubDate>
+        <lastBuildDate>Tue, 23 Oct 2018 07:08:56 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/followwindow.html</guid>
+            <title>PyQt5窗口跟随其它窗口</title>
+            <link>https://pyqt5.com/followwindow.html</link>
+            <category>PyQt</category>
+            <category>窗口</category>
+            <pubDate>Tue, 23 Oct 2018 07:08:56 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;要实现 &lt;code&gt;PyQt&lt;/code&gt;  窗口跟随其它外部的窗口，能想到两点办法，一个是 hook 系统事件得到目标窗口的位置和大小以及是否关闭等，二是通过循环检测窗口的位置来实现。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;基于windows定时检测目标窗口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基于windows定时检测目标窗口&#34;&gt;#&lt;/a&gt; 基于 Windows 定时检测目标窗口&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;利用 &lt;code&gt;win32gui&lt;/code&gt;  模块获取目标窗口的句柄&lt;/li&gt;
+&lt;li&gt;通过句柄获取目标窗口的大小位置，并设置自己的位置&lt;/li&gt;
+&lt;li&gt;主要是检测时间，在 10 毫秒以下很流畅&lt;/li&gt;
+&lt;li&gt;窗口关闭是根据目标句柄无效来判断&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/Demo/FollowWindow.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/Demo/FollowWindow.py&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
+Created on 2018年10月22日
+@author: Irony
+@site: https://github.com/892768447
+@email: 892768447@qq.com
+@file: FollowWindow
+@description: 
+&#34;&#34;&#34;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; os
+
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtCore &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QTimer
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QPushButton
+&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; win32gui
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;By: Irony
+QQ: 892768447
+Email: 892768447@qq.com&#34;&#34;&#34;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Copyright (c) 2018 Irony&#34;&lt;/span&gt;
+__Version__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Version 1.0&#34;&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWidget&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Window&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPushButton&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;test&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tmpHwnd &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 启动定时器检测记事本的位置大小和是否关闭&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;checkTimer &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QTimer&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; timeout&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;checkWindow&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;checkTimer&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 10毫秒比较流畅&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;checkWindow&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 查找&lt;/span&gt;
+        hwnd &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; win32gui&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;FindWindow&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Notepad&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tmpHwnd &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 表示记事本关闭了&lt;/span&gt;
+            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;checkTimer&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stop&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;close&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 关闭自己&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;tmpHwnd &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; hwnd
+        &lt;span class=&#34;token comment&#34;&gt;# 获取位置&lt;/span&gt;
+        rect &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; win32gui&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;GetWindowRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;hwnd&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;rect&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;move&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;rect&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; rect&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; __name__ &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;__main__&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys
+    &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QApplication
+    &lt;span class=&#34;token comment&#34;&gt;# 先检测是否已有记事本打开&lt;/span&gt;
+    hwnd &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; win32gui&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;FindWindow&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Notepad&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;hwnd&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 启动记事本&lt;/span&gt;
+        os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;startfile&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;notepad&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    app &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QApplication&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;argv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Window&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;app&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exec_&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/PyQt/Demo/ScreenShot/FollowWindow.gif&#34; alt=&#34;FollowWindow&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

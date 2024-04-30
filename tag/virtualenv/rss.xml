@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;virtualenv&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 02 May 2019 07:21:01 +0000</pubDate>
+        <lastBuildDate>Thu, 02 May 2019 07:21:01 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/virtualenvpy_625781186.html</guid>
+            <title>python 拷贝虚拟环境(一) 　</title>
+            <link>https://pyqt5.com/virtualenvpy_625781186.html</link>
+            <category>Python</category>
+            <category>virtualenvwrapper</category>
+            <category>virtualenv</category>
+            <pubDate>Thu, 02 May 2019 07:21:01 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;通常来说，刚开始使用 python 的时候都是把包装到全局路径，随着各个项目安装的包越来越多，之后每开始一个项目，pycharm 创建索引的时间都越来越漫长，所以不可避免得开始使用虚拟环境。&lt;br&gt;
+经过一番了解 ，虚拟环境的优点有这些：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改善 pycharm 索引时间；&lt;/li&gt;
+&lt;li&gt;各个项目的库不会冲突；&lt;/li&gt;
+&lt;li&gt;理论上虚拟环境可以给同版本的操作系统使用 (未试验过);&lt;/li&gt;
+&lt;li&gt;pip freeze &amp;gt; requestment.txt 导出的依赖清晰；&lt;/li&gt;
+&lt;li&gt;各个版本的 python 共存；&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;python 虚拟环境库除了自带的 venv , 还有三方库 &lt;code&gt;virtualenv&lt;/code&gt;  , 此外 在 &lt;code&gt;virtualenv&lt;/code&gt;  基础上又开发了 &lt;code&gt;virtualenvwrapper(virtualenvwrapper_win)&lt;/code&gt;  来管理&lt;/p&gt;
+&lt;p&gt;本文基于 &lt;code&gt;virtualenvwrapper&lt;/code&gt;  创建的虚拟环境来讲解.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;以下是收集的一些virtualenvwrapper配置教程:
+# linux平台
+https://www.cnblogs.com/netfoxman/p/5994697.html
+# window平台
+https://blog.csdn.net/shaququ/article/details/54292043  　
+https://blog.csdn.net/iaau0908/article/details/54021518
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;虚拟环境创建多了我们就会发现，&lt;br&gt;
+ 有时候使用相同版本的环境，一些常用的库是需要重新安装的，&lt;br&gt;
+ 那么能不能创建一个基础环境，默认拥有这些库，然后在这个基础环境上继续安装三方库呢？&lt;/p&gt;
+&lt;p&gt;本文经过试验发现是可行的:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;创建基础虚拟环境  &lt;code&gt;mkvirtualenv &amp;lt;环境名称&amp;gt; [-p空格python其他版本的解释器路径]&lt;/code&gt; .  例如  &lt;code&gt;mkvirtualenv py34 -p c:\Python34\python.exe&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切换到虚拟环境 &lt;code&gt;workon py34&lt;/code&gt;  , 然后安装一下三方库，然后复制 &lt;code&gt;py34&lt;/code&gt;  这个文件夹备份一下；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着复制这个 &lt;code&gt;py34&lt;/code&gt;  文件夹，把复制后的文件夹改名为我们需要需要的文件夹例如 &lt;code&gt;new34&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入 &lt;code&gt;new34文件夹&lt;/code&gt; ，用任意编辑器全路径搜索 &lt;code&gt;py34&lt;/code&gt;  (替换虚拟环境的路径)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除 &lt;code&gt;new34/Scripts&lt;/code&gt;  下的 &lt;code&gt;pip.exe, pip3.exe, pip3.x.exe, easy_install.exe&lt;/code&gt;  (因为安装路径硬编码到这里面了，改不了，需要重新安装)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/douniwan007009/article/details/81463958&#34;&gt;https://blog.csdn.net/douniwan007009/article/details/81463958&lt;/a&gt; 按方式二，源码安装  &lt;code&gt;setuptools&lt;/code&gt;  后再用 &lt;code&gt;easy_install pip&lt;/code&gt;  安装 pip 后，完成；&lt;br&gt;
+ 如果有问题，就继续按照方式一的源码安装 pip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;code&gt;new34&lt;/code&gt;  环境下 用 &lt;code&gt;pip show 三方库&lt;/code&gt;  来看一些库的位置，确保正确.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

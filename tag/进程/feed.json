@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"进程\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/processinclass_625781186.html",
+            "url": "https://pyqt5.com/processinclass_625781186.html",
+            "title": "python 在类里使用进程池",
+            "date_published": "2018-11-16T13:37:31.000Z",
+            "content_html": "<ol>\n<li>首先， 进程池的作用就是减少进程的创建和释放 开销的， 所以在类中作为局部变量是不合适的；</li>\n<li>其次， 进程池必须在 <code>if __name__ == &quot;__main__&quot; </code> 里 ，否则会报 frozen_ 什么什么的错误；（这一点可能解释有误）;</li>\n</ol>\n<span id=\"more\"></span>\n<ol start=\"3\">\n<li>然后， 线程池的 <code>apply_async</code>  中如果传入 <code>self.xxx</code>  方法，会报 <code>multiprocessing.Pool pickling error</code>  什么的错误， 具体解释见 https://blog.csdn.net/dutsoft/article/details/70336462， 里面有解决方法，但是我没有成功（最开始测试没有现在理解的透彻， 不过应该是可以的）; 由于第 1 点 不合理， 所以有什么办法在类 函数中获取 进程池对象 po 的地址：</li>\n</ol>\n<p><img src=\"/images/processinclass1.png\" alt=\"processinclass1\"></p>\n<p>我的解决思路和方法是:</p>\n<ol>\n<li>通过 globals () 取得全局变量 ， 测试证明 ：不同文件的 <code>globals()</code>  是不同的： 如 <code>Tab2.py </code> 的  <code>globals()</code>  和 <code> main_extra_func_file.py</code>  中的  <code>globals() </code> 是不同的 ， 所以 这样在 <code>Tab2.py</code>  中取不到 po 对象；</li>\n<li>通过 <code>__main__.po</code>  来获取 （为什么会想到这个呢， 因为有时候导包 import .xxx 和 import xxx 会报  <code>__main__</code>  没有什么属性什么的）：</li>\n</ol>\n<pre class=\"line-numbers language-python\" data-language=\"python\"><code class=\"language-python\"><span class=\"token keyword\">def</span> <span class=\"token function\">getPoolObject</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">:</span>\n<span class=\"token comment\"># po 的名字在main函数中定义</span>\n<span class=\"token comment\"># __main__ 模块在sys.modules 的键是\"__mp_main__\"</span>\n    <span class=\"token keyword\">return</span> sys<span class=\"token punctuation\">.</span>modules<span class=\"token punctuation\">[</span><span class=\"token string\">\"__mp_main__\"</span><span class=\"token punctuation\">]</span><span class=\"token punctuation\">.</span>po<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span></span></code></pre>\n<p>ps : (图没截好 ，  <code>rglob_worker</code>  是外部函数 ， 非类内函数 ，po = getPoolBojcet () 这一行是类内函数 ，红色箭头 2. 在的那条白色分割线 是 2 个函数。)</p>\n<p><img src=\"/images/processinclass2.png\" alt=\"processinclass2\"></p>\n<p><code>len(po._cache) == 1</code>  : po._cache 是当前有任务的进程数， ==1 表示所有任务结束；利用回调 ， 可以更轻松地进行进程通信。</p>\n",
+            "tags": [
+                "进程"
+            ]
+        }
+    ]
+}

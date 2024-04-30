@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;图片&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 26 Oct 2018 02:00:08 +0000</pubDate>
+        <lastBuildDate>Fri, 26 Oct 2018 02:00:08 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/qtninepatch.html</guid>
+            <title>PyQt5显示.9格式的PNG图片</title>
+            <link>https://pyqt5.com/qtninepatch.html</link>
+            <category>PyQt</category>
+            <category>图片</category>
+            <category>气泡</category>
+            <category>.9png</category>
+            <pubDate>Fri, 26 Oct 2018 02:00:08 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;做过安卓开发的和使用过 QQ 的都知道 &lt;code&gt;.9.png&lt;/code&gt;  这种图片格式，效果就如 QQ 的聊天气泡一样可以拉伸，这种格式的图片允许开发人员定义可扩展区域，当需要延伸图片以填充比图片本身更大区域时，可扩展区的内容被延展；允许开发人员定义内容显示区，用于显示文字或其他内容。目前在 &lt;code&gt;Github&lt;/code&gt;  上有两个 C++ 版本的，在这里我把它们都用 Python 实现了一遍。另外一个我也为 &lt;code&gt;PyQt&lt;/code&gt;  提供了编译好的 pyd 文件。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;c版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#c版本&#34;&gt;#&lt;/a&gt; C++ 版本&lt;/h2&gt;
+&lt;p&gt;在 Github 开源库中搜索到两个 C++ 版本的&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一个是 &lt;a href=&#34;https://github.com/Roninsc2/NinePatchQt&#34;&gt;NinePatchQt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;一个是 &lt;a href=&#34;https://github.com/soramimi/QtNinePatch&#34;&gt;QtNinePatch&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;pyqt5版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pyqt5版本&#34;&gt;#&lt;/a&gt; PyQt5 版本&lt;/h2&gt;
+&lt;p&gt;这里也分为两个版本，都是基于上面的 C++ 源码翻译改写过来的，具体的例子见项目里面的测试代码吧。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QLabel/QtNinePatch.py&#34;&gt;QtNinePatch&lt;/a&gt; 是参考第一个源码编写，用法是在 &lt;code&gt;paintEvent&lt;/code&gt;  中调用&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QLabel/QtNinePatch2.py&#34;&gt;QtNinePatch2&lt;/a&gt; 是参考第二个源码编写，用法是 &lt;code&gt;pixmap = QtNinePatch.createPixmapFromNinePatchImage(self.image, self.width(), self.height())&lt;/code&gt;  直接得到一个处理好的 &lt;code&gt;QPixmap&lt;/code&gt;  对象来使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#说明&#34;&gt;#&lt;/a&gt; 说明&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;建议优先使用 pyd 版本的（后续提供 Python3.4 3.5 3.6 3.7 编译好的 32 为库文件），也可以自行编译，编译步骤见下文。&lt;/li&gt;
+&lt;li&gt;其次可以使用纯 python 版本 2 的（个人觉得方便调用）&lt;/li&gt;
+&lt;li&gt;最后再考虑纯 python 版本 1 的吧&lt;/li&gt;
+&lt;li&gt;以上为个人意见，两个 C++ 版本的写法不一样，但是核心算法应该是类似的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;自行编译&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#自行编译&#34;&gt;#&lt;/a&gt; 自行编译&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;首先要安装好 Qt、PyQt5、编译安装对应的 sip、对应的 VC++ 编译工具&lt;/li&gt;
+&lt;li&gt;用 Qt Creator 打开 pro 文件进行编译&lt;/li&gt;
+&lt;li&gt;进入源码中的 sip 文件夹修改 configure.py 文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;# 这里是你的VC版本和对应的Qt目录中的文件夹
+config.platform &amp;#x3D; &amp;quot;win32-msvc2010&amp;quot;
+qt_path &amp;#x3D; &amp;#39;D:&amp;#x2F;soft&amp;#x2F;Qt&amp;#x2F;Qt5.5.1&amp;#x2F;5.5&amp;#x2F;msvc2010&amp;#39;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;最后执行 python configure.py 来编译&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载&#34;&gt;#&lt;/a&gt; 下载&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/tree/master/QLabel&#34;&gt;https://github.com/PyQt5/PyQt/tree/master/QLabel&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/PyQt/QLabel/ScreenShot/NinePatchImage.gif&#34; alt=&#34;NinePatchImage&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/circleimage.html</guid>
+            <title>PyQt5圆形图片</title>
+            <link>https://pyqt5.com/circleimage.html</link>
+            <category>PyQt</category>
+            <category>圆形</category>
+            <category>图片</category>
+            <pubDate>Tue, 25 Sep 2018 14:13:26 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;实现圆形图片的方法有很多，比如用遮罩（mask）, 裁切等等。这里比较几种实现方式，选出个人认为最优的方案。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QLabel/CircleImage.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/QLabel/CircleImage.py&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;采用mask方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#采用mask方式&#34;&gt;#&lt;/a&gt; 采用 mask 方式&lt;/h2&gt;
+&lt;p&gt;具体参考 &lt;a href=&#34;https://www.cnblogs.com/zhehan54/p/9515124.html&#34;&gt;【Qt】QLabel 实现的圆形图像 - 米罗西 - 博客园&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;画圆形遮盖适合纯色背景&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#画圆形遮盖适合纯色背景&#34;&gt;#&lt;/a&gt; 画圆形遮盖（适合纯色背景）&lt;/h2&gt;
+&lt;p&gt;原理是在原图片上画一个 4 角有颜色，中间圆形镂空的图片。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/circleimage1.png&#34; alt=&#34;circleimage1&#34;&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#39;&#39;&#39;
+Created on 2017年8月25日
+@author: Irony.&#34;[讽刺]
+@site: https://pyqt5.com, https://github.com/892768447
+@email: 892768447@qq.com
+@description: 
+&#39;&#39;&#39;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtCore &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; Qt
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtGui &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QPixmap&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QPainter&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QPainterPath
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QLabel&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QHBoxLayout
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;By: Irony.\&#34;[讽刺]\nQQ: 892768447\nEmail: 892768447@qq.com&#34;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Copyright (c) 2017 Irony.\&#34;[讽刺]&#34;&lt;/span&gt;
+__Version__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Version 1.0&#34;&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Label&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QLabel&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; antialiasing&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Label&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Antialiasing &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; antialiasing
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setMaximumSize&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setMinimumSize&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;radius &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;
+
+        &lt;span class=&#34;token comment&#34;&gt;#加载图片并缩放&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;head.jpg&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;scaled&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+            &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;KeepAspectRatioByExpanding&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothTransformation&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        painter &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPainter&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Antialiasing&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Antialiasing&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;HighQualityAntialiasing&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothPixmapTransform&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        path &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPainterPath&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addRoundedRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+            &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;radius&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;radius&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setPen&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;NoPen&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setBrush&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;green&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drawPath&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWidget&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Window&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QHBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Label&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Label&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; antialiasing&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setStyleSheet&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;background: black;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; __name__ &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;__main__&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys
+    &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QApplication
+    app &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QApplication&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;argv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Window&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;app&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exec_&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;使用qpainter的setcompositionmode&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用qpainter的setcompositionmode&#34;&gt;#&lt;/a&gt; 使用 QPainter 的 setCompositionMode&lt;/h2&gt;
+&lt;p&gt;具体参考 &lt;a href=&#34;https://qtdream.com/topic/911/qt-%E5%9C%86%E5%BD%A2%E5%A4%B4%E5%83%8F%E5%88%B6%E4%BD%9C%E5%B7%A5%E5%85%B7-%E6%8A%97%E9%94%AF%E9%BD%BF-%E5%8F%AF%E7%BC%A9%E6%94%BE%E7%BC%96%E8%BE%91&#34;&gt;Qt 圆形头像制作工具 抗锯齿 可缩放编辑&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-c++&#34; data-language=&#34;c++&#34;&gt;&lt;code class=&#34;language-c++&#34;&gt;&amp;#x2F;&amp;#x2F;result_avatar_size 是我们最后生成的图片的长宽，可以是QSize(200, 200)的正圆
+destination_image &amp;#x3D; QImage(result_avatar_size, QImage::Format_ARGB32_Premultiplied);
+&amp;#x2F;&amp;#x2F;在黑色的正方形中间画一个透明的圆，作为头像遮罩
+QPainter painter(&amp;amp;destination_image);
+painter.setRenderHint(QPainter::Antialiasing);
+&amp;#x2F;&amp;#x2F;全涂黑
+painter.fillRect(destination_image.rect(), QBrush(Qt::black, Qt::SolidPattern));
+painter.setCompositionMode(QPainter::CompositionMode_SourceOut);
+painter.setPen(Qt::NoPen);
+painter.setBrush(QBrush(Qt::transparent, Qt::SolidPattern));
+&amp;#x2F;&amp;#x2F;画透明区域
+painter.drawEllipse(destination_image.rect());&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;使用qpainter的切割方法推荐&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用qpainter的切割方法推荐&#34;&gt;#&lt;/a&gt; 使用 QPainter 的切割方法（推荐）&lt;/h2&gt;
+&lt;p&gt;利用 &lt;code&gt;QPainter.setClipPath&lt;/code&gt;  方法切割一个圆形的 &lt;code&gt;QPainterPath&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/circleimage2.png&#34; alt=&#34;circleimage2&#34;&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#39;&#39;&#39;
+Created on 2017年8月25日
+@author: Irony.&#34;[讽刺]
+@site: https://pyqt5.com, https://github.com/892768447
+@email: 892768447@qq.com
+@file: 
+@description: 
+&#39;&#39;&#39;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtCore &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; Qt
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtGui &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QPixmap&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QPainter&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QPainterPath&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QPen
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QLabel&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QHBoxLayout
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;By: Irony.\&#34;[讽刺]\nQQ: 892768447\nEmail: 892768447@qq.com&#34;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Copyright (c) 2017 Irony.\&#34;[讽刺]&#34;&lt;/span&gt;
+__Version__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;Version 1.0&#34;&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Label&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QLabel&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; antialiasing&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Label&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Antialiasing &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; antialiasing
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setMaximumSize&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setMinimumSize&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;radius &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;
+
+        &lt;span class=&#34;token comment&#34;&gt;#####################核心实现#########################&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;target &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;size&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 大小和控件一样&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;fill&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;transparent&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 填充背景为透明&lt;/span&gt;
+
+        p &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;head.jpg&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;scaled&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 加载图片并缩放和控件一样大&lt;/span&gt;
+            &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;KeepAspectRatioByExpanding&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothTransformation&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        painter &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPainter&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Antialiasing&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 抗锯齿&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Antialiasing&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;HighQualityAntialiasing&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothPixmapTransform&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;#         painter.setPen(# 测试黑色圆圈&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#             QPen(Qt.black, 5, Qt.SolidLine, Qt.RoundCap, Qt.RoundJoin))&lt;/span&gt;
+        path &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPainterPath&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addRoundedRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+            &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;radius&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;radius&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;#**** 切割为圆形 ****#&lt;/span&gt;
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setClipPath&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#         painter.drawPath(path)  # 测试黑色圆圈&lt;/span&gt;
+
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drawPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;target&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;#####################核心实现#########################&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWidget&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Window&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QHBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Label&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Label&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; antialiasing&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;False&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setStyleSheet&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;background: black;&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; __name__ &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;__main__&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys
+    &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QApplication
+    app &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QApplication&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;argv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Window&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;app&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exec_&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt; ]]></description>
+        </item>
+    </channel>
+</rss>

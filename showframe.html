@@ -1,0 +1,380 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>PyQt5调整窗口显示边框 | PyQt</title><meta name="author" content="Irony"><meta name="copyright" content="Irony"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="在 windows  某些场景下调整窗口大小或者移动后就会导致里面的内容重绘（速度慢，卡顿，闪烁），其实在以前 windows  在低配置设备为了减少这种频繁绘制的情况，默认会开启这种效果，不过目前设备越来越好了就关闭了该功能。具体是在控制面板中 -&gt; 调整 Windows  的外观和性能 -&gt; 去掉勾选 拖动时显示窗口内容。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PyQt5调整窗口显示边框">
+<meta property="og:url" content="https://pyqt5.com/showframe.html">
+<meta property="og:site_name" content="PyQt">
+<meta property="og:description" content="在 windows  某些场景下调整窗口大小或者移动后就会导致里面的内容重绘（速度慢，卡顿，闪烁），其实在以前 windows  在低配置设备为了减少这种频繁绘制的情况，默认会开启这种效果，不过目前设备越来越好了就关闭了该功能。具体是在控制面板中 -&gt; 调整 Windows  的外观和性能 -&gt; 去掉勾选 拖动时显示窗口内容。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png">
+<meta property="article:published_time" content="2019-04-26T14:19:26.000Z">
+<meta property="article:modified_time" content="2024-04-30T01:46:52.392Z">
+<meta property="article:author" content="Irony">
+<meta property="article:tag" content="PyQt">
+<meta property="article:tag" content="边框">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://pyqt5.com/showframe.html"><link rel="preconnect" href="https://jsd.012700.xyz"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="L09MDi9gA7mFqsqWfcVVtK_yhV7tPcfBIthuPs-zK4g"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://jsd.012700.xyz/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://jsd.012700.xyz/npm/@fancyapps/ui@latest/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f7dfd656bdac4e76da8b54bba2978f0b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "j6xye2x6np");</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":730,"position":"top","messagePrev":"距离上次更新已经过了","messageNext":"天，文章所描述的内容可能已经发生变化，请留意。"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":220},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":150,"languages":{"author":"作者: Irony","link":"链接: ","source":"来源: PyQt","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://jsd.012700.xyz/npm/@egjs/infinitegrid@latest/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'PyQt5调整窗口显示边框',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-30 09:46:52'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="preconnect" href="https://jsd.012700.xyz"><link href="/self/btf.css" rel="stylesheet"><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="PyQt" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/images/2.gif" data-lazy-src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">46</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png')"><nav id="nav"><span id="blog-info"><a href="/" title="PyQt"><span class="site-name">PyQt</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">PyQt5调整窗口显示边框<a class="post-edit-link" href="https://github.com/PyQt5/blog/edit/dev/source/_posts/showframe.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2019-04-26T14:19:26.000Z" title="发表于 2019-04-26 22:19:26">2019-04-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">674</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="PyQt5调整窗口显示边框"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>在 <code>windows</code>  某些场景下调整窗口大小或者移动后就会导致里面的内容重绘（速度慢，卡顿，闪烁），其实在以前 <code>windows</code>  在低配置设备为了减少这种频繁绘制的情况，默认会开启这种效果，不过目前设备越来越好了就关闭了该功能。具体是在控制面板中 -&gt; 调整 <code>Windows</code>  的外观和性能 -&gt; 去掉勾选 拖动时显示窗口内容。</p>
+<span id="more"></span>
+<p>由于这个开关是全局状态的，而我们只需要在自己的窗口中实现该效果有两种方式。</p>
+<ol>
+<li>一种是自己绘制一个边框效果，放开鼠标时才操作真正的窗口。</li>
+<li>二是替换窗口的处理过程函数 <code>wndproc</code>  处理 <code>WM_NCLBUTTONDOWN</code>  消息事件。</li>
+</ol>
+<p>今天讲第二种方法：</p>
+<ol>
+<li>需要了解  <code>SystemParametersInfo</code>  API 函数</li>
+<li><code>SPI_GETDRAGFULLWINDOWS</code> ：确定是否允许拖拉到最大窗口</li>
+<li><code>SPI_SETDRAGFULLWINDOWS</code> ：设置是否允许拖至最大窗口</li>
+</ol>
+<p>效果就是这样的：</p>
+<p><img src= "/images/2.gif" data-lazy-src="/PyQt/Demo/ScreenShot/ShowFrameWhenDrag.gif" alt="ShowFrameWhenDrag"></p>
+<p>正如图片所看的那样，窗体在移动的时候，窗体并没有绘制出来，而是绘制出窗体的边框，等到窗体不在移动的时候就直接把窗体图像数据全部绘制出来，这样就避免了窗体在移动的时候出现闪烁的现象。</p>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码">#</a> 代码</h2>
+<p><a target="_blank" rel="noopener" href="https://github.com/PyQt5/PyQt/blob/master/Demo/ShowFrameWhenDrag.py">https://github.com/PyQt5/PyQt/blob/master/Demo/ShowFrameWhenDrag.py</a></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#!/usr/bin/env python</span>
+<span class="token comment"># -*- coding: utf-8 -*-</span>
+
+<span class="token triple-quoted-string string">"""
+Created on 2019年4月23日
+@author: Irony
+@site: https://pyqt5.com https://github.com/892768447
+@email: 892768447@qq.com
+@file: ShowFrameWhenDrag
+@description: 调整窗口显示边框
+"""</span>
+<span class="token keyword">from</span> ctypes <span class="token keyword">import</span> sizeof<span class="token punctuation">,</span> windll<span class="token punctuation">,</span> c_int<span class="token punctuation">,</span> byref<span class="token punctuation">,</span> c_long<span class="token punctuation">,</span> c_void_p<span class="token punctuation">,</span> c_ulong<span class="token punctuation">,</span> c_longlong<span class="token punctuation">,</span>\
+    c_ulonglong<span class="token punctuation">,</span> WINFUNCTYPE<span class="token punctuation">,</span> c_uint
+
+<span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QWidget<span class="token punctuation">,</span> QVBoxLayout<span class="token punctuation">,</span> QLabel
+
+
+__Author__ <span class="token operator">=</span> <span class="token string">'Irony'</span>
+__Copyright__ <span class="token operator">=</span> <span class="token string">'Copyright (c) 2019 Irony'</span>
+__Version__ <span class="token operator">=</span> <span class="token number">1.0</span>
+
+<span class="token keyword">if</span> sizeof<span class="token punctuation">(</span>c_long<span class="token punctuation">)</span> <span class="token operator">==</span> sizeof<span class="token punctuation">(</span>c_void_p<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    WPARAM <span class="token operator">=</span> c_ulong
+    LPARAM <span class="token operator">=</span> c_long
+<span class="token keyword">elif</span> sizeof<span class="token punctuation">(</span>c_longlong<span class="token punctuation">)</span> <span class="token operator">==</span> sizeof<span class="token punctuation">(</span>c_void_p<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    WPARAM <span class="token operator">=</span> c_ulonglong
+    LPARAM <span class="token operator">=</span> c_longlong
+
+WM_NCLBUTTONDOWN <span class="token operator">=</span> <span class="token number">0x00a1</span>
+GWL_WNDPROC <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">4</span>
+SPI_GETDRAGFULLWINDOWS <span class="token operator">=</span> <span class="token number">38</span>
+SPI_SETDRAGFULLWINDOWS <span class="token operator">=</span> <span class="token number">37</span>
+WNDPROC <span class="token operator">=</span> WINFUNCTYPE<span class="token punctuation">(</span>c_long<span class="token punctuation">,</span> c_void_p<span class="token punctuation">,</span> c_uint<span class="token punctuation">,</span> WPARAM<span class="token punctuation">,</span> LPARAM<span class="token punctuation">)</span>
+
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    CallWindowProc <span class="token operator">=</span> windll<span class="token punctuation">.</span>user32<span class="token punctuation">.</span>CallWindowProcW
+    SetWindowLong <span class="token operator">=</span> windll<span class="token punctuation">.</span>user32<span class="token punctuation">.</span>SetWindowLongW
+    SystemParametersInfo <span class="token operator">=</span> windll<span class="token punctuation">.</span>user32<span class="token punctuation">.</span>SystemParametersInfoW
+<span class="token keyword">except</span><span class="token punctuation">:</span>
+    CallWindowProc <span class="token operator">=</span> windll<span class="token punctuation">.</span>user32<span class="token punctuation">.</span>CallWindowProcA
+    SetWindowLong <span class="token operator">=</span> windll<span class="token punctuation">.</span>user32<span class="token punctuation">.</span>SetWindowLongA
+    SystemParametersInfo <span class="token operator">=</span> windll<span class="token punctuation">.</span>user32<span class="token punctuation">.</span>SystemParametersInfoA
+
+
+<span class="token keyword">def</span> <span class="token function">GetDragFullwindows</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    rv <span class="token operator">=</span> c_int<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    SystemParametersInfo<span class="token punctuation">(</span>SPI_GETDRAGFULLWINDOWS<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> byref<span class="token punctuation">(</span>rv<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> rv<span class="token punctuation">.</span>value
+
+
+<span class="token keyword">def</span> <span class="token function">SetDragFullwindows</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    SystemParametersInfo<span class="token punctuation">(</span>SPI_SETDRAGFULLWINDOWS<span class="token punctuation">,</span> value<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Window</span><span class="token punctuation">(</span>QWidget<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> <span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token builtin">super</span><span class="token punctuation">(</span>Window<span class="token punctuation">,</span> self<span class="token punctuation">)</span><span class="token punctuation">.</span>__init__<span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">,</span> <span class="token operator">**</span>kwargs<span class="token punctuation">)</span>
+        layout <span class="token operator">=</span> QVBoxLayout<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+        layout<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>QLabel<span class="token punctuation">(</span><span class="token string">'拖动或者调整窗口试试看'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token comment"># 重点替换窗口处理过程</span>
+        self<span class="token punctuation">.</span>_newwndproc <span class="token operator">=</span> WNDPROC<span class="token punctuation">(</span>self<span class="token punctuation">.</span>_wndproc<span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>_oldwndproc <span class="token operator">=</span> SetWindowLong<span class="token punctuation">(</span>
+            <span class="token builtin">int</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>winId<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> GWL_WNDPROC<span class="token punctuation">,</span> self<span class="token punctuation">.</span>_newwndproc<span class="token punctuation">)</span>
+
+    <span class="token keyword">def</span> <span class="token function">_wndproc</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> hwnd<span class="token punctuation">,</span> msg<span class="token punctuation">,</span> wparam<span class="token punctuation">,</span> lparam<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> msg <span class="token operator">==</span> WM_NCLBUTTONDOWN<span class="token punctuation">:</span>
+            <span class="token comment"># 获取系统本身是否已经开启</span>
+            isDragFullWindow <span class="token operator">=</span> GetDragFullwindows<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">if</span> isDragFullWindow <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                <span class="token comment"># 开启虚线框</span>
+                SetDragFullwindows<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+                <span class="token comment"># 系统本身处理</span>
+                ret <span class="token operator">=</span> CallWindowProc<span class="token punctuation">(</span>
+                    self<span class="token punctuation">.</span>_oldwndproc<span class="token punctuation">,</span> hwnd<span class="token punctuation">,</span> msg<span class="token punctuation">,</span> wparam<span class="token punctuation">,</span> lparam<span class="token punctuation">)</span>
+                <span class="token comment"># 关闭虚线框</span>
+                SetDragFullwindows<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> ret
+        <span class="token keyword">return</span> CallWindowProc<span class="token punctuation">(</span>self<span class="token punctuation">.</span>_oldwndproc<span class="token punctuation">,</span> hwnd<span class="token punctuation">,</span> msg<span class="token punctuation">,</span> wparam<span class="token punctuation">,</span> lparam<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    <span class="token keyword">import</span> sys
+    <span class="token keyword">from</span> PyQt5<span class="token punctuation">.</span>QtWidgets <span class="token keyword">import</span> QApplication
+    app <span class="token operator">=</span> QApplication<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+    w <span class="token operator">=</span> Window<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    w<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sys<span class="token punctuation">.</span>exit<span class="token punctuation">(</span>app<span class="token punctuation">.</span>exec_<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="片尾"><a class="markdownIt-Anchor" href="#片尾">#</a> 片尾</h2>
+<p>替换窗口过程可以处理很多系统窗口的处理过程，更多需要读者自行去发现。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://pyqt5.com">Irony</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://pyqt5.com/showframe.html">https://pyqt5.com/showframe.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://pyqt5.com" target="_blank">PyQt</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/PyQt/">PyQt</a><a class="post-meta__tags" href="/tags/%E8%BE%B9%E6%A1%86/">边框</a></div><div class="post_share"><div class="social-share" data-image="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png" data-sites="facebook,twitter,google,douban,wechat,weibo,qq,qzone"></div><link rel="stylesheet" href="https://jsd.012700.xyz/npm/butterfly-extsrc@latest/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://jsd.012700.xyz/npm/butterfly-extsrc@latest/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/images/weixin.png" target="_blank"><img class="post-qr-code-img" src= "/images/2.gif" data-lazy-src="/images/weixin.png" alt="微信付"/></a><div class="post-qr-code-desc">微信付</div></li><li class="reward-item"><a href="/images/zhifubao.png" target="_blank"><img class="post-qr-code-img" src= "/images/2.gif" data-lazy-src="/images/zhifubao.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/viewpyindesigner_625781186.html" title="如何和设计师中查看ui转换的py代码"><img class="cover" src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-4.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">如何和设计师中查看ui转换的py代码</div></div></a></div><div class="next-post pull-right"><a href="/issignalconnected.html" title="PyQt5判断信号是否连接"><img class="cover" src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-9.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">PyQt5判断信号是否连接</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/QPropertyAnimation.html" title="PyQt属性动画(QPropertyAnimation)"><img class="cover" src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-05-08</div><div class="title">PyQt属性动画(QPropertyAnimation)</div></div></a></div><div><a href="/animateshadow.html" title="PyQt5动画边框阴影"><img class="cover" src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-9.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-09-25</div><div class="title">PyQt5动画边框阴影</div></div></a></div><div><a href="/bindsignals.html" title="三种方式绑定信号槽"><img class="cover" src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-05-04</div><div class="title">三种方式绑定信号槽</div></div></a></div><div><a href="/circleimage.html" title="PyQt5圆形图片"><img class="cover" src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-10.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-09-25</div><div class="title">PyQt5圆形图片</div></div></a></div><div><a href="/datawidgetmapper_625781186.html" title="QDataWidgetMapper 数据库绑定 QLineEdit控件"><img class="cover" src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-3.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-10-29</div><div class="title">QDataWidgetMapper 数据库绑定 QLineEdit控件</div></div></a></div><div><a href="/flipwidgetanimation.html" title="PyQt5窗口翻转动画"><img class="cover" src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-05-15</div><div class="title">PyQt5窗口翻转动画</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/images/2.gif" data-lazy-src="/images/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Irony</div><div class="author-info__description">Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">46</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/PyQt5"><i class="fab fa-github"></i><span>PyQt Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://jq.qq.com/?_wv=1027&amp;k=5QVVEdF" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #68B2F6;"></i></a><a class="social-icon" href="https://pd.qq.com/s/157c1hiay" target="_blank" title="Comment"><i class="far fa-comment" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://github.com/PyQt5" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:892768447@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div class="aside-qrcode"> <a href="https://jq.qq.com/?_wv=1027&k=5QVVEdF" alt="PyQt 学习" target="_blank"> <img src= "/images/2.gif" data-lazy-src="/images/PyQt_Group.png" width="241px"> </a> <p style="text-align: center"> or </p> <a href="https://pd.qq.com/s/157c1hiay" alt="PyQt 频道" target="_blank"> <img src= "/images/2.gif" data-lazy-src="/images/PyQt_Guild.png" width="241px"> </a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text"> 代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%87%E5%B0%BE"><span class="toc-number">2.</span> <span class="toc-text"> 片尾</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/pytest_qt_modal_625781186.html" title="pytest-qt 测试模态窗体."><img src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="pytest-qt 测试模态窗体."/></a><div class="content"><a class="title" href="/pytest_qt_modal_625781186.html" title="pytest-qt 测试模态窗体.">pytest-qt 测试模态窗体.</a><time datetime="2024-04-30T01:46:52.392Z" title="发表于 2024-04-30 09:46:52">2024-04-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/macm1pyqt.html" title="如何在Mac M1上快速安装PyQt5"><img src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-4.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何在Mac M1上快速安装PyQt5"/></a><div class="content"><a class="title" href="/macm1pyqt.html" title="如何在Mac M1上快速安装PyQt5">如何在Mac M1上快速安装PyQt5</a><time datetime="2023-10-07T06:08:06.000Z" title="发表于 2023-10-07 14:08:06">2023-10-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/equal_str_width_625781186.html" title="python 判断屏幕等宽字符串的长度 　"><img src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python 判断屏幕等宽字符串的长度 　"/></a><div class="content"><a class="title" href="/equal_str_width_625781186.html" title="python 判断屏幕等宽字符串的长度 　">python 判断屏幕等宽字符串的长度 　</a><time datetime="2019-12-26T11:49:41.000Z" title="发表于 2019-12-26 19:49:41">2019-12-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/use_pyuic_insteadof_pyside2uic.html" title="修改pyuic代替pyside2-uic."><img src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="修改pyuic代替pyside2-uic."/></a><div class="content"><a class="title" href="/use_pyuic_insteadof_pyside2uic.html" title="修改pyuic代替pyside2-uic.">修改pyuic代替pyside2-uic.</a><time datetime="2019-12-26T11:49:41.000Z" title="发表于 2019-12-26 19:49:41">2019-12-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/studynotes.html" title="PyQt学习心得"><img src= "/images/2.gif" data-lazy-src="https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PyQt学习心得"/></a><div class="content"><a class="title" href="/studynotes.html" title="PyQt学习心得">PyQt学习心得</a><time datetime="2019-08-26T01:00:00.000Z" title="发表于 2019-08-26 09:00:00">2019-08-26</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://jsd.012700.xyz/gh/jerryc127/CDN/img/material-6.png')"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2024 By Irony</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">蜀ICP备18031575号-1</a>｜<a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/">蜀ICP备18031575号-2</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://jsd.012700.xyz/npm/hexo-theme-butterfly@latest/source/js/utils.min.js"></script><script src="https://jsd.012700.xyz/npm/hexo-theme-butterfly@latest/source/js/main.min.js"></script><script src="https://jsd.012700.xyz/npm/@fancyapps/ui@latest/dist/fancybox/fancybox.umd.min.js"></script><script src="https://jsd.012700.xyz/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://jsd.012700.xyz/npm/vanilla-lazyload@latest/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://jsd.012700.xyz/npm/mermaid@latest/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script data-pjax src="/self/btf.js"></script><script defer="defer" id="ribbon" src="https://jsd.012700.xyz/npm/butterfly-extsrc@latest/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script src="https://jsd.012700.xyz/npm/pjax@latest/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/talking/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="https://jsd.012700.xyz/npm/hexo-theme-butterfly@latest/source/js/search/local-search.min.js"></script></div></div></body></html>

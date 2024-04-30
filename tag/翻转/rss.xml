@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;翻转&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 15 May 2019 14:48:00 +0000</pubDate>
+        <lastBuildDate>Wed, 15 May 2019 14:48:00 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/flipwidgetanimation.html</guid>
+            <title>PyQt5窗口翻转动画</title>
+            <link>https://pyqt5.com/flipwidgetanimation.html</link>
+            <category>PyQt</category>
+            <category>动画</category>
+            <category>翻转</category>
+            <pubDate>Wed, 15 May 2019 14:48:00 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;QQ 的界面一直是用来模仿练习做界面的好东西，这里就有一个类似 QQ 登录界面的实现翻转效果，当然这里并没有用两个窗口去做，而是用了 &lt;code&gt;QStackedWidget&lt;/code&gt;  包含两个控件做切换，同时单独使用一个窗口做动画绘制。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;原理说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#原理说明&#34;&gt;#&lt;/a&gt; 原理说明&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;用了两个 &lt;code&gt;QLabel&lt;/code&gt;  来显示模拟的图片界面，并实现鼠标点击模拟真实的窗口对应位置点击&lt;/li&gt;
+&lt;li&gt;用了 &lt;code&gt;QStackedWidget&lt;/code&gt;  来存放上面的两个界面 &lt;code&gt;QLabel&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点击切换时主要是对上面的两个界面进行截图并传递给翻转动画窗口&lt;/li&gt;
+&lt;li&gt;通过 &lt;code&gt;setWindowOpacity&lt;/code&gt;  控制主窗口的显示隐藏（保留任务栏），当然也可以用 &lt;code&gt;hide&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;动画窗口 &lt;code&gt;FlipWidget.py&lt;/code&gt;  主要实现两张图片的翻转显示，考虑到 0-90 和 90-180 之前的情况，以及图片的缩放动画&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;核心实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#核心实现&#34;&gt;#&lt;/a&gt; 核心实现&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;主要是在 &lt;code&gt;paintEvent&lt;/code&gt;  方法中使用 &lt;code&gt;QTransform&lt;/code&gt;  对 &lt;code&gt;QPainter&lt;/code&gt;  进行圆心变换以及 &lt;code&gt;rotate&lt;/code&gt;  设置翻转角度&lt;/li&gt;
+&lt;li&gt;同时根据翻转的角度范围对图片进行切换和缩放&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;paintEvent&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; event&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;FlipWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;paintEvent&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;event&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;hasattr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;image1&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;hasattr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;image2&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;isVisible&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+        painter &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QPainter&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Antialiasing&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRenderHint&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QPainter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothPixmapTransform&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        &lt;span class=&#34;token comment&#34;&gt;# 变换&lt;/span&gt;
+        transform &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QTransform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# 把圆心设置为矩形中心&lt;/span&gt;
+        transform&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;translate&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;90&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;and&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;90&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 当翻转角度在90范围内显示第一张图，且从大图缩放到小图的过程&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;save&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 设置翻转角度&lt;/span&gt;
+            transform&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;rotate&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;YAxis&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setTransform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;transform&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 缩放图片高度&lt;/span&gt;
+            width &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;
+            height &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;
+                         &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;abs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Scale&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            image &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;scaled&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image1&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; height&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;IgnoreAspectRatio&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothTransformation&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drawPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                QPointF&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;height &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; image&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;restore&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 当翻转角度在90范围内显示第二张图，且从小图缩放到原图的过程&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;save&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                angle &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;180&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle
+            &lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                angle &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_angle &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;180&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 设置翻转角度， 注意这里角度有差异&lt;/span&gt;
+            transform&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;rotate&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;angle&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;YAxis&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setTransform&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;transform&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 缩放图片高度&lt;/span&gt;
+            width &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;
+            height &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;
+                         &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;360&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;abs&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;angle&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Scale &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            image &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;scaled&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;image2&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; height&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;IgnoreAspectRatio&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; Qt&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SmoothTransformation&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;drawPixmap&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                QPointF&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;height &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; image&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            painter&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;restore&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QPropertyAnimation/FlipWidgetAnimation.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/QPropertyAnimation/FlipWidgetAnimation.py&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/PyQt/QPropertyAnimation/ScreenShot/FlipWidgetAnimation.gif&#34; alt=&#34;FlipWidgetAnimation&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

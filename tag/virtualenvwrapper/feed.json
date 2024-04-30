@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"virtualenvwrapper\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/virtualenvpy_625781186.html",
+            "url": "https://pyqt5.com/virtualenvpy_625781186.html",
+            "title": "python 拷贝虚拟环境(一) 　",
+            "date_published": "2019-05-02T07:21:01.000Z",
+            "content_html": "<p>通常来说，刚开始使用 python 的时候都是把包装到全局路径，随着各个项目安装的包越来越多，之后每开始一个项目，pycharm 创建索引的时间都越来越漫长，所以不可避免得开始使用虚拟环境。<br>\n经过一番了解 ，虚拟环境的优点有这些：</p>\n<ul>\n<li>改善 pycharm 索引时间；</li>\n<li>各个项目的库不会冲突；</li>\n<li>理论上虚拟环境可以给同版本的操作系统使用 (未试验过);</li>\n<li>pip freeze &gt; requestment.txt 导出的依赖清晰；</li>\n<li>各个版本的 python 共存；</li>\n<li>…</li>\n</ul>\n<span id=\"more\"></span>\n<p>python 虚拟环境库除了自带的 venv , 还有三方库 <code>virtualenv</code>  , 此外 在 <code>virtualenv</code>  基础上又开发了 <code>virtualenvwrapper(virtualenvwrapper_win)</code>  来管理</p>\n<p>本文基于 <code>virtualenvwrapper</code>  创建的虚拟环境来讲解.</p>\n<pre><code>以下是收集的一些virtualenvwrapper配置教程:\n# linux平台\nhttps://www.cnblogs.com/netfoxman/p/5994697.html\n# window平台\nhttps://blog.csdn.net/shaququ/article/details/54292043  　\nhttps://blog.csdn.net/iaau0908/article/details/54021518\n</code></pre>\n<p>虚拟环境创建多了我们就会发现，<br>\n 有时候使用相同版本的环境，一些常用的库是需要重新安装的，<br>\n 那么能不能创建一个基础环境，默认拥有这些库，然后在这个基础环境上继续安装三方库呢？</p>\n<p>本文经过试验发现是可行的:</p>\n<ol>\n<li>\n<p>创建基础虚拟环境  <code>mkvirtualenv &lt;环境名称&gt; [-p空格python其他版本的解释器路径]</code> .  例如  <code>mkvirtualenv py34 -p c:\\Python34\\python.exe</code></p>\n</li>\n<li>\n<p>切换到虚拟环境 <code>workon py34</code>  , 然后安装一下三方库，然后复制 <code>py34</code>  这个文件夹备份一下；</p>\n</li>\n<li>\n<p>接着复制这个 <code>py34</code>  文件夹，把复制后的文件夹改名为我们需要需要的文件夹例如 <code>new34</code></p>\n</li>\n<li>\n<p>进入 <code>new34文件夹</code> ，用任意编辑器全路径搜索 <code>py34</code>  (替换虚拟环境的路径)</p>\n</li>\n<li>\n<p>删除 <code>new34/Scripts</code>  下的 <code>pip.exe, pip3.exe, pip3.x.exe, easy_install.exe</code>  (因为安装路径硬编码到这里面了，改不了，需要重新安装)</p>\n</li>\n<li>\n<p><a href=\"https://blog.csdn.net/douniwan007009/article/details/81463958\">https://blog.csdn.net/douniwan007009/article/details/81463958</a> 按方式二，源码安装  <code>setuptools</code>  后再用 <code>easy_install pip</code>  安装 pip 后，完成；<br>\n 如果有问题，就继续按照方式一的源码安装 pip;</p>\n</li>\n<li>\n<p>在 <code>new34</code>  环境下 用 <code>pip show 三方库</code>  来看一些库的位置，确保正确.</p>\n</li>\n</ol>\n",
+            "tags": [
+                "Python",
+                "virtualenvwrapper",
+                "virtualenv"
+            ]
+        }
+    ]
+}

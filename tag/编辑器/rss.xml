@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;编辑器&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 04 May 2019 10:04:08 +0000</pubDate>
+        <lastBuildDate>Sat, 04 May 2019 10:04:08 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/suggesteditor.html</guid>
+            <title>推荐编辑器LiClipse</title>
+            <link>https://pyqt5.com/suggesteditor.html</link>
+            <category>编辑器</category>
+            <pubDate>Sat, 04 May 2019 10:04:08 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;关于 Python 的开发编辑器有很多，每个人有每个人的喜好，经常看到很多在问什么编辑器好用，有人推荐 Sublime，有人推荐 Pycharm 等等，这里就不去比较其它编辑器的优缺点了，只谈谈关于 LiClipse 这个编辑器在初级使用阶段的智能提示功能等。开箱即用，支持多种语言，RST，Markdown 和 HTML 编辑器的 HTML 预览。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;其实 LiClipse 这个编辑器就是以前的 PyDev 插件的独立版本，基于 Eclipse 编辑器开发，去掉了 Java 的相关开发功能，关于软件的详细说明可以去官网查看： &lt;a href=&#34;http://www.liclipse.com/&#34;&gt;http://www.liclipse.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;编辑器只需要少量的配置，打开即可使用，快速自动 import，也可以根据需要安装自己所需的插件，比如 json、svn、主题插件等。个人推荐：适合刚入门的新手使用&lt;/p&gt;
+&lt;p&gt;由于新版的 PyQt 和 PyDev 去掉了详细的函数提示，所以 PyQt 的智能提示只有函数和返回值，并没有英文注释，但是以前的比如 PyQt4 的智能提示应该是有详细的英文注释提示。&lt;/p&gt;
+&lt;h2 id=&#34;界面预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#界面预览&#34;&gt;#&lt;/a&gt; 界面预览&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;主界面&lt;br&gt;
+&lt;img src=&#34;/images/editor1.png&#34; alt=&#34;editor1&#34;&gt;&lt;/li&gt;
+&lt;li&gt;鼠标悬停提示&lt;br&gt;
+&lt;img src=&#34;/images/editor2.png&#34; alt=&#34;editor2&#34;&gt;&lt;/li&gt;
+&lt;li&gt;输入提示&lt;br&gt;
+&lt;img src=&#34;/images/editor3.png&#34; alt=&#34;editor3&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Git 面板&lt;br&gt;
+&lt;img src=&#34;/images/editor4.png&#34; alt=&#34;editor4&#34;&gt;&lt;/li&gt;
+&lt;li&gt;全局搜索（Ctrl + H）&lt;br&gt;
+&lt;img src=&#34;/images/editor5.png&#34; alt=&#34;editor5&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/editor6.png&#34; alt=&#34;editor6&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;自动导包&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#自动导包&#34;&gt;#&lt;/a&gt; 自动导包&lt;/h2&gt;
+&lt;p&gt;其实这个功能我是非常喜欢的，通过按下快捷键即可自动寻找包名导入，快捷键 Ctrl + Shift + O&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_import.png&#34; alt=&#34;editor_import&#34;&gt;&lt;/p&gt;
+&lt;p&gt;也可以在标红的代码上按下 Ctrl + F1 进行导入&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_import2.png&#34; alt=&#34;editor_import2&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置&#34;&gt;#&lt;/a&gt; 配置&lt;/h2&gt;
+&lt;p&gt;打开编辑器后首先要配置【Window -&amp;gt; Preferences】的就是 Python 的环境变量，可以同时添加多个 Python 版本&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_env.png&#34; alt=&#34;editor_env&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tab等设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tab等设置&#34;&gt;#&lt;/a&gt; Tab 等设置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Insert spaces for tabs        tab 转空格&lt;/li&gt;
+&lt;li&gt;Show line numbers             显示行号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_tab.png&#34; alt=&#34;editor_tab&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;模版&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#模版&#34;&gt;#&lt;/a&gt; 模版&lt;/h2&gt;
+&lt;p&gt;这个功能可以快速插入自己定义好的模版代码，比如  &lt;code&gt;if __name__ == &#39;__main__&#39;:&lt;/code&gt;  等等，比如我这里配置的创建文件的模版&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_tpl.png&#34; alt=&#34;editor_tpl&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;常用快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用快捷键&#34;&gt;#&lt;/a&gt; 常用快捷键&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;格式化对齐&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl + Shift + F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;自动导包&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl + Shift + O&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;快捷提示&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Alt + /&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

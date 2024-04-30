@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;snoop&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 06 Jul 2019 17:37:22 +0000</pubDate>
+        <lastBuildDate>Sat, 06 Jul 2019 17:37:22 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/read_open_source.html</guid>
+            <title>像读文章一样读源码</title>
+            <link>https://pyqt5.com/read_open_source.html</link>
+            <category>Python</category>
+            <category>debug</category>
+            <category>snoop</category>
+            <pubDate>Sat, 06 Jul 2019 17:37:22 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;使用 snoop, 像读文章一样读源码。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;不得不说 开源项目没有一个提纲 ， 看起来太操蛋了。问了作者， 作者说 ， 你运行下主函数， 然后慢慢跟 。。。&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-b274b7acaecf49bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;没有目的地概览 ， 不知不觉就追究到细节里面去了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-1304cc87fcd42cae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以这一篇文章的目地就是 ， 如何在没有提纲的情况下 ， 能更好的只关注流程 ， 而不是细节 。&lt;/p&gt;
+&lt;p&gt;开始 ：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;python DEBUG 模块介绍 :&lt;br&gt;
+　前段时间看过挺多文章提到 pysoonper 这个调试模块，有兴趣的可以百度一下.&lt;br&gt;
+ 个人尝试了一下，篇幅过大的 DEBUG 不适合用 pysoonper , 因为没有缩进！&lt;br&gt;
+　这几天偶然遇到一个二次封装的模块&lt;a href=&#34;%5Bhttps://github.com/alexmojaki/snoop%5D(https://github.com/alexmojaki/snoop)&#34;&gt; snoop&lt;/a&gt;, 完美地解决了这个问题.&lt;/li&gt;
+&lt;li&gt;操作步骤 :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;1 .  在 &lt;code&gt;eric6.py&lt;/code&gt;  的 &lt;code&gt;main()&lt;/code&gt;  函数上加 snoop 装饰器；&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-74129f6a6c303b25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;2 . 用 vscode 打开  &lt;code&gt;eric6start_.log&lt;/code&gt;   文件 (8 层深度 log 文件 34W 行，pycharm 对大文件支持很差);&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-ae946c117a082c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;log文件&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;发现可以折叠 ， 但是最大可折叠等级只到 5 级 ， 而且无法对对应等级折叠 ， 有点遗憾 。也许是.log 格式选得不太好， 不知道是否有更好的后缀格式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 . vscode 配置 log 文件关键字高亮；&lt;br&gt;
+安装高亮插件&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-8f6fee2356d7071d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 配置高亮关键字&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-a135fd015409b3da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将 &lt;code&gt;call&lt;/code&gt;  和 &lt;code&gt;return&lt;/code&gt;  给加进去.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 . 增加阶段关键字；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-c39d01a02149e808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;eric6启动阶段&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-aef5704c36824dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;加 &lt;code&gt;#000&lt;/code&gt;  是为了方便搜索 。&lt;br&gt;
+需要自己手动折叠 。&lt;br&gt;
+可以发现 每个 &lt;code&gt;splash.showMessage()&lt;/code&gt;  都是一个阶段 ， 展开折叠之后就是每个阶段具体执行细节 。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢&#34;&gt;#&lt;/a&gt; ps: vscode 阅读 log 文件还是有一些不方便的地方，除了在 2. 中提到的，还有包括关闭文件再打开，折叠状态不会保留，有其他更好的方式 请留言告诉我，谢谢.&lt;/h3&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

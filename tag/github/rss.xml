@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;github&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 18 Apr 2019 00:59:06 +0000</pubDate>
+        <lastBuildDate>Thu, 18 Apr 2019 00:59:06 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/speedgithub.html</guid>
+            <title>解决GitHub下载速度缓慢的问题</title>
+            <link>https://pyqt5.com/speedgithub.html</link>
+            <category>Github</category>
+            <pubDate>Thu, 18 Apr 2019 00:59:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;由于 Github 的下载走的是 AWS - 亚马逊的路线，，so slow，跟乌龟一样慢。。照着一些方法改了 hosts 文件，偶尔能提提速度。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;windows&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#windows&#34;&gt;#&lt;/a&gt; Windows&lt;/h2&gt;
+&lt;p&gt;Hosts 文件的路径是：&lt;/p&gt;
+&lt;p&gt;C:\Windows\System32\drivers\etc&lt;/p&gt;
+&lt;h2 id=&#34;mac&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mac&#34;&gt;#&lt;/a&gt; Mac&lt;/h2&gt;
+&lt;p&gt;终端内输入：&lt;/p&gt;
+&lt;p&gt;sudo vim /etc/hosts&lt;/p&gt;
+&lt;h2 id=&#34;追加域名的ip地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#追加域名的ip地址&#34;&gt;#&lt;/a&gt; 追加域名的 IP 地址&lt;/h2&gt;
+&lt;p&gt;利用 https://www.ipaddress.com/ 来获得以下两个 GitHub 域名的 IP 地址：&lt;/p&gt;
+&lt;p&gt;(1) &lt;a href=&#34;http://github.com&#34;&gt;github.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(2) &lt;a href=&#34;http://github.global.ssl.fastly.net&#34;&gt;github.global.ssl.fastly.net&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;打开网页后，利用输入框内分别查询两个域名&lt;/p&gt;
+&lt;p&gt;将以上两段 IP 写入 Hosts 文件中：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;192.30.253.112               github.com
+151.101.185.194              github.global.ssl.fastly.net&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;保存。&lt;/p&gt;
+&lt;p&gt;刷新 DNS 缓存&lt;/p&gt;
+&lt;p&gt;在终端或 CMD 中，执行以下命令：&lt;/p&gt;
+&lt;p&gt;ipconfig /flushdns&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

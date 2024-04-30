@@ -1,0 +1,426 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;随笔&#34; category</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 26 Dec 2019 11:49:41 +0000</pubDate>
+        <lastBuildDate>Thu, 26 Dec 2019 11:49:41 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/equal_str_width_625781186.html</guid>
+            <title>python 判断屏幕等宽字符串的长度 　</title>
+            <link>https://pyqt5.com/equal_str_width_625781186.html</link>
+            <category>Python</category>
+            <pubDate>Thu, 26 Dec 2019 11:49:41 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;判断屏幕等宽字符串的长度？&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;判断屏幕等宽字符串的长度？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-58b19652011e153a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:41:50  @北京 - BUG 开发 - 黑择明 求指点&lt;br&gt;
+【专家】北京 - BUG 开发 - 黑择明  22:43:04  fontMetrics&lt;br&gt;
+【专家】 &lt;a href=&#34;https://pyqt.site&#34;&gt;https://pyqt.site&lt;/a&gt; (892768447) 22:43:54  QFontMetrics&lt;br&gt;
+【专家】 &lt;a href=&#34;https://pyqt.site&#34;&gt;https://pyqt.site&lt;/a&gt; (892768447) 22:44:09  通过 QLabel.font ().fontMetrics () 得到&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:52:00&lt;br&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/35771863/how-to-calculate-length-of-string-in-pixels-for-specific-font-and-size&#34;&gt;https://stackoverflow.com/questions/35771863/how-to-calculate-length-of-string-in-pixels-for-specific-font-and-size&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-9dc2f83609106252.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:53:15  感觉和 fontMetrics 应该是差不多的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-411570eeadf51793.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;【专家】北京 - BUG 开发 - 黑择明       (996742224) 11:29:04&lt;br&gt;
+fm = QFontMetrics(QFont())&lt;br&gt;
+fm.width(“qweqwe”)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/use_pyuic_insteadof_pyside2uic.html</guid>
+            <title>修改pyuic代替pyside2-uic.</title>
+            <link>https://pyqt5.com/use_pyuic_insteadof_pyside2uic.html</link>
+            <category>PyQt5 PySide2</category>
+            <pubDate>Thu, 26 Dec 2019 11:49:41 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;修改 pyuic 代替 pyside2-uic&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;修改 pyuic 代替 pyside2-uic.&lt;/p&gt;
+&lt;p&gt;最近看到挺多人用 pyside2 的 uic 编译 ui 文件有问题 .&lt;br&gt;
+ 写个解决办法.&lt;/p&gt;
+&lt;p&gt;首先，&lt;br&gt;
+ &lt;code&gt;pip install qtpy&lt;/code&gt;  ,&lt;br&gt;
+ 这个是兼容 pyqt5 和 pyside2 的，无缝转换 .&lt;/p&gt;
+&lt;p&gt;然后，&lt;br&gt;
+ 修改 pyqt5 的 uic ,&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-2ed1053f322c26a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;最后用 pyuic5 , 生成 Ui_XXX.py 文件 .&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/python_statemachine_625781186.html</guid>
+            <title>python 状态机模块 　</title>
+            <link>https://pyqt5.com/python_statemachine_625781186.html</link>
+            <category>Python</category>
+            <category>python 状态机</category>
+            <pubDate>Wed, 17 Jul 2019 09:03:33 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;用状态来取代 if…else 判断。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;GUI 涉及到挺多的状态改变，以前一直用 if…else 来判断，最近读了设计模式，发现有个状态模式，随后发现了状态机这个东西 .&lt;/p&gt;
+&lt;p&gt;python 的状态机模块挺多的，不过好像很多都不更新了.&lt;br&gt;
+ 推荐 2 个状态机模块，但是也没有太深入的使用经验，就跑跑例子，以后有更详细的 pyqt 例子再补上 .&lt;/p&gt;
+&lt;p&gt;1:  &lt;code&gt;pip install python-statemachine&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;官方例子 : &lt;a href=&#34;https://github.com/fgmacedo/python-statemachine&#34;&gt;https://github.com/fgmacedo/python-statemachine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2. &lt;code&gt;pip install state_machine&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;官方例子 : &lt;a href=&#34;https://github.com/jtushman/state_machine&#34;&gt;https://github.com/jtushman/state_machine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1 的 最近一次更新在 6 个月以前，使用 &lt;code&gt;类继承&lt;/code&gt; 和 &lt;code&gt;mixin&lt;/code&gt;  方式，不过有些地方不如 2 个人性化；&lt;/p&gt;
+&lt;p&gt;2 的设计更人性化一些，包括状态改变 &lt;code&gt;before&lt;/code&gt;  和  &lt;code&gt;after&lt;/code&gt;  , 不过由于是装饰器实现的动态增加属性，有些地方编辑器智能提示可能就靠不上了.&lt;/p&gt;
+&lt;p&gt;两者实现实现方式不一样，有兴趣可以读读源码 .&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;qt 内置状态机框架&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/amnes1a/article/details/62418196&#34;&gt;https://blog.csdn.net/amnes1a/article/details/62418196&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/dongfenghuojian/article/details/78187131&#34;&gt;https://blog.csdn.net/dongfenghuojian/article/details/78187131&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html&#34;&gt;http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html&lt;/a&gt; (系列教程)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pyqt5_hook_key_625781186.html</guid>
+            <title>在pyqt中使用python全局钩子模块</title>
+            <link>https://pyqt5.com/pyqt5_hook_key_625781186.html</link>
+            <category>Python</category>
+            <category>pyqt hook key</category>
+            <pubDate>Sat, 06 Jul 2019 17:37:22 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在某些时候需要为自己的软件增加全局键盘监听，比如软件最小化隐藏后可以通过热键唤醒，又或者比如像 QQ 一样可以全局热键截图。这里介绍几个方法实现在 PyQt 中使用 Python 全局钩子模块实现全局热键功能。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;pyHook3&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;安装命令 :  &lt;code&gt;pip install pyhook3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/q871063970/article/details/86648386&#34;&gt;https://blog.csdn.net/q871063970/article/details/86648386&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;似乎将 pyhook 支持 py3 版本的了？没有太多研究.&lt;/p&gt;
+&lt;p&gt;缺点：只支持 win 平台.&lt;/p&gt;
+&lt;p&gt;2. &lt;code&gt;keyboard&lt;/code&gt;  &amp;amp;  &lt;code&gt;mouse&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装命令:  &lt;code&gt;pip install keyboard mouse&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;
+from PyQt5 import  QtGui, QtWidgets, QtCore
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+import keyboard
+class Window(QWidget):
+
+    def __init__(self, *args, **kwargs):
+        super(Window, self).__init__(*args, **kwargs)
+        layout &amp;#x3D; QVBoxLayout(self)
+        self.testBtn &amp;#x3D; QPushButton(self)
+        layout.addWidget(self.testBtn)
+
+        keyboard.add_hotkey(&amp;#39;ctrl+shift+x&amp;#39;, lambda:print(&amp;#39;triggered&amp;#39;, &amp;#39;hotkey&amp;#39;))
+        keyboard.add_hotkey(&amp;#39;ctrl+shift+c&amp;#39;, self.abc,args&amp;#x3D;(&amp;#39;aa&amp;#39;,&amp;quot;bb&amp;quot;,&amp;quot;cc&amp;quot;))
+
+    def abc(self,a,b,c):
+        print(a,b,c)
+        
+if __name__ &amp;#x3D;&amp;#x3D; &amp;#39;__main__&amp;#39;:
+    import sys
+    from PyQt5.QtWidgets import QApplication
+    app &amp;#x3D; QApplication(sys.argv)
+    w &amp;#x3D; Window()
+    w.show()
+    sys.exit(app.exec_())&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更详细例子 : &lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/63c6376358acb1863313fb5593097e6e0210cad6/Test/%E5%85%A8%E5%B1%80%E7%83%AD%E9%94%AE/HotKey.py&#34;&gt;pyqt 中使用 keyboard 全局热键&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;优点：跨平台；&lt;/p&gt;
+&lt;p&gt;缺点：模块名字取得太差，不容易被发现.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/read_open_source.html</guid>
+            <title>像读文章一样读源码</title>
+            <link>https://pyqt5.com/read_open_source.html</link>
+            <category>Python</category>
+            <category>debug</category>
+            <category>snoop</category>
+            <pubDate>Sat, 06 Jul 2019 17:37:22 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;使用 snoop, 像读文章一样读源码。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;不得不说 开源项目没有一个提纲 ， 看起来太操蛋了。问了作者， 作者说 ， 你运行下主函数， 然后慢慢跟 。。。&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-b274b7acaecf49bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;没有目的地概览 ， 不知不觉就追究到细节里面去了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-1304cc87fcd42cae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以这一篇文章的目地就是 ， 如何在没有提纲的情况下 ， 能更好的只关注流程 ， 而不是细节 。&lt;/p&gt;
+&lt;p&gt;开始 ：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;python DEBUG 模块介绍 :&lt;br&gt;
+　前段时间看过挺多文章提到 pysoonper 这个调试模块，有兴趣的可以百度一下.&lt;br&gt;
+ 个人尝试了一下，篇幅过大的 DEBUG 不适合用 pysoonper , 因为没有缩进！&lt;br&gt;
+　这几天偶然遇到一个二次封装的模块&lt;a href=&#34;%5Bhttps://github.com/alexmojaki/snoop%5D(https://github.com/alexmojaki/snoop)&#34;&gt; snoop&lt;/a&gt;, 完美地解决了这个问题.&lt;/li&gt;
+&lt;li&gt;操作步骤 :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;1 .  在 &lt;code&gt;eric6.py&lt;/code&gt;  的 &lt;code&gt;main()&lt;/code&gt;  函数上加 snoop 装饰器；&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-74129f6a6c303b25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;2 . 用 vscode 打开  &lt;code&gt;eric6start_.log&lt;/code&gt;   文件 (8 层深度 log 文件 34W 行，pycharm 对大文件支持很差);&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-ae946c117a082c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;log文件&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;发现可以折叠 ， 但是最大可折叠等级只到 5 级 ， 而且无法对对应等级折叠 ， 有点遗憾 。也许是.log 格式选得不太好， 不知道是否有更好的后缀格式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 . vscode 配置 log 文件关键字高亮；&lt;br&gt;
+安装高亮插件&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-8f6fee2356d7071d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 配置高亮关键字&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-a135fd015409b3da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将 &lt;code&gt;call&lt;/code&gt;  和 &lt;code&gt;return&lt;/code&gt;  给加进去.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 . 增加阶段关键字；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-c39d01a02149e808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;eric6启动阶段&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-aef5704c36824dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;加 &lt;code&gt;#000&lt;/code&gt;  是为了方便搜索 。&lt;br&gt;
+需要自己手动折叠 。&lt;br&gt;
+可以发现 每个 &lt;code&gt;splash.showMessage()&lt;/code&gt;  都是一个阶段 ， 展开折叠之后就是每个阶段具体执行细节 。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢&#34;&gt;#&lt;/a&gt; ps: vscode 阅读 log 文件还是有一些不方便的地方，除了在 2. 中提到的，还有包括关闭文件再打开，折叠状态不会保留，有其他更好的方式 请留言告诉我，谢谢.&lt;/h3&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pyqt_get_subprocess_pipeline_625781186.html</guid>
+            <title>python 获取子进程print信息 　</title>
+            <link>https://pyqt5.com/pyqt_get_subprocess_pipeline_625781186.html</link>
+            <category>Python</category>
+            <category>subprocess.Popen</category>
+            <category>拦截print</category>
+            <pubDate>Fri, 24 May 2019 06:39:44 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在 PyQt 中使用子线程读取子进程 Python 脚本的 print 输出流内容。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;问题所在：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/24/5ce793171984f27031.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果模块都由自己开发， 正常操作&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/24/5ce7933994a0090037.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但是因为不能改，所以只能拦截：&lt;br&gt;
+代码：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;pythonPath &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pythonPath_cb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;currentText&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; suffix &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;py&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 首次&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pyCommand &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;pythonPath&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; path&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;modifiedReloadPython&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;modifiedReloadPython&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; path_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;chdir&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;dirname&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 子进程调用&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Popen&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pyCommand&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stdout&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;PIPE&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stderr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;STDOUT&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# self.stdoutWorker.p = self.p&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Worker&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;connect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;lambda&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;error_te&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;PYDEBUG:\n&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Worker&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QThread&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    stdout_signal &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pyqtSignal&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; p&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; parent&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;parent&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; p
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            QApplication&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;processEvents&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                line &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;readline&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# line = line.strip()&lt;/span&gt;
+                &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; line &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;b&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                    &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                        info &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; line&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decode&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;emit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;info&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                    &lt;span class=&#34;token keyword&#34;&gt;except&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;emit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;repr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;line&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/suggesteditor.html</guid>
+            <title>推荐编辑器LiClipse</title>
+            <link>https://pyqt5.com/suggesteditor.html</link>
+            <category>编辑器</category>
+            <pubDate>Sat, 04 May 2019 10:04:08 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;关于 Python 的开发编辑器有很多，每个人有每个人的喜好，经常看到很多在问什么编辑器好用，有人推荐 Sublime，有人推荐 Pycharm 等等，这里就不去比较其它编辑器的优缺点了，只谈谈关于 LiClipse 这个编辑器在初级使用阶段的智能提示功能等。开箱即用，支持多种语言，RST，Markdown 和 HTML 编辑器的 HTML 预览。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;其实 LiClipse 这个编辑器就是以前的 PyDev 插件的独立版本，基于 Eclipse 编辑器开发，去掉了 Java 的相关开发功能，关于软件的详细说明可以去官网查看： &lt;a href=&#34;http://www.liclipse.com/&#34;&gt;http://www.liclipse.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;编辑器只需要少量的配置，打开即可使用，快速自动 import，也可以根据需要安装自己所需的插件，比如 json、svn、主题插件等。个人推荐：适合刚入门的新手使用&lt;/p&gt;
+&lt;p&gt;由于新版的 PyQt 和 PyDev 去掉了详细的函数提示，所以 PyQt 的智能提示只有函数和返回值，并没有英文注释，但是以前的比如 PyQt4 的智能提示应该是有详细的英文注释提示。&lt;/p&gt;
+&lt;h2 id=&#34;界面预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#界面预览&#34;&gt;#&lt;/a&gt; 界面预览&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;主界面&lt;br&gt;
+&lt;img src=&#34;/images/editor1.png&#34; alt=&#34;editor1&#34;&gt;&lt;/li&gt;
+&lt;li&gt;鼠标悬停提示&lt;br&gt;
+&lt;img src=&#34;/images/editor2.png&#34; alt=&#34;editor2&#34;&gt;&lt;/li&gt;
+&lt;li&gt;输入提示&lt;br&gt;
+&lt;img src=&#34;/images/editor3.png&#34; alt=&#34;editor3&#34;&gt;&lt;/li&gt;
+&lt;li&gt;Git 面板&lt;br&gt;
+&lt;img src=&#34;/images/editor4.png&#34; alt=&#34;editor4&#34;&gt;&lt;/li&gt;
+&lt;li&gt;全局搜索（Ctrl + H）&lt;br&gt;
+&lt;img src=&#34;/images/editor5.png&#34; alt=&#34;editor5&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;/images/editor6.png&#34; alt=&#34;editor6&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;自动导包&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#自动导包&#34;&gt;#&lt;/a&gt; 自动导包&lt;/h2&gt;
+&lt;p&gt;其实这个功能我是非常喜欢的，通过按下快捷键即可自动寻找包名导入，快捷键 Ctrl + Shift + O&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_import.png&#34; alt=&#34;editor_import&#34;&gt;&lt;/p&gt;
+&lt;p&gt;也可以在标红的代码上按下 Ctrl + F1 进行导入&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_import2.png&#34; alt=&#34;editor_import2&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置&#34;&gt;#&lt;/a&gt; 配置&lt;/h2&gt;
+&lt;p&gt;打开编辑器后首先要配置【Window -&amp;gt; Preferences】的就是 Python 的环境变量，可以同时添加多个 Python 版本&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_env.png&#34; alt=&#34;editor_env&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tab等设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tab等设置&#34;&gt;#&lt;/a&gt; Tab 等设置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Insert spaces for tabs        tab 转空格&lt;/li&gt;
+&lt;li&gt;Show line numbers             显示行号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_tab.png&#34; alt=&#34;editor_tab&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;模版&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#模版&#34;&gt;#&lt;/a&gt; 模版&lt;/h2&gt;
+&lt;p&gt;这个功能可以快速插入自己定义好的模版代码，比如  &lt;code&gt;if __name__ == &#39;__main__&#39;:&lt;/code&gt;  等等，比如我这里配置的创建文件的模版&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/editor_tpl.png&#34; alt=&#34;editor_tpl&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;常用快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用快捷键&#34;&gt;#&lt;/a&gt; 常用快捷键&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;格式化对齐&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl + Shift + F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;自动导包&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl + Shift + O&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;快捷提示&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Alt + /&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/virtualenvpy_625781186.html</guid>
+            <title>python 拷贝虚拟环境(一) 　</title>
+            <link>https://pyqt5.com/virtualenvpy_625781186.html</link>
+            <category>Python</category>
+            <category>virtualenvwrapper</category>
+            <category>virtualenv</category>
+            <pubDate>Thu, 02 May 2019 07:21:01 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;通常来说，刚开始使用 python 的时候都是把包装到全局路径，随着各个项目安装的包越来越多，之后每开始一个项目，pycharm 创建索引的时间都越来越漫长，所以不可避免得开始使用虚拟环境。&lt;br&gt;
+经过一番了解 ，虚拟环境的优点有这些：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改善 pycharm 索引时间；&lt;/li&gt;
+&lt;li&gt;各个项目的库不会冲突；&lt;/li&gt;
+&lt;li&gt;理论上虚拟环境可以给同版本的操作系统使用 (未试验过);&lt;/li&gt;
+&lt;li&gt;pip freeze &amp;gt; requestment.txt 导出的依赖清晰；&lt;/li&gt;
+&lt;li&gt;各个版本的 python 共存；&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;python 虚拟环境库除了自带的 venv , 还有三方库 &lt;code&gt;virtualenv&lt;/code&gt;  , 此外 在 &lt;code&gt;virtualenv&lt;/code&gt;  基础上又开发了 &lt;code&gt;virtualenvwrapper(virtualenvwrapper_win)&lt;/code&gt;  来管理&lt;/p&gt;
+&lt;p&gt;本文基于 &lt;code&gt;virtualenvwrapper&lt;/code&gt;  创建的虚拟环境来讲解.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;以下是收集的一些virtualenvwrapper配置教程:
+# linux平台
+https://www.cnblogs.com/netfoxman/p/5994697.html
+# window平台
+https://blog.csdn.net/shaququ/article/details/54292043  　
+https://blog.csdn.net/iaau0908/article/details/54021518
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;虚拟环境创建多了我们就会发现，&lt;br&gt;
+ 有时候使用相同版本的环境，一些常用的库是需要重新安装的，&lt;br&gt;
+ 那么能不能创建一个基础环境，默认拥有这些库，然后在这个基础环境上继续安装三方库呢？&lt;/p&gt;
+&lt;p&gt;本文经过试验发现是可行的:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;创建基础虚拟环境  &lt;code&gt;mkvirtualenv &amp;lt;环境名称&amp;gt; [-p空格python其他版本的解释器路径]&lt;/code&gt; .  例如  &lt;code&gt;mkvirtualenv py34 -p c:\Python34\python.exe&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切换到虚拟环境 &lt;code&gt;workon py34&lt;/code&gt;  , 然后安装一下三方库，然后复制 &lt;code&gt;py34&lt;/code&gt;  这个文件夹备份一下；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着复制这个 &lt;code&gt;py34&lt;/code&gt;  文件夹，把复制后的文件夹改名为我们需要需要的文件夹例如 &lt;code&gt;new34&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入 &lt;code&gt;new34文件夹&lt;/code&gt; ，用任意编辑器全路径搜索 &lt;code&gt;py34&lt;/code&gt;  (替换虚拟环境的路径)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除 &lt;code&gt;new34/Scripts&lt;/code&gt;  下的 &lt;code&gt;pip.exe, pip3.exe, pip3.x.exe, easy_install.exe&lt;/code&gt;  (因为安装路径硬编码到这里面了，改不了，需要重新安装)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/douniwan007009/article/details/81463958&#34;&gt;https://blog.csdn.net/douniwan007009/article/details/81463958&lt;/a&gt; 按方式二，源码安装  &lt;code&gt;setuptools&lt;/code&gt;  后再用 &lt;code&gt;easy_install pip&lt;/code&gt;  安装 pip 后，完成；&lt;br&gt;
+ 如果有问题，就继续按照方式一的源码安装 pip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;code&gt;new34&lt;/code&gt;  环境下 用 &lt;code&gt;pip show 三方库&lt;/code&gt;  来看一些库的位置，确保正确.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pyqtclient.html</guid>
+            <title>PyQtClient例子客户端</title>
+            <link>https://pyqt5.com/pyqtclient.html</link>
+            <category>PyQt</category>
+            <pubDate>Sat, 02 Feb 2019 07:15:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;/images/1.gif&#34; alt=&#34;1.gif&#34;&gt; 对本博客所写的项目 PyQt 例子进行一个客户端的编写，客户端主要实现一些动画效果，更换皮肤，运行例子等功能。&lt;img src=&#34;/images/2.gif&#34; alt=&#34;2.gif&#34;&gt;&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;项目地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目地址&#34;&gt;#&lt;/a&gt; 项目地址&lt;/h2&gt;
+&lt;div class=&#34;github-widget&#34; data-repo=&#34;PyQt5/PyQtClient&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;windows客户端下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#windows客户端下载&#34;&gt;#&lt;/a&gt; Windows 客户端下载&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQtClient/releases/download/1.0.1/PyQtClient-x86-win32-exe.7z&#34;&gt;包含部分例子&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQtClient/releases/download/1.0.1/PyQtClient-x86-win32-exe.7z&#34;&gt;不包含例子&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pan.baidu.com/s/14j9tMqGlAy_8y3067xh-vw&#34;&gt;百度网盘&lt;/a&gt; 提取码: nadv&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://github.com/PyQt5/PyQtClient/raw/master/ScreenShot/PyQtClient.gif&#34; alt=&#34;PyQtClient&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

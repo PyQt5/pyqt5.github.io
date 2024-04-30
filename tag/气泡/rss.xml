@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;气泡&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 26 Oct 2018 02:00:08 +0000</pubDate>
+        <lastBuildDate>Fri, 26 Oct 2018 02:00:08 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/qtninepatch.html</guid>
+            <title>PyQt5显示.9格式的PNG图片</title>
+            <link>https://pyqt5.com/qtninepatch.html</link>
+            <category>PyQt</category>
+            <category>图片</category>
+            <category>气泡</category>
+            <category>.9png</category>
+            <pubDate>Fri, 26 Oct 2018 02:00:08 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;做过安卓开发的和使用过 QQ 的都知道 &lt;code&gt;.9.png&lt;/code&gt;  这种图片格式，效果就如 QQ 的聊天气泡一样可以拉伸，这种格式的图片允许开发人员定义可扩展区域，当需要延伸图片以填充比图片本身更大区域时，可扩展区的内容被延展；允许开发人员定义内容显示区，用于显示文字或其他内容。目前在 &lt;code&gt;Github&lt;/code&gt;  上有两个 C++ 版本的，在这里我把它们都用 Python 实现了一遍。另外一个我也为 &lt;code&gt;PyQt&lt;/code&gt;  提供了编译好的 pyd 文件。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;c版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#c版本&#34;&gt;#&lt;/a&gt; C++ 版本&lt;/h2&gt;
+&lt;p&gt;在 Github 开源库中搜索到两个 C++ 版本的&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一个是 &lt;a href=&#34;https://github.com/Roninsc2/NinePatchQt&#34;&gt;NinePatchQt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;一个是 &lt;a href=&#34;https://github.com/soramimi/QtNinePatch&#34;&gt;QtNinePatch&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;pyqt5版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pyqt5版本&#34;&gt;#&lt;/a&gt; PyQt5 版本&lt;/h2&gt;
+&lt;p&gt;这里也分为两个版本，都是基于上面的 C++ 源码翻译改写过来的，具体的例子见项目里面的测试代码吧。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QLabel/QtNinePatch.py&#34;&gt;QtNinePatch&lt;/a&gt; 是参考第一个源码编写，用法是在 &lt;code&gt;paintEvent&lt;/code&gt;  中调用&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QLabel/QtNinePatch2.py&#34;&gt;QtNinePatch2&lt;/a&gt; 是参考第二个源码编写，用法是 &lt;code&gt;pixmap = QtNinePatch.createPixmapFromNinePatchImage(self.image, self.width(), self.height())&lt;/code&gt;  直接得到一个处理好的 &lt;code&gt;QPixmap&lt;/code&gt;  对象来使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#说明&#34;&gt;#&lt;/a&gt; 说明&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;建议优先使用 pyd 版本的（后续提供 Python3.4 3.5 3.6 3.7 编译好的 32 为库文件），也可以自行编译，编译步骤见下文。&lt;/li&gt;
+&lt;li&gt;其次可以使用纯 python 版本 2 的（个人觉得方便调用）&lt;/li&gt;
+&lt;li&gt;最后再考虑纯 python 版本 1 的吧&lt;/li&gt;
+&lt;li&gt;以上为个人意见，两个 C++ 版本的写法不一样，但是核心算法应该是类似的。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;自行编译&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#自行编译&#34;&gt;#&lt;/a&gt; 自行编译&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;首先要安装好 Qt、PyQt5、编译安装对应的 sip、对应的 VC++ 编译工具&lt;/li&gt;
+&lt;li&gt;用 Qt Creator 打开 pro 文件进行编译&lt;/li&gt;
+&lt;li&gt;进入源码中的 sip 文件夹修改 configure.py 文件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;# 这里是你的VC版本和对应的Qt目录中的文件夹
+config.platform &amp;#x3D; &amp;quot;win32-msvc2010&amp;quot;
+qt_path &amp;#x3D; &amp;#39;D:&amp;#x2F;soft&amp;#x2F;Qt&amp;#x2F;Qt5.5.1&amp;#x2F;5.5&amp;#x2F;msvc2010&amp;#39;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;最后执行 python configure.py 来编译&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载&#34;&gt;#&lt;/a&gt; 下载&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/tree/master/QLabel&#34;&gt;https://github.com/PyQt5/PyQt/tree/master/QLabel&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/PyQt/QLabel/ScreenShot/NinePatchImage.gif&#34; alt=&#34;NinePatchImage&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

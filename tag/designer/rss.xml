@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;designer&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 30 Apr 2019 05:11:09 +0000</pubDate>
+        <lastBuildDate>Tue, 30 Apr 2019 05:11:09 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/viewpyindesigner_625781186.html</guid>
+            <title>如何和设计师中查看ui转换的py代码</title>
+            <link>https://pyqt5.com/viewpyindesigner_625781186.html</link>
+            <category>PyQt</category>
+            <category>Designer</category>
+            <category>设计师</category>
+            <pubDate>Tue, 30 Apr 2019 05:11:09 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;通过 设计师  查看 ui 转换的 py 代码&lt;/p&gt;
+&lt;p&gt;当初我刚学 pyqt 的时候，也有很多疑惑，用什么属性把控件加到布局，改了这个属性会发生什么，为什么这个会这样，那个会那样 。。。 。。。&lt;/p&gt;
+&lt;p&gt;后来就看 ui 转成的 py 代码，注释一下，什么效果消失了，就是那个 api 引起的 。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;再来后发现了官方文档，查一查函数就行了 .&lt;/p&gt;
+&lt;p&gt;但是有些 api 文档找起来麻烦，用设计师点几下就行了，然后把转换出来的代码拷贝一下就完事了.&lt;/p&gt;
+&lt;p&gt;可是需要单独把 ui 转为 py 文件，之后再删除这个文件也是很烦的一件事 .&lt;/p&gt;
+&lt;p&gt;好，话不多说，接下来手把手教你如何快速在 ui 中查看 py 代码 .&lt;/p&gt;
+&lt;p&gt;官方也考虑过这种情况，所以 设计师中 是有这个功能的，但是 qt 的是没问题的，pyqt 的毕竟是绑定过来的，所以正常来说 你点击之后会弹出一个找不到应用程序的提示 .&lt;/p&gt;
+&lt;p&gt;看到这个东西是不是很眼熟，我们用的命令 pyuic5 和这个东西应该是一样的 .&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/viewpyindesigner1.jpg&#34; alt=&#34;viewpyindesigner1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以接下来，我们找找电脑上有没有这个东西&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/viewpyindesigner2.jpg&#34; alt=&#34;viewpyindesigner2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;果然在 pyqt5-toos 文件夹下有这个东西，&lt;/p&gt;
+&lt;p&gt;我们根据第一张图的提示，把这个东西拷贝到相应的目录 (如果没有那个 bin 文件夹，手动创建),&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/viewpyindesigner3.jpg&#34; alt=&#34;viewpyindesigner3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;好了，大功告成！&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

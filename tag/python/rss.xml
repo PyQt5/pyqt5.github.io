@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;python&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 26 Dec 2019 11:49:41 +0000</pubDate>
+        <lastBuildDate>Thu, 26 Dec 2019 11:49:41 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/equal_str_width_625781186.html</guid>
+            <title>python 判断屏幕等宽字符串的长度 　</title>
+            <link>https://pyqt5.com/equal_str_width_625781186.html</link>
+            <category>Python</category>
+            <pubDate>Thu, 26 Dec 2019 11:49:41 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;判断屏幕等宽字符串的长度？&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;判断屏幕等宽字符串的长度？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-58b19652011e153a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:41:50  @北京 - BUG 开发 - 黑择明 求指点&lt;br&gt;
+【专家】北京 - BUG 开发 - 黑择明  22:43:04  fontMetrics&lt;br&gt;
+【专家】 &lt;a href=&#34;https://pyqt.site&#34;&gt;https://pyqt.site&lt;/a&gt; (892768447) 22:43:54  QFontMetrics&lt;br&gt;
+【专家】 &lt;a href=&#34;https://pyqt.site&#34;&gt;https://pyqt.site&lt;/a&gt; (892768447) 22:44:09  通过 QLabel.font ().fontMetrics () 得到&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:52:00&lt;br&gt;
+&lt;a href=&#34;https://stackoverflow.com/questions/35771863/how-to-calculate-length-of-string-in-pixels-for-specific-font-and-size&#34;&gt;https://stackoverflow.com/questions/35771863/how-to-calculate-length-of-string-in-pixels-for-specific-font-and-size&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-9dc2f83609106252.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;【新手】重庆 - 搬砖 - NoWait 22:53:15  感觉和 fontMetrics 应该是差不多的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-411570eeadf51793.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;【专家】北京 - BUG 开发 - 黑择明       (996742224) 11:29:04&lt;br&gt;
+fm = QFontMetrics(QFont())&lt;br&gt;
+fm.width(“qweqwe”)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/python_statemachine_625781186.html</guid>
+            <title>python 状态机模块 　</title>
+            <link>https://pyqt5.com/python_statemachine_625781186.html</link>
+            <category>Python</category>
+            <category>python 状态机</category>
+            <pubDate>Wed, 17 Jul 2019 09:03:33 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;用状态来取代 if…else 判断。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;GUI 涉及到挺多的状态改变，以前一直用 if…else 来判断，最近读了设计模式，发现有个状态模式，随后发现了状态机这个东西 .&lt;/p&gt;
+&lt;p&gt;python 的状态机模块挺多的，不过好像很多都不更新了.&lt;br&gt;
+ 推荐 2 个状态机模块，但是也没有太深入的使用经验，就跑跑例子，以后有更详细的 pyqt 例子再补上 .&lt;/p&gt;
+&lt;p&gt;1:  &lt;code&gt;pip install python-statemachine&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;官方例子 : &lt;a href=&#34;https://github.com/fgmacedo/python-statemachine&#34;&gt;https://github.com/fgmacedo/python-statemachine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2. &lt;code&gt;pip install state_machine&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;官方例子 : &lt;a href=&#34;https://github.com/jtushman/state_machine&#34;&gt;https://github.com/jtushman/state_machine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1 的 最近一次更新在 6 个月以前，使用 &lt;code&gt;类继承&lt;/code&gt; 和 &lt;code&gt;mixin&lt;/code&gt;  方式，不过有些地方不如 2 个人性化；&lt;/p&gt;
+&lt;p&gt;2 的设计更人性化一些，包括状态改变 &lt;code&gt;before&lt;/code&gt;  和  &lt;code&gt;after&lt;/code&gt;  , 不过由于是装饰器实现的动态增加属性，有些地方编辑器智能提示可能就靠不上了.&lt;/p&gt;
+&lt;p&gt;两者实现实现方式不一样，有兴趣可以读读源码 .&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;qt 内置状态机框架&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/amnes1a/article/details/62418196&#34;&gt;https://blog.csdn.net/amnes1a/article/details/62418196&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/dongfenghuojian/article/details/78187131&#34;&gt;https://blog.csdn.net/dongfenghuojian/article/details/78187131&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html&#34;&gt;http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html&lt;/a&gt; (系列教程)&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pyqt5_hook_key_625781186.html</guid>
+            <title>在pyqt中使用python全局钩子模块</title>
+            <link>https://pyqt5.com/pyqt5_hook_key_625781186.html</link>
+            <category>Python</category>
+            <category>pyqt hook key</category>
+            <pubDate>Sat, 06 Jul 2019 17:37:22 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在某些时候需要为自己的软件增加全局键盘监听，比如软件最小化隐藏后可以通过热键唤醒，又或者比如像 QQ 一样可以全局热键截图。这里介绍几个方法实现在 PyQt 中使用 Python 全局钩子模块实现全局热键功能。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;pyHook3&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;安装命令 :  &lt;code&gt;pip install pyhook3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/q871063970/article/details/86648386&#34;&gt;https://blog.csdn.net/q871063970/article/details/86648386&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;似乎将 pyhook 支持 py3 版本的了？没有太多研究.&lt;/p&gt;
+&lt;p&gt;缺点：只支持 win 平台.&lt;/p&gt;
+&lt;p&gt;2. &lt;code&gt;keyboard&lt;/code&gt;  &amp;amp;  &lt;code&gt;mouse&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;安装命令:  &lt;code&gt;pip install keyboard mouse&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;
+from PyQt5 import  QtGui, QtWidgets, QtCore
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+import keyboard
+class Window(QWidget):
+
+    def __init__(self, *args, **kwargs):
+        super(Window, self).__init__(*args, **kwargs)
+        layout &amp;#x3D; QVBoxLayout(self)
+        self.testBtn &amp;#x3D; QPushButton(self)
+        layout.addWidget(self.testBtn)
+
+        keyboard.add_hotkey(&amp;#39;ctrl+shift+x&amp;#39;, lambda:print(&amp;#39;triggered&amp;#39;, &amp;#39;hotkey&amp;#39;))
+        keyboard.add_hotkey(&amp;#39;ctrl+shift+c&amp;#39;, self.abc,args&amp;#x3D;(&amp;#39;aa&amp;#39;,&amp;quot;bb&amp;quot;,&amp;quot;cc&amp;quot;))
+
+    def abc(self,a,b,c):
+        print(a,b,c)
+        
+if __name__ &amp;#x3D;&amp;#x3D; &amp;#39;__main__&amp;#39;:
+    import sys
+    from PyQt5.QtWidgets import QApplication
+    app &amp;#x3D; QApplication(sys.argv)
+    w &amp;#x3D; Window()
+    w.show()
+    sys.exit(app.exec_())&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;更详细例子 : &lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/63c6376358acb1863313fb5593097e6e0210cad6/Test/%E5%85%A8%E5%B1%80%E7%83%AD%E9%94%AE/HotKey.py&#34;&gt;pyqt 中使用 keyboard 全局热键&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;优点：跨平台；&lt;/p&gt;
+&lt;p&gt;缺点：模块名字取得太差，不容易被发现.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/read_open_source.html</guid>
+            <title>像读文章一样读源码</title>
+            <link>https://pyqt5.com/read_open_source.html</link>
+            <category>Python</category>
+            <category>debug</category>
+            <category>snoop</category>
+            <pubDate>Sat, 06 Jul 2019 17:37:22 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;使用 snoop, 像读文章一样读源码。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;不得不说 开源项目没有一个提纲 ， 看起来太操蛋了。问了作者， 作者说 ， 你运行下主函数， 然后慢慢跟 。。。&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-b274b7acaecf49bc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;没有目的地概览 ， 不知不觉就追究到细节里面去了。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-1304cc87fcd42cae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以这一篇文章的目地就是 ， 如何在没有提纲的情况下 ， 能更好的只关注流程 ， 而不是细节 。&lt;/p&gt;
+&lt;p&gt;开始 ：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;python DEBUG 模块介绍 :&lt;br&gt;
+　前段时间看过挺多文章提到 pysoonper 这个调试模块，有兴趣的可以百度一下.&lt;br&gt;
+ 个人尝试了一下，篇幅过大的 DEBUG 不适合用 pysoonper , 因为没有缩进！&lt;br&gt;
+　这几天偶然遇到一个二次封装的模块&lt;a href=&#34;%5Bhttps://github.com/alexmojaki/snoop%5D(https://github.com/alexmojaki/snoop)&#34;&gt; snoop&lt;/a&gt;, 完美地解决了这个问题.&lt;/li&gt;
+&lt;li&gt;操作步骤 :&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;1 .  在 &lt;code&gt;eric6.py&lt;/code&gt;  的 &lt;code&gt;main()&lt;/code&gt;  函数上加 snoop 装饰器；&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-74129f6a6c303b25.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/li&gt;
+&lt;li&gt;2 . 用 vscode 打开  &lt;code&gt;eric6start_.log&lt;/code&gt;   文件 (8 层深度 log 文件 34W 行，pycharm 对大文件支持很差);&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-ae946c117a082c24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;log文件&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;发现可以折叠 ， 但是最大可折叠等级只到 5 级 ， 而且无法对对应等级折叠 ， 有点遗憾 。也许是.log 格式选得不太好， 不知道是否有更好的后缀格式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 . vscode 配置 log 文件关键字高亮；&lt;br&gt;
+安装高亮插件&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-8f6fee2356d7071d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;br&gt;
+ 配置高亮关键字&lt;br&gt;
+&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-a135fd015409b3da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将 &lt;code&gt;call&lt;/code&gt;  和 &lt;code&gt;return&lt;/code&gt;  给加进去.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 . 增加阶段关键字；&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-c39d01a02149e808.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;eric6启动阶段&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload-images.jianshu.io/upload_images/10769157-aef5704c36824dcc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;加 &lt;code&gt;#000&lt;/code&gt;  是为了方便搜索 。&lt;br&gt;
+需要自己手动折叠 。&lt;br&gt;
+可以发现 每个 &lt;code&gt;splash.showMessage()&lt;/code&gt;  都是一个阶段 ， 展开折叠之后就是每个阶段具体执行细节 。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ps-vscode-阅读log文件还是有一些不方便的地方-除了在2中提到的-还有包括关闭文件再打开-折叠状态不会保留-有其他更好的方式-请留言告诉我-谢谢&#34;&gt;#&lt;/a&gt; ps: vscode 阅读 log 文件还是有一些不方便的地方，除了在 2. 中提到的，还有包括关闭文件再打开，折叠状态不会保留，有其他更好的方式 请留言告诉我，谢谢.&lt;/h3&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pyqt_get_subprocess_pipeline_625781186.html</guid>
+            <title>python 获取子进程print信息 　</title>
+            <link>https://pyqt5.com/pyqt_get_subprocess_pipeline_625781186.html</link>
+            <category>Python</category>
+            <category>subprocess.Popen</category>
+            <category>拦截print</category>
+            <pubDate>Fri, 24 May 2019 06:39:44 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在 PyQt 中使用子线程读取子进程 Python 脚本的 print 输出流内容。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;问题所在：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/24/5ce793171984f27031.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果模块都由自己开发， 正常操作&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/24/5ce7933994a0090037.png&#34; alt=&#34;image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;但是因为不能改，所以只能拦截：&lt;br&gt;
+代码：&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;pythonPath &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pythonPath_cb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;currentText&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; suffix &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;py&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 首次&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pyCommand &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;pythonPath&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; path&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;modifiedReloadPython&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;modifiedReloadPython&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; path_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;chdir&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;dirname&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path_&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 子进程调用&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Popen&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pyCommand&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stdout&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;PIPE&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stderr&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;subprocess&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;STDOUT&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# self.stdoutWorker.p = self.p&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Worker&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;connect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;lambda&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;error_te&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;append&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;PYDEBUG:\n&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; x&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdoutWorker&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Worker&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QThread&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    stdout_signal &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pyqtSignal&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; p&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; parent&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;parent&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; p
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            QApplication&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;processEvents&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p &lt;span class=&#34;token keyword&#34;&gt;is&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                line &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;readline&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# line = line.strip()&lt;/span&gt;
+                &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; line &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;b&#39;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                    &lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                        info &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; line&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;decode&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;emit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;info&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                    &lt;span class=&#34;token keyword&#34;&gt;except&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdout_signal&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;emit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;repr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;line&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/virtualenvpy_625781186.html</guid>
+            <title>python 拷贝虚拟环境(一) 　</title>
+            <link>https://pyqt5.com/virtualenvpy_625781186.html</link>
+            <category>Python</category>
+            <category>virtualenvwrapper</category>
+            <category>virtualenv</category>
+            <pubDate>Thu, 02 May 2019 07:21:01 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;通常来说，刚开始使用 python 的时候都是把包装到全局路径，随着各个项目安装的包越来越多，之后每开始一个项目，pycharm 创建索引的时间都越来越漫长，所以不可避免得开始使用虚拟环境。&lt;br&gt;
+经过一番了解 ，虚拟环境的优点有这些：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改善 pycharm 索引时间；&lt;/li&gt;
+&lt;li&gt;各个项目的库不会冲突；&lt;/li&gt;
+&lt;li&gt;理论上虚拟环境可以给同版本的操作系统使用 (未试验过);&lt;/li&gt;
+&lt;li&gt;pip freeze &amp;gt; requestment.txt 导出的依赖清晰；&lt;/li&gt;
+&lt;li&gt;各个版本的 python 共存；&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;python 虚拟环境库除了自带的 venv , 还有三方库 &lt;code&gt;virtualenv&lt;/code&gt;  , 此外 在 &lt;code&gt;virtualenv&lt;/code&gt;  基础上又开发了 &lt;code&gt;virtualenvwrapper(virtualenvwrapper_win)&lt;/code&gt;  来管理&lt;/p&gt;
+&lt;p&gt;本文基于 &lt;code&gt;virtualenvwrapper&lt;/code&gt;  创建的虚拟环境来讲解.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;以下是收集的一些virtualenvwrapper配置教程:
+# linux平台
+https://www.cnblogs.com/netfoxman/p/5994697.html
+# window平台
+https://blog.csdn.net/shaququ/article/details/54292043  　
+https://blog.csdn.net/iaau0908/article/details/54021518
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;虚拟环境创建多了我们就会发现，&lt;br&gt;
+ 有时候使用相同版本的环境，一些常用的库是需要重新安装的，&lt;br&gt;
+ 那么能不能创建一个基础环境，默认拥有这些库，然后在这个基础环境上继续安装三方库呢？&lt;/p&gt;
+&lt;p&gt;本文经过试验发现是可行的:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;创建基础虚拟环境  &lt;code&gt;mkvirtualenv &amp;lt;环境名称&amp;gt; [-p空格python其他版本的解释器路径]&lt;/code&gt; .  例如  &lt;code&gt;mkvirtualenv py34 -p c:\Python34\python.exe&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切换到虚拟环境 &lt;code&gt;workon py34&lt;/code&gt;  , 然后安装一下三方库，然后复制 &lt;code&gt;py34&lt;/code&gt;  这个文件夹备份一下；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接着复制这个 &lt;code&gt;py34&lt;/code&gt;  文件夹，把复制后的文件夹改名为我们需要需要的文件夹例如 &lt;code&gt;new34&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入 &lt;code&gt;new34文件夹&lt;/code&gt; ，用任意编辑器全路径搜索 &lt;code&gt;py34&lt;/code&gt;  (替换虚拟环境的路径)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除 &lt;code&gt;new34/Scripts&lt;/code&gt;  下的 &lt;code&gt;pip.exe, pip3.exe, pip3.x.exe, easy_install.exe&lt;/code&gt;  (因为安装路径硬编码到这里面了，改不了，需要重新安装)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/douniwan007009/article/details/81463958&#34;&gt;https://blog.csdn.net/douniwan007009/article/details/81463958&lt;/a&gt; 按方式二，源码安装  &lt;code&gt;setuptools&lt;/code&gt;  后再用 &lt;code&gt;easy_install pip&lt;/code&gt;  安装 pip 后，完成；&lt;br&gt;
+ 如果有问题，就继续按照方式一的源码安装 pip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 &lt;code&gt;new34&lt;/code&gt;  环境下 用 &lt;code&gt;pip show 三方库&lt;/code&gt;  来看一些库的位置，确保正确.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/calljava.html</guid>
+            <title>Python调用Java对Excel截图</title>
+            <link>https://pyqt5.com/calljava.html</link>
+            <category>Python</category>
+            <category>截图</category>
+            <pubDate>Tue, 12 Mar 2019 13:15:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;有的时候会遇到一些奇葩的需求，就是用 Excel 做报表，但是需要对里面的数据进行填充并生成报表图片，发送出去。这里记录用 python 调用 jar 包对 excel 文件进行公式计算和截图，数据填充可以用 xlrd 或者 openpyxl&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;利用 &lt;code&gt;jpype&lt;/code&gt;  模块初始化 java 虚拟机加载 jar 包然后执行其中的功能。&lt;/p&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
+Created on 2019年3月12日
+@author: Irony
+@site: https://pyqt5.com https://github.com/892768447
+@email: 892768447@qq.com
+@file: CallJava
+@description: 
+&#34;&#34;&#34;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; os
+
+&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; jpype
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Irony&#39;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Copyright (c) 2019&#39;&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;convertToImage&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    Workbook &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;JClass&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;com.aspose.cells.Workbook&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    ImageFormat &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;JClass&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;com.aspose.cells.ImageFormat&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    ImageOrPrintOptions &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;JClass&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+        &lt;span class=&#34;token string&#34;&gt;&#39;com.aspose.cells.ImageOrPrintOptions&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    SheetRender &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;JClass&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;com.aspose.cells.SheetRender&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    book &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Workbook&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;abspath&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;data/test.xlsx&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;replace&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;\\&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;/&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 保存为html&lt;/span&gt;
+    book&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;save&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;data/index.html&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 保存为pdf&lt;/span&gt;
+    book&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;save&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;data/test.pdf&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# 截图&lt;/span&gt;
+    imgOptions &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; ImageOrPrintOptions&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# imgOptions.setQuality(100)&lt;/span&gt;
+    imgOptions&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setOnePagePerSheet&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# 输出图片格式&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#     imgOptions.setImageFormat(ImageFormat.getJpeg())&lt;/span&gt;
+    imgOptions&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setImageFormat&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;ImageFormat&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;getPng&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# 计算&lt;/span&gt;
+    CalculationOptions &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;JClass&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+        &lt;span class=&#34;token string&#34;&gt;&#39;com.aspose.cells.CalculationOptions&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    opt &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; CalculationOptions&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 对Sheet1中的公式进行计算&lt;/span&gt;
+    sheet &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; book&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;getWorksheets&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;get&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;Sheet1&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    sheet&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;calculateFormula&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;opt&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token comment&#34;&gt;# 设置区域&lt;/span&gt;
+    pageSetup &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; sheet&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;getPageSetup&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 去掉边距&lt;/span&gt;
+    pageSetup&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setBottomMargin&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    pageSetup&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setLeftMargin&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    pageSetup&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setRightMargin&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    pageSetup&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setTopMargin&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 设置要截图的区域(对角线)&lt;/span&gt;
+    pageSetup&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setPrintArea&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;A0:C2&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# Create a SheetRender object for the target sheet&lt;/span&gt;
+    sr &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; SheetRender&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sheet&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; imgOptions&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; page &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;getPageCount&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token comment&#34;&gt;# Generate an image for the worksheet&lt;/span&gt;
+        sr&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;toImage&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+            page&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; os&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;join&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;data&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;%d.png&#39;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;%&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;page &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# emm这里不知道什么用绝对路径就报错&lt;/span&gt;
+    libs &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;&amp;#123;&amp;#125;;&amp;#123;&amp;#125;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+        &lt;span class=&#34;token string&#34;&gt;&#39;libs/bcprov-jdk16-146.jar&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+        &lt;span class=&#34;token string&#34;&gt;&#39;libs/aspose-cells-19.2.jar&#39;&lt;/span&gt;
+    &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    command &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;getDefaultJVMPath&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                   &lt;span class=&#34;token string&#34;&gt;&#39;-ea&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-Xmn128m&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-Xms512M&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-Xmx512M&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                   &lt;span class=&#34;token string&#34;&gt;&#39;-Djava.class.path=&amp;#123;0&amp;#125;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;libs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;command&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;startJVM&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;getDefaultJVMPath&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                   &lt;span class=&#34;token string&#34;&gt;&#39;-ea&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-Xmn128m&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-Xms512M&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-Xmx512M&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+                   &lt;span class=&#34;token string&#34;&gt;&#39;-Djava.class.path=&amp;#123;0&amp;#125;&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;libs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                   &lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 解决多线程问题&lt;/span&gt;
+    jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;attachThreadToJVM&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 对excel截图&lt;/span&gt;
+    convertToImage&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;# 关闭虚拟机&lt;/span&gt;
+    jpype&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;shutdownJVM&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;截图完成&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; __name__ &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;__main__&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    test&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;附件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#附件&#34;&gt;#&lt;/a&gt; 附件&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;/files/%E8%B0%83%E7%94%A8java%E7%94%9F%E6%88%90%E6%8A%A5%E8%A1%A8.7z&#34;&gt;调用 java 生成报表.7z&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;解压后进入 whls 文件夹安装对应版本的 jpype 包&lt;/p&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/images/calljava.png&#34; alt=&#34;calljava&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/ffmpeghls.html</guid>
+            <title>FFmpeg合成加密HLS记录</title>
+            <link>https://pyqt5.com/ffmpeghls.html</link>
+            <category>Python</category>
+            <category>FFmpeg</category>
+            <category>HLS</category>
+            <pubDate>Sat, 12 Jan 2019 11:28:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;记录在某个需求中要求截图并合成加密视频文件，这里采用 FFmpeg 的管道流来实现生成 HLS 加密文件。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
+Created on 2019年3月4日
+@author: Irony
+@site: https://pyqt5.com https://github.com/892768447
+@email: 892768447@qq.com
+@file: 
+@description: 
+&#34;&#34;&#34;&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; pathlib &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; Path
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; subprocess &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; Popen&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; PIPE
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;By: Irony
+QQ: 892768447
+Email: 892768447@qq.com&#34;&#34;&#34;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Copyright (c) 2019 Irony&#39;&lt;/span&gt;
+__Version__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1.0&lt;/span&gt;
+
+
+&lt;span class=&#34;token comment&#34;&gt;# p = Popen([r&#39;D:\soft\ffmpeg\bin\ffmpeg.exe&#39;, &#39;-y&#39;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            &#39;-threads&#39;, &#39;2&#39;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            &#39;-f&#39;, &#39;image2pipe&#39;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            &#39;-vcodec&#39;, &#39;mjpeg&#39;, &#39;-r&#39;, &#39;24&#39;, &#39;-i&#39;, &#39;-&#39;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            &#39;-vcodec&#39;, &#39;h264&#39;, &#39;-r&#39;, &#39;24&#39;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            #            &#39;-encryption_scheme&#39;, &#39;cenc-aes-ctr&#39;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            #            &#39;-encryption_key&#39;, &#39;617D8A125A284DF48E3C6B1866348A3F&#39;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            #            &#39;-encryption_kid&#39;, &#39;B326F895B6A24CC5A4DC70995728059C&#39;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            r&#39;F:\Workspace\Test\videos\video.mp4&#39;], stdin=PIPE)&lt;/span&gt;
+
+p &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Popen&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;r&#39;D:\soft\ffmpeg\bin\ffmpeg.exe&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-re&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;   &lt;span class=&#34;token comment&#34;&gt;# 按照实际帧率读取输入文件&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-y&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;        &lt;span class=&#34;token comment&#34;&gt;# 覆盖已存在文件&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-threads&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;2&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 线程数量&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-f&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;image2pipe&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# PIPE图片流&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-vcodec&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;mjpeg&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 图片编码&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-r&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;24&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 帧率&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-i&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;-&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 指定输入流为PIPE&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-vcodec&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;h264&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 输出编码&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-r&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;24&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;# 帧率&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-map&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;0&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            &#39;-crf&#39;,&#39;20&#39;,     # 降低质量&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-b&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;720k&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;        &lt;span class=&#34;token comment&#34;&gt;# 码率&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-f&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;hls&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-codec:v&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;libx264&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-vbsf&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;h264_mp4toannexb&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+           &lt;span class=&#34;token comment&#34;&gt;# 指定加密密匙文件&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-hls_key_info_file&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;r&#39;F:\Workspace\Test\videokey.info&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-hls_time&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;20&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-hls_list_size&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;0&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;&#39;-hls_wrap&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;0&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;#            &#39;-hls_flags&#39;, &#39;single_file&#39;,  # 生成单个文件(有bug)&lt;/span&gt;
+           &lt;span class=&#34;token string&#34;&gt;r&#39;F:\Workspace\Test\videos\playlist.m3u8&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; stdin&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;PIPE&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+t &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;24&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; path &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;enumerate&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Path&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;frames&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;rglob&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;*.jpg&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token comment&#34;&gt;#     print(i, path)&lt;/span&gt;
+    p&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdin&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;write&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token builtin&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;path&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;rb&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;read&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+p&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stdin&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;close&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+p&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;wait&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;ok&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/daemonthread.html</guid>
+            <title>多线程之守护线程和阻塞线程</title>
+            <link>https://pyqt5.com/daemonthread.html</link>
+            <category>Python</category>
+            <category>线程</category>
+            <pubDate>Wed, 24 Oct 2018 07:51:15 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;如果你设置一个线程为守护线程，就表示你在说这个线程是不重要的，在进程退出的时候，不用等待这个线程退出。如果你的主线程在退出的时候，不用等待那些子线程完成，那就设置这些线程的 daemon 属性。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;即在线程开始（thread.start ()）之前，调用 setDeamon（）函数，设定线程的 daemon 标志。&lt;/p&gt;
+&lt;p&gt;（thread.setDaemon (True)）就表示这个线程 “不重要”。&lt;/p&gt;
+&lt;p&gt;如果你想等待子线程完成再退出，那就什么都不用做，或者显示地调用 thread.setDaemon (False)，设置 daemon 的值为 false。新的子线程会继承父线程的 daemon 标志。&lt;/p&gt;
+&lt;p&gt;整个 Python 会在所有的非守护线程退出后才会结束，即进程中没有非守护线程存在的时候才结束。&lt;/p&gt;
+&lt;p&gt;setDaemon () 函数要放在 start 之前设置才行。&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; threading
+&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; time
+
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;子线程开启：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; time&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;localtime&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    time&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sleep&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;子线程结束：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; time&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;localtime&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;主线程开启：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; time&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;localtime&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+t &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; threading&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Thread&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;target&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;func&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; args&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# t.setDaemon(True)&lt;/span&gt;
+t&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;主线程关闭：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; time&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;localtime&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在 Python 的多线程编程中，在实例代码中经常有 thread1.join () 这样的代码。那么今天咱们用实际代码来解释一下 join 函数的作用。&lt;/p&gt;
+&lt;p&gt;join 的原理就是依次检验线程池中的线程是否结束，没有结束就阻塞直到线程结束，如果结束则跳转执行下一个线程的 join 函数。&lt;/p&gt;
+&lt;p&gt;先看看这个：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;阻塞主进程，专注于执行多线程中的程序。&lt;/li&gt;
+&lt;li&gt;多线程多 join 的情况下，依次执行各线程的 join 方法，前头一个结束了才能执行后面一个。&lt;/li&gt;
+&lt;li&gt;无参数，则等待到该线程结束，才开始执行下一个线程的 join。&lt;/li&gt;
+&lt;li&gt;参数 timeout 为线程的阻塞时间，如 timeout=2 就是罩着这个线程 2s 以后，就不管他了，继续执行下面的代码。&lt;/li&gt;
+&lt;li&gt;下面的例子是一次阻塞子线程，每个子线程都会等上个子线程 join 结束才会执行，如果注释掉 t.join 则会同时执行 5 个子线程，多线程在做网络访问的时候可以减少等待时间，那么在一个工作流程中可以将访问网络接口的情况做成多线程。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; threading&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; time
+
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;hello world!&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    time&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;sleep&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;hello main start&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    t &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; threading&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Thread&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;target&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;func&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; args&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;t&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;getName&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    t&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;start&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    t&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;join&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/cgitb.html</guid>
+            <title>异常捕获之cgitb模块</title>
+            <link>https://pyqt5.com/cgitb.html</link>
+            <category>Python</category>
+            <category>异常</category>
+            <pubDate>Mon, 17 Sep 2018 15:17:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;code&gt;cgitb&lt;/code&gt;  模块为 &lt;code&gt;Python&lt;/code&gt;  脚本提供了一个特殊的异常管理器。名字有点误导人，它最初设计是为了以 HTML 格式展示 cgi 脚本的大量异常信息。后来，他扩展为也可以展示纯文本信息。该模块激活后，如果发生了未捕获的异常，将会展示格式化的输出报告。该报告包括源代码每一层的回溯，以及当前执行程序的参数和局部变量。以及，你可以选择将这些信息存到一个文件里，而不是发送到浏览器。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;用途&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#用途&#34;&gt;#&lt;/a&gt; 用途&lt;/h2&gt;
+&lt;p&gt;当编辑器中无法显示错误信息时，尤其是 &lt;code&gt;PyQt&lt;/code&gt; ，可以尝试在 cmd 中运行代码，或者使用此模块来得到错误信息。&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 介绍&lt;/h2&gt;
+&lt;h3 id=&#34;cgitbenable&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#cgitbenable&#34;&gt;#&lt;/a&gt; cgitb.enable&lt;/h3&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;cgitb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;enable&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;display&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; logdir&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; context&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;html&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参数说明&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;display 1，发送至浏览器；0， 不发送&lt;/li&gt;
+&lt;li&gt;logdir 如果有的话，写到该目录下&lt;/li&gt;
+&lt;li&gt;context 显示错误代码周围的代码行数&lt;/li&gt;
+&lt;li&gt;format 是否显示为 HTML，除了’html’之外的所有值，都会显示为纯文本&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;cgitbhandle&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#cgitbhandle&#34;&gt;#&lt;/a&gt; cgitb.handle&lt;/h3&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;cgitb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;handle&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;info&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;参数说明&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;如果你想用 cgitb 处理异常，你可以调用这个函数。&lt;/li&gt;
+&lt;li&gt;info 应当是含有异常类型、异常值和 traceback 对象的三元组&lt;/li&gt;
+&lt;li&gt;如同 sys.exc_info () 返回的那样。如果不提供 info，则从 sys.exc_info 中获取。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;如何使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如何使用&#34;&gt;#&lt;/a&gt; 如何使用&lt;/h2&gt;
+&lt;p&gt;以下代码放在最开始执行&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; cgitb
+&lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys
+sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;excepthook &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; cgitb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;Hook&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token boolean&#34;&gt;None&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;stderr&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;text&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

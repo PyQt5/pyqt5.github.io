@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"designer\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/viewpyindesigner_625781186.html",
+            "url": "https://pyqt5.com/viewpyindesigner_625781186.html",
+            "title": "如何和设计师中查看ui转换的py代码",
+            "date_published": "2019-04-30T05:11:09.000Z",
+            "content_html": "<p>通过 设计师  查看 ui 转换的 py 代码</p>\n<p>当初我刚学 pyqt 的时候，也有很多疑惑，用什么属性把控件加到布局，改了这个属性会发生什么，为什么这个会这样，那个会那样 。。。 。。。</p>\n<p>后来就看 ui 转成的 py 代码，注释一下，什么效果消失了，就是那个 api 引起的 。</p>\n<span id=\"more\"></span>\n<p>再来后发现了官方文档，查一查函数就行了 .</p>\n<p>但是有些 api 文档找起来麻烦，用设计师点几下就行了，然后把转换出来的代码拷贝一下就完事了.</p>\n<p>可是需要单独把 ui 转为 py 文件，之后再删除这个文件也是很烦的一件事 .</p>\n<p>好，话不多说，接下来手把手教你如何快速在 ui 中查看 py 代码 .</p>\n<p>官方也考虑过这种情况，所以 设计师中 是有这个功能的，但是 qt 的是没问题的，pyqt 的毕竟是绑定过来的，所以正常来说 你点击之后会弹出一个找不到应用程序的提示 .</p>\n<p>看到这个东西是不是很眼熟，我们用的命令 pyuic5 和这个东西应该是一样的 .</p>\n<p><img src=\"/images/viewpyindesigner1.jpg\" alt=\"viewpyindesigner1\"></p>\n<p>所以接下来，我们找找电脑上有没有这个东西</p>\n<p><img src=\"/images/viewpyindesigner2.jpg\" alt=\"viewpyindesigner2\"></p>\n<p>果然在 pyqt5-toos 文件夹下有这个东西，</p>\n<p>我们根据第一张图的提示，把这个东西拷贝到相应的目录 (如果没有那个 bin 文件夹，手动创建),</p>\n<p><img src=\"/images/viewpyindesigner3.jpg\" alt=\"viewpyindesigner3\"></p>\n<p>好了，大功告成！</p>\n",
+            "tags": [
+                "PyQt",
+                "Designer",
+                "设计师"
+            ]
+        }
+    ]
+}

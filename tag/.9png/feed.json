@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \".9png\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/qtninepatch.html",
+            "url": "https://pyqt5.com/qtninepatch.html",
+            "title": "PyQt5显示.9格式的PNG图片",
+            "date_published": "2018-10-26T02:00:08.000Z",
+            "content_html": "<p>做过安卓开发的和使用过 QQ 的都知道 <code>.9.png</code>  这种图片格式，效果就如 QQ 的聊天气泡一样可以拉伸，这种格式的图片允许开发人员定义可扩展区域，当需要延伸图片以填充比图片本身更大区域时，可扩展区的内容被延展；允许开发人员定义内容显示区，用于显示文字或其他内容。目前在 <code>Github</code>  上有两个 C++ 版本的，在这里我把它们都用 Python 实现了一遍。另外一个我也为 <code>PyQt</code>  提供了编译好的 pyd 文件。</p>\n<span id=\"more\"></span>\n<h2 id=\"c版本\"><a class=\"markdownIt-Anchor\" href=\"#c版本\">#</a> C++ 版本</h2>\n<p>在 Github 开源库中搜索到两个 C++ 版本的</p>\n<ol>\n<li>一个是 <a href=\"https://github.com/Roninsc2/NinePatchQt\">NinePatchQt</a></li>\n<li>一个是 <a href=\"https://github.com/soramimi/QtNinePatch\">QtNinePatch</a></li>\n</ol>\n<h2 id=\"pyqt5版本\"><a class=\"markdownIt-Anchor\" href=\"#pyqt5版本\">#</a> PyQt5 版本</h2>\n<p>这里也分为两个版本，都是基于上面的 C++ 源码翻译改写过来的，具体的例子见项目里面的测试代码吧。</p>\n<ol>\n<li><a href=\"https://github.com/PyQt5/PyQt/blob/master/QLabel/QtNinePatch.py\">QtNinePatch</a> 是参考第一个源码编写，用法是在 <code>paintEvent</code>  中调用</li>\n<li><a href=\"https://github.com/PyQt5/PyQt/blob/master/QLabel/QtNinePatch2.py\">QtNinePatch2</a> 是参考第二个源码编写，用法是 <code>pixmap = QtNinePatch.createPixmapFromNinePatchImage(self.image, self.width(), self.height())</code>  直接得到一个处理好的 <code>QPixmap</code>  对象来使用</li>\n</ol>\n<h2 id=\"说明\"><a class=\"markdownIt-Anchor\" href=\"#说明\">#</a> 说明</h2>\n<ol>\n<li>建议优先使用 pyd 版本的（后续提供 Python3.4 3.5 3.6 3.7 编译好的 32 为库文件），也可以自行编译，编译步骤见下文。</li>\n<li>其次可以使用纯 python 版本 2 的（个人觉得方便调用）</li>\n<li>最后再考虑纯 python 版本 1 的吧</li>\n<li>以上为个人意见，两个 C++ 版本的写法不一样，但是核心算法应该是类似的。</li>\n</ol>\n<h2 id=\"自行编译\"><a class=\"markdownIt-Anchor\" href=\"#自行编译\">#</a> 自行编译</h2>\n<ol>\n<li>首先要安装好 Qt、PyQt5、编译安装对应的 sip、对应的 VC++ 编译工具</li>\n<li>用 Qt Creator 打开 pro 文件进行编译</li>\n<li>进入源码中的 sip 文件夹修改 configure.py 文件</li>\n</ol>\n<pre class=\"line-numbers language-none\"><code class=\"language-none\"># 这里是你的VC版本和对应的Qt目录中的文件夹\nconfig.platform &#x3D; &quot;win32-msvc2010&quot;\nqt_path &#x3D; &#39;D:&#x2F;soft&#x2F;Qt&#x2F;Qt5.5.1&#x2F;5.5&#x2F;msvc2010&#39;<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span></span></code></pre>\n<ol start=\"4\">\n<li>最后执行 python configure.py 来编译</li>\n</ol>\n<h2 id=\"下载\"><a class=\"markdownIt-Anchor\" href=\"#下载\">#</a> 下载</h2>\n<p><a href=\"https://github.com/PyQt5/PyQt/tree/master/QLabel\">https://github.com/PyQt5/PyQt/tree/master/QLabel</a></p>\n<h2 id=\"效果图\"><a class=\"markdownIt-Anchor\" href=\"#效果图\">#</a> 效果图</h2>\n<p><img src=\"/PyQt/QLabel/ScreenShot/NinePatchImage.gif\" alt=\"NinePatchImage\"></p>\n",
+            "tags": [
+                "PyQt",
+                "图片",
+                "气泡",
+                ".9png"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;边框&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 26 Apr 2019 14:19:26 +0000</pubDate>
+        <lastBuildDate>Fri, 26 Apr 2019 14:19:26 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/showframe.html</guid>
+            <title>PyQt5调整窗口显示边框</title>
+            <link>https://pyqt5.com/showframe.html</link>
+            <category>PyQt</category>
+            <category>边框</category>
+            <pubDate>Fri, 26 Apr 2019 14:19:26 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;在 &lt;code&gt;windows&lt;/code&gt;  某些场景下调整窗口大小或者移动后就会导致里面的内容重绘（速度慢，卡顿，闪烁），其实在以前 &lt;code&gt;windows&lt;/code&gt;  在低配置设备为了减少这种频繁绘制的情况，默认会开启这种效果，不过目前设备越来越好了就关闭了该功能。具体是在控制面板中 -&amp;gt; 调整 &lt;code&gt;Windows&lt;/code&gt;  的外观和性能 -&amp;gt; 去掉勾选 拖动时显示窗口内容。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;由于这个开关是全局状态的，而我们只需要在自己的窗口中实现该效果有两种方式。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一种是自己绘制一个边框效果，放开鼠标时才操作真正的窗口。&lt;/li&gt;
+&lt;li&gt;二是替换窗口的处理过程函数 &lt;code&gt;wndproc&lt;/code&gt;  处理 &lt;code&gt;WM_NCLBUTTONDOWN&lt;/code&gt;  消息事件。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;今天讲第二种方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;需要了解  &lt;code&gt;SystemParametersInfo&lt;/code&gt;  API 函数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SPI_GETDRAGFULLWINDOWS&lt;/code&gt; ：确定是否允许拖拉到最大窗口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SPI_SETDRAGFULLWINDOWS&lt;/code&gt; ：设置是否允许拖至最大窗口&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;效果就是这样的：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/PyQt/Demo/ScreenShot/ShowFrameWhenDrag.gif&#34; alt=&#34;ShowFrameWhenDrag&#34;&gt;&lt;/p&gt;
+&lt;p&gt;正如图片所看的那样，窗体在移动的时候，窗体并没有绘制出来，而是绘制出窗体的边框，等到窗体不在移动的时候就直接把窗体图像数据全部绘制出来，这样就避免了窗体在移动的时候出现闪烁的现象。&lt;/p&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/Demo/ShowFrameWhenDrag.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/Demo/ShowFrameWhenDrag.py&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class=&#34;token comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+
+&lt;span class=&#34;token triple-quoted-string string&#34;&gt;&#34;&#34;&#34;
+Created on 2019年4月23日
+@author: Irony
+@site: https://pyqt5.com https://github.com/892768447
+@email: 892768447@qq.com
+@file: ShowFrameWhenDrag
+@description: 调整窗口显示边框
+&#34;&#34;&#34;&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; ctypes &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_int&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; byref&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_long&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_void_p&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_ulong&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_longlong&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;\
+    c_ulonglong&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; WINFUNCTYPE&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_uint
+
+&lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QWidget&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; QLabel
+
+
+__Author__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Irony&#39;&lt;/span&gt;
+__Copyright__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;Copyright (c) 2019 Irony&#39;&lt;/span&gt;
+__Version__ &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1.0&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_long&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_void_p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    WPARAM &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_ulong
+    LPARAM &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_long
+&lt;span class=&#34;token keyword&#34;&gt;elif&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_longlong&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; sizeof&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_void_p&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    WPARAM &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_ulonglong
+    LPARAM &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_longlong
+
+WM_NCLBUTTONDOWN &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0x00a1&lt;/span&gt;
+GWL_WNDPROC &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;4&lt;/span&gt;
+SPI_GETDRAGFULLWINDOWS &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;38&lt;/span&gt;
+SPI_SETDRAGFULLWINDOWS &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;37&lt;/span&gt;
+WNDPROC &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; WINFUNCTYPE&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;c_long&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_void_p&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; c_uint&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; WPARAM&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; LPARAM&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    CallWindowProc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;CallWindowProcW
+    SetWindowLong &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SetWindowLongW
+    SystemParametersInfo &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SystemParametersInfoW
+&lt;span class=&#34;token keyword&#34;&gt;except&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    CallWindowProc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;CallWindowProcA
+    SetWindowLong &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SetWindowLongA
+    SystemParametersInfo &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; windll&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;user32&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;SystemParametersInfoA
+
+
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;GetDragFullwindows&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    rv &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; c_int&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    SystemParametersInfo&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;SPI_GETDRAGFULLWINDOWS&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; byref&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;rv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; rv&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;value
+
+
+&lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;SetDragFullwindows&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;value&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    SystemParametersInfo&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;SPI_SETDRAGFULLWINDOWS&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; value&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;token class-name&#34;&gt;Window&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QWidget&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;__init__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token builtin&#34;&gt;super&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Window&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;__init__&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;args&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;**&lt;/span&gt;kwargs&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QVBoxLayout&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        layout&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;addWidget&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;QLabel&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;拖动或者调整窗口试试看&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+        &lt;span class=&#34;token comment&#34;&gt;# 重点替换窗口处理过程&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_newwndproc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; WNDPROC&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_wndproc&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+        self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_oldwndproc &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; SetWindowLong&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+            &lt;span class=&#34;token builtin&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;winId&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; GWL_WNDPROC&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_newwndproc&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+    &lt;span class=&#34;token keyword&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;_wndproc&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; msg&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; wparam&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; lparam&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; msg &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; WM_NCLBUTTONDOWN&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+            &lt;span class=&#34;token comment&#34;&gt;# 获取系统本身是否已经开启&lt;/span&gt;
+            isDragFullWindow &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; GetDragFullwindows&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+            &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; isDragFullWindow &lt;span class=&#34;token operator&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# 开启虚线框&lt;/span&gt;
+                SetDragFullwindows&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# 系统本身处理&lt;/span&gt;
+                ret &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; CallWindowProc&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;
+                    self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_oldwndproc&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; msg&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; wparam&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; lparam&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token comment&#34;&gt;# 关闭虚线框&lt;/span&gt;
+                SetDragFullwindows&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+                &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; ret
+        &lt;span class=&#34;token keyword&#34;&gt;return&lt;/span&gt; CallWindowProc&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_oldwndproc&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; hwnd&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; msg&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; wparam&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; lparam&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; __name__ &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;__main__&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; sys
+    &lt;span class=&#34;token keyword&#34;&gt;from&lt;/span&gt; PyQt5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;QtWidgets &lt;span class=&#34;token keyword&#34;&gt;import&lt;/span&gt; QApplication
+    app &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; QApplication&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;argv&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; Window&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    w&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+    sys&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;app&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exec_&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;片尾&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#片尾&#34;&gt;#&lt;/a&gt; 片尾&lt;/h2&gt;
+&lt;p&gt;替换窗口过程可以处理很多系统窗口的处理过程，更多需要读者自行去发现。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

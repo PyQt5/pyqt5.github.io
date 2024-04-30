@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"mac\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/macm1pyqt.html",
+            "url": "https://pyqt5.com/macm1pyqt.html",
+            "title": "如何在Mac M1上快速安装PyQt5",
+            "date_published": "2023-10-07T06:08:06.000Z",
+            "content_html": "<p>由于官方并没有在 M1 上编译 PyQt 导致安装存在一些问题。<br>\nM1 上的 Python 不能直接使用 x64 的 PyQt5。但是 M1 上可以运行 x64 的 Python。所以通过安装 x64 的 Python 然后再安装 PyQt5 即可。</p>\n<span id=\"more\"></span>\n<p><strong>1. 安装 Python</strong><br>\n<a href=\"https://www.python.org/ftp/python/3.9.13/python-3.9.13-macosx10.9.pkg\">python-3.9.13-macosx10.9.pkg</a></p>\n<p><strong>2. 勾选自定义同时只勾选安装 pip</strong></p>\n<p><img src=\"/images/macpyqtstep1.png\" alt=\"step1.png\"></p>\n<p><img src=\"/images/macpyqtstep2.png\" alt=\"step1.png\"></p>\n<p><strong>3. 设置 pip 源</strong></p>\n<pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">/Library/Frameworks/Python.framework/Versions/3.9/bin/pip3 <span class=\"token function\">install</span> pqi\n/Library/Frameworks/Python.framework/Versions/3.9/bin/pqi use tuna<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span></span></code></pre>\n<p><strong>4. 安装 PyQt5</strong></p>\n<pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">/Library/Frameworks/Python.framework/Versions/3.9/bin/pip3 <span class=\"token function\">install</span> PyQt5<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n<p><strong>5. 测试</strong></p>\n<pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">/Library/Frameworks/Python.framework/Versions/3.9/bin/python3<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n<p><img src=\"/images/macpyqtstep3.png\" alt=\"step3.png\"></p>\n<p>📢📢📢</p>\n<p>也可以直接安装 <a href=\"https://docs.anaconda.com/free/miniconda/miniconda-install/\">Miniconda</a></p>\n<p>然后：conda install -c conda-forge pyqt</p>\n",
+            "tags": [
+                "PyQt",
+                "Mac",
+                "M1"
+            ]
+        }
+    ]
+}

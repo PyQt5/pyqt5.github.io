@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;轮播&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Sat, 24 Nov 2018 13:45:06 +0000</pubDate>
+        <lastBuildDate>Sat, 24 Nov 2018 13:45:06 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/pageswitching.html</guid>
+            <title>PyQt5之图片轮播</title>
+            <link>https://pyqt5.com/pageswitching.html</link>
+            <category>PyQt</category>
+            <category>动画</category>
+            <category>轮播</category>
+            <pubDate>Sat, 24 Nov 2018 13:45:06 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;之前看到了 &lt;code&gt;QStackedWidget&lt;/code&gt;  做切换动画，让界面不那么生硬，于是参考了 &lt;a href=&#34;http://qt.shoutwiki.com/wiki/Extending_QStackedWidget_for_sliding_page_animations_in_Qt&#34;&gt;http://qt.shoutwiki.com/wiki/Extending_QStackedWidget_for_sliding_page_animations_in_Qt&lt;/a&gt; 做了一个 &lt;code&gt;QStackedWidget&lt;/code&gt;  的切换动画，然后利用 &lt;code&gt;QStackedWidget&lt;/code&gt;  结合多个 &lt;code&gt;QLabel&lt;/code&gt;  显示图片来做一个轮播效果。&lt;/p&gt;
+&lt;p&gt;其实在写之前也在网上找了很多例子，参看过后发现大多例子都是利用到了 &lt;code&gt;paintEvent&lt;/code&gt;  去绘制，这样其实还是比较麻烦，个人觉得更好的方式是使用 &lt;code&gt;QPropertyAnimation&lt;/code&gt;  属性动画修改控件中 &lt;code&gt;QLabel&lt;/code&gt;  图片控件的 pos 位置属性就可以达到移动效果了。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ol&gt;
+&lt;li&gt;比较核心的算法就是要计算当前页面和下一个页面的位置偏移量，比如:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;&lt;span class=&#34;token comment&#34;&gt;# 计算偏移量&lt;/span&gt;
+offsetX &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;frameRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;width&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+offsetY &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;frameRect&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;height&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+w_next&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;setGeometry&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; offsetX&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; offsetY&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+
+&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt; direction &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;BOTTOM2TOP&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    offsetX &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;
+    offsetY &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;offsetY
+&lt;span class=&#34;token keyword&#34;&gt;elif&lt;/span&gt; direction &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;TOP2BOTTOM&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    offsetX &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;elif&lt;/span&gt; direction &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;RIGHT2LEFT&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    offsetX &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;offsetX
+    offsetY &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;
+&lt;span class=&#34;token keyword&#34;&gt;elif&lt;/span&gt; direction &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt; self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;LEFT2RIGHT&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;
+    offsetY &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;
+
+&lt;span class=&#34;token comment&#34;&gt;# 重新定位显示区域外部/旁边的下一个窗口小部件&lt;/span&gt;
+pnext &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; w_next&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pos&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+pnow &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; w_now&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pos&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+self&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;_pnow &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; pnow
+
+&lt;span class=&#34;token comment&#34;&gt;# 移动到指定位置并显示&lt;/span&gt;
+w_next&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;move&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pnext&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;x&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; offsetX&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; pnext&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;y&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; offsetY&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+w_next&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;show&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;
+w_next&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;raise_&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;其次是对这两个页面增加关联 &lt;code&gt;pos&lt;/code&gt;  属性的 &lt;code&gt;QPropertyAnimation&lt;/code&gt;  动画，然后加入到并行动画组 &lt;code&gt;QParallelAnimationGroup&lt;/code&gt;  中再启动即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对 &lt;code&gt;QStackedWidget&lt;/code&gt;  的 &lt;code&gt;setCurrentIndex&lt;/code&gt;  和 &lt;code&gt;setCurrentWidget&lt;/code&gt;  这两个函数进行了覆盖重写达到及时手动调用这两个函数也会产生动画效果的目的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#代码&#34;&gt;#&lt;/a&gt; 代码&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/PyQt5/PyQt/blob/master/QPropertyAnimation/PageSwitching.py&#34;&gt;https://github.com/PyQt5/PyQt/blob/master/QPropertyAnimation/PageSwitching.py&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;效果图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#效果图&#34;&gt;#&lt;/a&gt; 效果图&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/PyQt/QPropertyAnimation/ScreenShot/PageSwitching.gif&#34; alt=&#34;PageSwitching&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

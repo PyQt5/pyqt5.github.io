@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>PyQt • Posts by &#34;python 状态机&#34; tag</title>
+        <link>https://pyqt5.com</link>
+        <description>Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 17 Jul 2019 09:03:33 +0000</pubDate>
+        <lastBuildDate>Wed, 17 Jul 2019 09:03:33 +0000</lastBuildDate>
+        <category>PyQt</category>
+        <category>动画</category>
+        <category>阴影</category>
+        <category>信号</category>
+        <category>Python</category>
+        <category>截图</category>
+        <category>异常</category>
+        <category>圆形</category>
+        <category>图片</category>
+        <category>线程</category>
+        <category>Model</category>
+        <category>FFmpeg</category>
+        <category>HLS</category>
+        <category>翻转</category>
+        <category>窗口</category>
+        <category>滑动条</category>
+        <category>特效</category>
+        <category>Mac</category>
+        <category>M1</category>
+        <category>菜单</category>
+        <category>轮播</category>
+        <category>进程</category>
+        <category>pyqt hook key</category>
+        <category>Asyncio</category>
+        <category>异步</category>
+        <category>subprocess.Popen</category>
+        <category>拦截print</category>
+        <category>pytest-qt</category>
+        <category>python 状态机</category>
+        <category>气泡</category>
+        <category>.9png</category>
+        <category>QWebView</category>
+        <category>QWebEngineView</category>
+        <category>浏览器</category>
+        <category>debug</category>
+        <category>snoop</category>
+        <category>无边框</category>
+        <category>圆角</category>
+        <category>边框</category>
+        <category>Github</category>
+        <category>编辑器</category>
+        <category>PyQt5 PySide2</category>
+        <category>Designer</category>
+        <category>设计师</category>
+        <category>virtualenvwrapper</category>
+        <category>virtualenv</category>
+        <item>
+            <guid isPermalink="true">https://pyqt5.com/python_statemachine_625781186.html</guid>
+            <title>python 状态机模块 　</title>
+            <link>https://pyqt5.com/python_statemachine_625781186.html</link>
+            <category>Python</category>
+            <category>python 状态机</category>
+            <pubDate>Wed, 17 Jul 2019 09:03:33 +0000</pubDate>
+            <description><![CDATA[ &lt;p&gt;用状态来取代 if…else 判断。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;GUI 涉及到挺多的状态改变，以前一直用 if…else 来判断，最近读了设计模式，发现有个状态模式，随后发现了状态机这个东西 .&lt;/p&gt;
+&lt;p&gt;python 的状态机模块挺多的，不过好像很多都不更新了.&lt;br&gt;
+ 推荐 2 个状态机模块，但是也没有太深入的使用经验，就跑跑例子，以后有更详细的 pyqt 例子再补上 .&lt;/p&gt;
+&lt;p&gt;1:  &lt;code&gt;pip install python-statemachine&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;官方例子 : &lt;a href=&#34;https://github.com/fgmacedo/python-statemachine&#34;&gt;https://github.com/fgmacedo/python-statemachine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2. &lt;code&gt;pip install state_machine&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;官方例子 : &lt;a href=&#34;https://github.com/jtushman/state_machine&#34;&gt;https://github.com/jtushman/state_machine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1 的 最近一次更新在 6 个月以前，使用 &lt;code&gt;类继承&lt;/code&gt; 和 &lt;code&gt;mixin&lt;/code&gt;  方式，不过有些地方不如 2 个人性化；&lt;/p&gt;
+&lt;p&gt;2 的设计更人性化一些，包括状态改变 &lt;code&gt;before&lt;/code&gt;  和  &lt;code&gt;after&lt;/code&gt;  , 不过由于是装饰器实现的动态增加属性，有些地方编辑器智能提示可能就靠不上了.&lt;/p&gt;
+&lt;p&gt;两者实现实现方式不一样，有兴趣可以读读源码 .&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;qt 内置状态机框架&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/amnes1a/article/details/62418196&#34;&gt;https://blog.csdn.net/amnes1a/article/details/62418196&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/dongfenghuojian/article/details/78187131&#34;&gt;https://blog.csdn.net/dongfenghuojian/article/details/78187131&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html&#34;&gt;http://blog.sina.com.cn/s/articlelist_3284623693_0_1.html&lt;/a&gt; (系列教程)&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

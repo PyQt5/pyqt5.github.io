@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"pytest-qt\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/pytest_qt_modal_625781186.html",
+            "url": "https://pyqt5.com/pytest_qt_modal_625781186.html",
+            "title": "pytest-qt 测试模态窗体.",
+            "date_published": "2024-04-30T01:46:52.392Z",
+            "content_html": "<p>步骤分别是 :</p>\n<ol>\n<li>\n<p>点击 开始扫描 弹出 选择路径窗口；</p>\n</li>\n<li>\n<p>勾选路基；</p>\n</li>\n</ol>\n<p>3. 点击确定；</p>\n<span id=\"more\"></span>\n<p>大概想测一下这个界面 :</p>\n<p><img src=\"https://upload-images.jianshu.io/upload_images/10769157-c1ed0bd52808c5b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></p>\n<p>步骤分别是 :</p>\n<ol>\n<li>\n<p>点击 开始扫描 弹出 选择路径窗口；</p>\n</li>\n<li>\n<p>勾选路基；</p>\n</li>\n</ol>\n<p>3. 点击确定；</p>\n<p>需要测试的函数 :</p>\n<p><img src=\"https://upload-images.jianshu.io/upload_images/10769157-b5265859d74b269d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></p>\n<p>测试函数 :</p>\n<p><img src=\"https://upload-images.jianshu.io/upload_images/10769157-58f4310a54a815ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></p>\n<p>可以发现断言失败 .</p>\n<p><img src=\"https://upload-images.jianshu.io/upload_images/10769157-939c73b5be19c21e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240\" alt=\"image.png\"></p>\n<p>官方文档：测试模态窗体.</p>\n<p><a href=\"https://pytest-qt.readthedocs.io/en/latest/note_dialogs.html\">https://pytest-qt.readthedocs.io/en/latest/note_dialogs.html</a></p>\n<p>用的是官方的  <code>monkeypatch</code>  方式 .</p>\n<p>大致意思就是替换  <code>FileSelectPathDialog</code>  类的 exec 函数.</p>\n",
+            "tags": [
+                "pytest-qt"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "PyQt • All posts by \"pyqt hook key\" tag",
+    "description": "Python PyQt PyQt6 PyQt5 PyQt4 PySide PySide2 PySide6",
+    "home_page_url": "https://pyqt5.com",
+    "items": [
+        {
+            "id": "https://pyqt5.com/pyqt5_hook_key_625781186.html",
+            "url": "https://pyqt5.com/pyqt5_hook_key_625781186.html",
+            "title": "在pyqt中使用python全局钩子模块",
+            "date_published": "2019-07-06T17:37:22.000Z",
+            "content_html": "<p>在某些时候需要为自己的软件增加全局键盘监听，比如软件最小化隐藏后可以通过热键唤醒，又或者比如像 QQ 一样可以全局热键截图。这里介绍几个方法实现在 PyQt 中使用 Python 全局钩子模块实现全局热键功能。</p>\n<span id=\"more\"></span>\n<ol>\n<li><code>pyHook3</code></li>\n</ol>\n<p>安装命令 :  <code>pip install pyhook3</code></p>\n<p><a href=\"https://blog.csdn.net/q871063970/article/details/86648386\">https://blog.csdn.net/q871063970/article/details/86648386</a></p>\n<p>似乎将 pyhook 支持 py3 版本的了？没有太多研究.</p>\n<p>缺点：只支持 win 平台.</p>\n<p>2. <code>keyboard</code>  &amp;  <code>mouse</code></p>\n<p>安装命令:  <code>pip install keyboard mouse</code></p>\n<pre class=\"line-numbers language-none\"><code class=\"language-none\">\nfrom PyQt5 import  QtGui, QtWidgets, QtCore\nfrom PyQt5.QtCore import *\nfrom PyQt5.QtGui import *\nfrom PyQt5.QtWidgets import *\nimport keyboard\nclass Window(QWidget):\n\n    def __init__(self, *args, **kwargs):\n        super(Window, self).__init__(*args, **kwargs)\n        layout &#x3D; QVBoxLayout(self)\n        self.testBtn &#x3D; QPushButton(self)\n        layout.addWidget(self.testBtn)\n\n        keyboard.add_hotkey(&#39;ctrl+shift+x&#39;, lambda:print(&#39;triggered&#39;, &#39;hotkey&#39;))\n        keyboard.add_hotkey(&#39;ctrl+shift+c&#39;, self.abc,args&#x3D;(&#39;aa&#39;,&quot;bb&quot;,&quot;cc&quot;))\n\n    def abc(self,a,b,c):\n        print(a,b,c)\n        \nif __name__ &#x3D;&#x3D; &#39;__main__&#39;:\n    import sys\n    from PyQt5.QtWidgets import QApplication\n    app &#x3D; QApplication(sys.argv)\n    w &#x3D; Window()\n    w.show()\n    sys.exit(app.exec_())<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>\n<p>更详细例子 : <a href=\"https://github.com/PyQt5/PyQt/blob/63c6376358acb1863313fb5593097e6e0210cad6/Test/%E5%85%A8%E5%B1%80%E7%83%AD%E9%94%AE/HotKey.py\">pyqt 中使用 keyboard 全局热键</a></p>\n<p>优点：跨平台；</p>\n<p>缺点：模块名字取得太差，不容易被发现.</p>\n",
+            "tags": [
+                "Python",
+                "pyqt hook key"
+            ]
+        }
+    ]
+}
