@@ -1,6 +1,0 @@
-[submodule "themes/shoka"]
-	path = themes/shoka
-	url = https://github.com/amehime/hexo-theme-shoka.git
-[submodule "themes/matery"]
-	path = themes/matery
-	url = https://github.com/blinkfox/hexo-theme-matery.git
